@@ -1,4 +1,4 @@
-<footer class="[ bg-dark ][ padding--top-bottom--large  ]ch-g1 wrapper bottom clearfix">
+<footer class="[ bg-dark ][ padding--top-bottom--large ]">
 	<div class="[ container ]">
 		<div class="[ row ]">
 			<div class="[ col-xs-12 col-sm-offset-4 col-sm-4  ]">
@@ -8,47 +8,51 @@
 			<div class="[ row ]">
 				<div class="[ col-xs-12 col-sm-4 ]">
 					<h4 class="[ color-primary ]">NEWSLETTER</h4>
-					<div class="[ inline-flex ][ hidden-xs ][ input-group ]">
-						<input type="text" class="[ form-control ]" placeholder="buscar...">
+					<div class="[ inline-flex ][ input-group ][ width-60 ]">
+						<input type="text" class="[ form-control ][ width-60 ]" placeholder="mail…">
 						<span class="[ input-group-btn ]">
-							<button class="[ btn btn-primary ]" type="button">
+							<button class="[ btn btn-primary ]" type="submit">
 							<span class="[ relative ][ icon search ]"></span>SUSCRIBE</button>
 						</span>
 					</div><!-- /input-group -->
 				</div>
 
 				<div class="[ col-xs-12 col-sm-4 ]">
-					<address class="component addressExtended link">
-						<dl class="socialData">
+					<address class="component link">
+						<dl>
 							<dt><h4 class="[ color-primary ]">SÍGUENOS</h4></dt>	
-							<span class="[ color-light ][ icon-logo-facebook ]"></span>
-							<span class="[ color-light ][ icon-logo-twitter-bird ]"></span>
-							<span class="[ color-light ][ icon-logo-youtube-clip ]"></span>
-							<span class="[ color-light ][ icon-logo-instagram ]"></span>
-							<span class="[ color-light ][ icon-logo-pinterest ]"></span>
-							<span class="[ color-light ][ icon-logo-google ]"></span>
-							<span class="[ color-light ][ icon-logo-tumblr ]"></span>
-							<span class="[ color-light ][ icon-logo-whatsapp ]"></span>
-							<dd id="fb-button"></dd>
-							<g:plusone size="medium" count="false" href="http://www.hola.pcorbeau.com"></g:plusone>
+							<a href="#" class="[ color-light ][ icon-logo-facebook ]"></a>
+							<a href="#" class="[ color-light ][ icon-logo-twitter-bird ]"></a>
+							<a href="#" class="[ color-light ][ icon-logo-youtube-clip ]"></a>
+							<a href="#" class="[ color-light ][ icon-logo-instagram ]"></a>
+							<a href="#" class="[ color-light ][ icon-logo-pinterest ]"></a>
+							<a href="#" class="[ color-light ][ icon-logo-google ]"></a>
+							<a href="#" class="[ color-light ][ icon-logo-tumblr ]"></a>
+							<a href="#" class="[ color-light ][ icon-logo-whatsapp ]"></a>
+							<div class="[ margin-top ]">
+								<dd id="fb-button"></dd>
+								<g:plusone size="medium" count="false" href="http://www.hola.pcorbeau.com"></g:plusone>
+							</div>
 						</dl>
-						<dl class="companyData">
-							<dt><h4 class="[ color-primary ]]">CONTACTANOS</h4></dt> 
+						<dl class="companyData [ color-light ]">
+							<dt><h4 class="[ color-primary ]]">CONTÁCTANOS</h4></dt> 
 							<dd>raldezamacona</dd>
 							#if($showContactFooter)
 								<dd>Aguascalientes</dd>
 								<dd> 5543367589</dd> 
 							#end
 							<dd>
-								<a href="/contact">Contáctanos</a>
+								<a href="/contact" class="[ icon-mail ]" > envíar mensaje </a>
 							</dd>
 						</dl>  
 					</address>
 				</div>
 				<div class="[ col-xs-12 col-sm-4 ]">
-					<a class="[ margin-top-bottom ]" href=""><h4 class="[ text-uppercase ][ color-primary ]">Terminos y condiciones</h4></a>
-					<a class="[ margin-top-bottom ]" href=""><h4 class="[ text-uppercase ][ color-primary ]">Politica de Devolucion</h4></a>
-					<a class="[ margin-top-bottom ]" href=""><h4 class="[ text-uppercase ][ color-primary ]">Preguntas frecuentes</h4></a>
+					<div class="[ border-left-primary ][ margin-left padding ]">
+						<a class="[ margin-top-bottom ]" href="terminos.html"><h5 class="[ color-primary ]">Terminos y condiciones</h5></a>
+						<a class="[ margin-top-bottom ]" href="politicas.html"><h5 class="[ color-primary ]">Politica de Devolucion</h5></a>
+						<a class="[ margin-top-bottom ]" href="faq.html"><h5 class="[ color-primary ]">Preguntas frecuentes</h5></a>	
+					</div>
 				</div>
 			</div>
 			
