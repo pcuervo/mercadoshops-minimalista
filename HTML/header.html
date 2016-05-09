@@ -79,15 +79,6 @@
 
 <!--	<div class="ch-g1 header-top [ bg-dark color-light ]">
 		<div class="ch-container">
-			#if( $hasLogo )
-				<figure class="[ hidden ] component img-logo">
-					<a href="/" title="Inicio"><img src="/images/logo.jpg?" alt="raldezamacona" title="raldezamacona" /></a>
-				</figure>
-			#else
-				<div class="[ hidden ] component txt-logo">
-					<a href="/" title="Inicio" class="logo">raldezamacona</a>
-				</div>
-			#end
 
 			<div class="ch-g4-5">
 				<div class="ch-container clearfix [ pull-left ]">
@@ -135,6 +126,9 @@
 	<section class="[ bg-dark ][ hidden-xs ][ text-center ]">
 		<div class="[ container ]">
 			<div class="[ row ]">
+				#if( $hasOnlyOneCategory )
+					<a href="$uniqueCategory.url" class="no-categ link ch-btn ch-secondary button">Todos los productos</a>
+				#else
 				<div class="[ dropdown--hover ][ col-sm-2 ]">
 					<span class="[ color-light ][ padding--top-bottom padding--sides ][ block ]">Tipos</span>
 					<div class="[ dropdown-content ]">
@@ -208,7 +202,6 @@
 				#end
 			</div>
 		</div>
-
-
 	</div>
+
 </header>
