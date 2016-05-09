@@ -77,7 +77,7 @@
 	</div>
 	<!-- / Mobile menu -->
 
-<!--	<div class="ch-g1 header-top [ bg-dark color-light ]">
+	<!-- <div class="ch-g1 header-top [ bg-dark color-light ]">
 		<div class="ch-container">
 			#if( $hasLogo )
 				<figure class="[ hidden ] component img-logo">
@@ -113,7 +113,7 @@
 						<input type="hidden" name="view" value="result">
 						<input id="search" type="search" name="q" value="" class="inputField">
 						<input type="submit" value="Buscar" class="ch-btn ch-secondary button">
-					</form> 
+					</form>
 				</div>
 				#if( $shopHasCart )
 					<div id="cart" class="component cartButton">
@@ -126,10 +126,17 @@
 		</div>
 	</div> -->
 
-	<figure class=" img-logo ">
-		<a href="/" title="Inicio">
-			<img class="[ img-responsive ][ center-block ][ padding--sides margin-top-bottom ]" src="/images/logo.png" alt="Type shirts logo " title="logo"/></a>
-	</figure>
+	#if( $hasLogo )
+		<figure class="component img-logo">
+			<a href="/" title="Inicio">
+				<img class="[ img-responsive ][ center-block ][ padding--sides margin-top-bottom ]" src="/images/logo.jpg?" alt="raldezamacona" title="raldezamacona" />
+			</a>
+		</figure>
+	#else
+		<div class="component txt-logo">
+			<a href="/" title="Inicio" class="logo">raldezamacona</a>
+		</div>
+	#end
 
 	<!-- desktop menu-->
 	<section class="[ bg-dark ][ hidden-xs ][ text-center ]">
