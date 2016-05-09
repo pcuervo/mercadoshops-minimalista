@@ -14,7 +14,7 @@
 
 			<form class="[ inline-flex ][ input-group ][ padding--sides ][ margin-top-bottom ]" id="searchForm" method="get" action="/jm/com.mercadoshops.web.frontend.page.PageController">
 				<input type="hidden" name="view" value="result">
-				<input id="search" type="search" name="q" value="" class="[ form-control ]" placeholder="buscar...">
+				<input id="search" type="search" name="q" value="" class="[ form-control ][ input-search ]" placeholder="buscar...">
 				<span class="[ input-group-btn ]">
 					<button class="[ btn btn-primary bg-dark ]" type="submit">
 						<span class="[ relative ][ icon-search-1 ][ color-light ]"></span>
@@ -60,7 +60,7 @@
 
 		<div class="[ inline-block ]">
 			#foreach( $menuItem in $menuItemList )
-				<a class="[ text-uppercase ][ color-light ][ padding--sides ][ icon-$menuItem.name ]" title="$menuItem.name" href='$menuItem.target'>$menuItem.name</a>
+				<a class="[ text-uppercase ][ color-light ][ padding--sides ][ icon-$menuItem.name icon-medium ]" title="$menuItem.name" href='$menuItem.target'>$menuItem.name</a>
 			#end
 		</div>
 

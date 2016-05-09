@@ -1295,12 +1295,16 @@ a:hover {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+a:visited {
+  color: #F2AF0D;
+}
+
 small,
 .small {
   font-size: 85%;
 }
 mark,
-.mark {
+.mark {input
   background-color: #fcf8e3;
   padding: .2em;
 }
@@ -2535,6 +2539,10 @@ input[type="checkbox"]:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+}
+.input-search{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 output {
   display: block;
@@ -6172,6 +6180,10 @@ button.close {
 /* '' */
 .icon-key-hole-2:before {
   content: '\e844';
+}
+/* '' */
+.icon-Inicio:before {
+  content: '\e838';
 }
 /* '' */
 .icon-xsmall {
