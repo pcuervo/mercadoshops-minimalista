@@ -12,20 +12,20 @@
 				<i class="[ icon-shop icon-small ]"></i>
 			</a>
 
-			<form class="[ inline-flex ][ input-group ][ padding--sides ][ margin-top-bottom ]">
-				<input type="text" class="[ form-control ]" placeholder="buscar...">
+			<form class="[ inline-flex ][ input-group ][ padding--sides ][ margin-top-bottom ]" id="searchForm" method="get" action="/jm/com.mercadoshops.web.frontend.page.PageController">
+				<input type="hidden" name="view" value="result">
+				<input id="search" type="search" name="q" value="" class="[ form-control ]" placeholder="buscar...">
 				<span class="[ input-group-btn ]">
-					<button class="[ btn btn-primary bg-dark ]" type="button">
+					<button class="[ btn btn-primary bg-dark ]" type="submit">
 						<span class="[ relative ][ icon-search-1 ][ color-light ]"></span>
 					</button>
 				</span>
 			</form><!-- /search -->
 
 			<nav class="[ text-bold ]">
-
-				<a class="[ text-center text-uppercase ][ block ][ padding ][ border-bottom-primary-darken ]" href='pago-envio.html'>Pago y Envío</a>
-				<a class="[ text-center text-uppercase ][ block ][ padding ][ border-bottom-primary-darken ]" href="contacto.html">Contacto</a>
-				<a class="[ text-center text-uppercase ][ block ][ padding ]" href='about.html'>Quiénes Somos</a>
+				#foreach( $menuItem in $menuItemList )
+					<a class="[ text-center text-uppercase ][ block ][ padding ][ border-bottom-primary-darken ]" title="$menuItem.name" href='$menuItem.target'>$menuItem.name</a>
+				#end
 				<hr>
 				#foreach($categoryLevel1 in $level1CategoryList)
 					<div class="[ sub-menu-wrapper ]">
@@ -48,16 +48,6 @@
 				#end
 			</nav>
 
-			<!-- <div class="[ sub-menu-wrapper ]">
-				<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding ][ border-bottom-primary-darken ]">Tipos</a>
-				<div class="[ sub-menu ]">
-					<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ]" href="categoria.html">Hombres</a>
-					<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ]" href="categoria.html">Mujeres</a>
-					<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ]" href="categoria.html">Niños</a>
-					<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ][ border-bottom-primary-darken ]" href="categoria.html">Unisex</a>
-				</div>
-			</div> -->
-
 		</div>
 		#if( $shopHasCart )
 			<a href="/cart" title="Ver Carrito" rel="nofollow" class="[ color-light ][ pull-right ]"><span class="[ icon-shopping-cart-4-2 icon-small ]"></span></a>
@@ -69,31 +59,30 @@
  	<div class="[ bg-dark ][ padding padding--bottom--large-xs ][ hidden-xs ]">
 
 		<div class="[ inline-block ]">
-			<a class="[ text-uppercase ][ color-light ][ padding--sides ][ btn btn-default ]" href='index.html' data-toggle="tooltip" data-placement="bottom" title="Inicio">
-				<i class="[ icon-shop icon-medium ]"></i>
-			</a>
-			<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href='pago-envio.html'>Pago y Envío</a>
-			<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href="contacto.html">Contacto</a>
-			<a class="[ text-uppercase ][ color-light ][ padding--sides ]" href="about.html">Quiénes Somos</a>
+			#foreach( $menuItem in $menuItemList )
+				<a class="[ text-uppercase ][ color-light ][ padding--sides ][ icon-$menuItem.name ]" title="$menuItem.name" href='$menuItem.target'>$menuItem.name</a>
+			#end
 		</div>
 
-		<form class="[ inline-flex ][ input-group ][ center-block ][ margin-left--xlarge ]">
-			<input type="text" class="[ form-control ]" placeholder="buscar...">
+		<form class="[ inline-flex ][ input-group ][ center-block ][ margin-left--xlarge ]" id="searchForm" method="get" action="/jm/com.mercadoshops.web.frontend.page.PageController">
+			<input type="hidden" name="view" value="result">
+			<input id="search" type="search" name="q" value="" class="[ form-control ]" placeholder="buscar...">
 			<span class="[ input-group-btn ]">
-				<button class="[ btn btn-primary ]" type="button">
+				<button class="[ btn btn-primary ]" type="submit">
 					<span class="[ relative ][ icon-search-1 ][ color-light ]"></span>
 				</button>
 			</span>
 		</form><!-- /search -->
 
+		#if( $shopHasCart )
+			<div class="[ pull-right ]">
+				<a class="[ text-uppercase ][ color-light ]" href="/cart" rel="nofollow">
+					<span class="[ icon-shopping-cart-4-2  icon-medium  ][ aling-middle ]"></span>
+					<span class="[ padding-top ]">Mi Carrito </span>
+				</a>
+			</div>
+		#end
 
-
-		<div class="[ pull-right ]">
-			<a class="[ text-uppercase ][ color-light ]" href="mi-carrito.html">
-				<span class="[ icon-shopping-cart-4-2  icon-medium  ][ aling-middle ]"></span>
-				<span class="[ padding-top ]">Mi Carrito </span>
-			</a>
-		</div>
 
  	</div>
 
