@@ -178,37 +178,38 @@
 		</div>
 	</div>
 
+	<!-- novedades o bloques destacados mercadoshop desde admin  -->
 	<h3 class="title-component">Novedades</h3>
 	<div class="ch-carousel" data-max-items="$newsMaxItemsPerPage">
 		<ul class="list-prod">
 			#foreach ($newsItem in $newsItemList)
-			<li>	
-				<figure>
-					<a href="$newsItem.url">
-						#if($newsItem.hasImages)
-						<img src="$newsItem.imageUrl" title="$newsItem.title" />
-						#else
-						<img src="$newsItem.imageUrl" alt="Sin Foto" title="Sin Foto">
+				<li>	
+					<figure>
+						<a href="$newsItem.url">
+							#if($newsItem.hasImages)
+							<img src="$newsItem.imageUrl" title="$newsItem.title" />
+							#else
+							<img src="$newsItem.imageUrl" alt="Sin Foto" title="Sin Foto">
+							#end
+							#if( $newsItem.showLastAvailable )
+								<span class="lastProd last-MX">Últimos Disponibles</span>
+							#end
+						</a>
+						#if($newsItem.hasPromotion)
+							#if($newsItem.promotion.isDiscountTypePrice)
+								<p class="promoRibbonNews"><span>$newsItem.promotion.discountPercent</span>&#37; <strong>OFF</strong></p>
+							#elseif ($newsItem.promotion.isDiscountTypeQuantity && "MX" != "BR")
+								<p class="promoRibbonNews"><strong class="promoQtyBuy">$newsItem.promotion.quantityTake<span class="promoQtyBuyX">x</span>$newsItem.promotion.quantityBuy</strong></p>
+							#end
 						#end
-						#if( $newsItem.showLastAvailable )
-							<span class="lastProd last-MX">Últimos Disponibles</span>
-						#end
-					</a>
-					#if($newsItem.hasPromotion)
-						#if($newsItem.promotion.isDiscountTypePrice)
-							<p class="promoRibbonNews"><span>$newsItem.promotion.discountPercent</span>&#37; <strong>OFF</strong></p>
-						#elseif ($newsItem.promotion.isDiscountTypeQuantity && "MX" != "BR")
-							<p class="promoRibbonNews"><strong class="promoQtyBuy">$newsItem.promotion.quantityTake<span class="promoQtyBuyX">x</span>$newsItem.promotion.quantityBuy</strong></p>
-						#end
-					#end
-				</figure>
+					</figure>
+					
+					<h2>
+						<a href="$newsItem.url" title="$newsItem.title" class="title">$newsItem.title</a>
+					</h2>
 				
-				<h2>
-					<a href="$newsItem.url" title="$newsItem.title" class="title">$newsItem.title</a>
-				</h2>
-				
-				#set ($galleryItem = $newsItem)
-				#set ($galleryPromotion = $newsItem.promotion)
+					#set ($galleryItem = $newsItem)
+					#set ($galleryPromotion = $newsItem.promotion)
 				
 									<dl id="homePrice" >
     #if ($galleryItem.hasPriceWithDiscount())<del class="ch-price price">#end
