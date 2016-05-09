@@ -77,46 +77,6 @@
 	</div>
 	<!-- / Mobile menu -->
 
-	<!-- <div class="ch-g1 header-top [ bg-dark color-light ]">
-		<div class="ch-container">
-
-			<div class="ch-g4-5">
-				<div class="ch-container clearfix [ pull-left ]">
-					<ul class="component simpleMenu clearfix [ bg-dark ]">
-						#foreach( $menuItem in $menuItemList )
-							#if( $menuItem.isFirstItem )
-							<li class="first background [ bg-dark ] ">
-								<a href="$menuItem.target" title="" class="link [ text-uppercase color-light ]" data-name="$menuItem.name" data-isFirstItem="$menuItem.isFirstItem" data-target="$menuItem.target" data-noFollow="$menuItem.noFollow" data-linkTarget="$menuItem.linkTarget">$menuItem.name</a>
-							</li>
-							#else
-							<li class="background">
-								<a href="$menuItem.target" class="[ text-uppercase color-light ]" #if($menuItem.noFollow) rel="nofollow" #end title="" class="link" target="$menuItem.linkTarget" data-name="$menuItem.name" data-isFirstItem="$menuItem.isFirstItem" data-target="$menuItem.target" data-noFollow="$menuItem.noFollow" data-linkTarget="$menuItem.linkTarget">$menuItem.name</a>
-							</li>
-							#end
-						#end
-					</ul>
-				</div>
-			</div>
-
-			<div id="searchWrap" class="searchWrapper clearfix">
-				<div class="component searchBar">
-					<form id="searchForm" method="get" action="/jm/com.mercadoshops.web.frontend.page.PageController">
-						<input type="hidden" name="view" value="result">
-						<input id="search" type="search" name="q" value="" class="inputField">
-						<input type="submit" value="Buscar" class="ch-btn ch-secondary button">
-					</form>
-				</div>
-				#if( $shopHasCart )
-					<div id="cart" class="component cartButton">
-						<span id="mini-cart-container" class="bg-cart">
-						<a href="/cart" title="Ver Carrito" rel="nofollow" class="ch-btn ch-secondary button">Ver Carrito</a>
-						</span>
-					</div>
-				#end
-			</div>
-		</div>
-	</div> -->
-
 	<!-- TOP menu desktop  -->
  	<div class="[ bg-dark ][ padding padding--bottom--large-xs ][ hidden-xs ]">
 
