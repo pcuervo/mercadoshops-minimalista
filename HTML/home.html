@@ -2,60 +2,57 @@
 	<div class="ch-g1 mainContent">
 		<div class="ch-container">
 			<div class="ch-container oneColumn clearfix">
- 	#if(("MX" != "VE") && ($!show_mp_methods))
-	<div class="component promoMP payMethod clearfix">
-				<span id="promo-block" class="promo-block"></span>
-		<p class="pay-safe">Compra seguro:</p>  
-				
-				<h4>12 mensualidades con</h4>
-		<ul class="payMethod clearfix">
-			<li class="card-MLM-visa">visa</li>
-			<li class="card-MLM-master">master</li>
-		</ul>
-		<p class="more"><a id="mp-promos-layer" href="#mx-modal" rel="height-260">Más bancos</a></p>
-		<div id="mx-modal" style="display:none;overflow:hidden;">
-		<h1 class="titulobancos">Promociones</h1>
-			<h5 class="title-component modal-title">Bancos que aceptan pagos en 12 mensualidades</h5>
-			<ul class="mp-promo-mlm">
-				<li class="card-mlm-big-visa">Serfin, Bancomer, Banamex, HSBC, Scotiabank, Banorte</li>
-				<li class="card-mlm-big-master">Serfin, Bancomer, Banamex, HSBC, Scotiabank, Banorte</li>
-				
-			</ul>
-		</div>
-			</div>
-	#end
-#if($showContent)
-<div class="box-content-list ch-g1">
-#if($showContentImage)
- 	<div  class="ch-carousel" data-max-items="1">
- 		<ul class="content-list">
- 		
-			#foreach ($contentImage in $contentImageList)
-			<li style="height: $contentImageMaxHeight">
-				<article class="component article clearfix">
-					<figure>
-						<span>
-							#if($contentImage.hasLink)
-							<a href="$contentImage.link" rel="nofollow" target="_blank">
-							#end
-									<img src="$contentImage.src" alt="$contentImage.alt">
-							#if($contentImage.hasLink)
-							</a>
-							#end
-						</span>
-					</figure>
-				</article>
-			</li>
-			
-			#end
-		</ul>
-	</div>
-#elseif ($showContentText)
-	<div>$contentText</div>
-#end
-</div>
-#end
-<section class="component prominentProd prodCarousel ch-g1">
+				#if(("MX" != "VE") && ($!show_mp_methods))
+					<div class="component promoMP payMethod clearfix">
+						<span id="promo-block" class="promo-block"></span>
+						<p class="pay-safe">Compra seguro:</p>  
+						<h4>12 mensualidades con</h4>
+						<ul class="payMethod clearfix">
+							<li class="card-MLM-visa">visa</li>
+							<li class="card-MLM-master">master</li>
+						</ul>
+						<p class="more"><a id="mp-promos-layer" href="#mx-modal" rel="height-260">Más bancos</a></p>
+						<div id="mx-modal" style="display:none;overflow:hidden;">
+							<h1 class="titulobancos">Promociones</h1>
+							<h5 class="title-component modal-title">Bancos que aceptan pagos en 12 mensualidades</h5>
+							<ul class="mp-promo-mlm">
+								<li class="card-mlm-big-visa">Serfin, Bancomer, Banamex, HSBC, Scotiabank, Banorte</li>
+								<li class="card-mlm-big-master">Serfin, Bancomer, Banamex, HSBC, Scotiabank, Banorte</li>
+								
+							</ul>
+						</div>
+					</div>
+				#end
+				#if($showContent)
+					<div class="box-content-list ch-g1">
+						#if($showContentImage)
+						 	<div  class="ch-carousel" data-max-items="1">
+						 		<ul class="content-list">
+									#foreach ($contentImage in $contentImageList)
+										<li style="height: $contentImageMaxHeight">
+											<article class="component article clearfix">
+												<figure>
+													<span>
+														#if($contentImage.hasLink)
+														<a href="$contentImage.link" rel="nofollow" target="_blank">
+														#end
+																<img src="$contentImage.src" alt="$contentImage.alt">
+														#if($contentImage.hasLink)
+														</a>
+														#end
+													</span>
+												</figure>
+											</article>
+										</li>
+									#end
+								</ul>
+							</div>
+						#elseif ($showContentText)
+							<div>$contentText</div>
+						#end
+					</div>
+				#end
+			<section class="component prominentProd prodCarousel ch-g1">
 	
 <div class="ch-carousel" data-max-items="$outstandingMaxItemsPerPage">
 	<ul>
