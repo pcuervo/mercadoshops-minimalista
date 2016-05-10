@@ -4000,6 +4000,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 /*------------------------------------*\
     #Mercadoshops
 \*------------------------------------*/
+.component.page-user{
+  display: inline-block;
+}
 
 @media (min-width: 767px) and (max-width: 1200px) {
   .component.page-user{
