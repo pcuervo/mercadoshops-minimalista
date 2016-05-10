@@ -29,15 +29,15 @@
 				<hr>
 				#foreach($categoryLevel1 in $level1CategoryList)
 					<div class="[ sub-menu-wrapper ]">
-						<a class="[ text-center text-uppercase ][ block ][ padding ][ border-bottom-primary-darken ][ js-sub-menu-opener ]">$categoryLevel1.name</a>
+						<a class="[ text-center text-uppercase ][ block ][ padding ][ border-bottom-primary-darken ][ sub-menu-opener js-sub-menu-opener ]">$categoryLevel1.name</a>
 						#if($categoryLevel1.hasSubCategories)
 							<div class="[ sub-menu ]">
 								#foreach($categoryLevel2 in $categoryLevel1.subCategories)
-									<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ]" href="$categoryLevel2.url">$categoryLevel2.name</a>
+									<a class="[ text-center text-uppercase ][ block ][ padding--small ][ sub-menu-opener js-sub-menu-opener ]" href="$categoryLevel2.url">$categoryLevel2.name</a>
 									#if($categoryLevel2.hasSubCategories)
 										<div class="[ sub-menu ]">
 											#foreach($categoryLevel3 in $categoryLevel2.subCategories)
-												<a class="[ text-center text-uppercase ][ block ][ js-sub-menu-opener ][ padding--small ]" href="$categoryLevel3.name">$categoryLevel3.name</a>
+												<a class="[ text-center text-uppercase ][ block ][ padding--small ][ sub-menu-opener js-sub-menu-opener ]" href="$categoryLevel3.name">$categoryLevel3.name</a>
 											#end
 										</div>
 									#end
