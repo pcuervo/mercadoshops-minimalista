@@ -2181,6 +2181,7 @@ select[multiple].input-lg {
   margin-right: -15px;
 }
 .ch-form{
+  padding: 2% 0;
   background:#000; 
   border-radius: 20px;
 }
