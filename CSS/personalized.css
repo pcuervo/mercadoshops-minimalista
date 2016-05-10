@@ -1877,6 +1877,10 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+.btn-close, .btn-mobile-menu {
+  background: none;
+  border: none;
+}
 
 /*------------------------------------*\
     #Component animations
@@ -2632,6 +2636,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-left-radius: 0;
 }
 
+.nav-menu-mobile a:hover{ 
+  color: #fff;
+  background: #fcb916;
+}
 
 /*------------------------------------*\
     #Navbar
