@@ -1329,9 +1329,10 @@ select[multiple].input-lg {
 
 /* chico form Pcuervo */
 .ch-form{
-  border-radius: 20px;
+  background:#000;
   padding: 20px;
   background:#000;
+  border-radius: 20px;
 }
 .ch-form .ch-form-required label{
   color: #fff;
