@@ -1030,9 +1030,9 @@ dl.priceInfo.promotionPrice dd.installments span.withMP, dl.priceInfo dd.install
 	min-height: 3.6em;
 }
 
-.component.itemGallery .item-gallery h2 {
+/*.component.itemGallery .item-gallery h2 {
 	min-height: 2.6em;
-}
+}*/
 
 .semjuros-container span.ch-price.price, #semjuros-installment-text {
 	display: inline-block;
