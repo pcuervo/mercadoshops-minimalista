@@ -4,257 +4,16 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+/*------------------------------------*\
+    #Google fonts
+\*------------------------------------*/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans|BenchNine);
 
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-[hidden],
-template {
-  display: none;
-}
-a {
-  background-color: transparent;
-}
-a:active,
-a:hover {
-  outline: 0;
-}
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-b,
-strong {
-  font-weight: bold;
-}
-dfn {
-  font-style: italic;
-}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-mark {
-  background: #ff0;
-  color: #000;
-}
-small {
-  font-size: 80%;
-}
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-img {
-  border: 0;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-figure {
-  margin: 1em 40px;
-}
-hr {
-  box-sizing: content-box;
-  height: 0;
-}
-pre {
-  overflow: auto;
-}
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-}
-button {
-  overflow: visible;
-}
-button,
-select {
-  text-transform: none;
-}
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-input {
-  line-height: normal;
-}
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-input[type="search"] {
-  -webkit-appearance: textfield;
-  box-sizing: content-box;
-}
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-legend {
-  border: 0;
-  padding: 0;
-}
-textarea {
-  overflow: auto;
-}
-optgroup {
-  font-weight: bold;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-td,
-th {
-  padding: 0;
-}
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  img {
-    max-width: 100% !important;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-  .navbar {
-    display: none;
-  }
-  .btn > .caret,
-  .dropup > .btn > .caret {
-    border-top-color: #000 !important;
-  }
-  .label {
-    border: 1px solid #000;
-  }
-  .table {
-    border-collapse: collapse !important;
-  }
-  .table td,
-  .table th {
-    background-color: #fff !important;
-  }
-  .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #ddd !important;
-  }
-}
+/*------------------------------------*\
+    #Scaffolding
+\*------------------------------------*/
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -277,6 +36,7 @@ body {
   color: #000;
   background-color: #fff;
 }
+
 input,
 button,
 select,
@@ -361,6 +121,11 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
+
+/*------------------------------------*\
+    #Typography
+\*------------------------------------*/
+
 h1,
 h2,
 h3,
@@ -730,58 +495,13 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
-code,
-kbd,
-pre,
-samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-code {
-  padding: 2px 4px;
-  font-size: 90%;
-  color: #c7254e;
-  background-color: #f9f2f4;
-  border-radius: 4px;
-}
-kbd {
-  padding: 2px 4px;
-  font-size: 90%;
-  color: #fff;
-  background-color: #333;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
-}
-kbd kbd {
-  padding: 0;
-  font-size: 100%;
-  font-weight: bold;
-  box-shadow: none;
-}
-pre {
-  display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
-  line-height: 1.42857143;
-  word-break: break-all;
-  word-wrap: break-word;
-  color: #8d8d8d;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-pre code {
-  padding: 0;
-  font-size: inherit;
-  color: inherit;
-  white-space: pre-wrap;
-  background-color: transparent;
-  border-radius: 0;
-}
-.pre-scrollable {
-  max-height: 340px;
-  overflow-y: scroll;
-}
+
+
+/*------------------------------------*\
+    #Grid
+\*------------------------------------*/
+
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -1449,6 +1169,13 @@ pre code {
     margin-left: 0%;
   }
 }
+
+
+/*------------------------------------*\
+    #Tables
+\*------------------------------------*/
+
+
 table {
   background-color: transparent;
 }
@@ -1689,6 +1416,12 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
+
+
+/*------------------------------------*\
+    #Forms
+\*------------------------------------*/
+
 fieldset {
   padding: 0;
   margin: 0;
@@ -2185,7 +1918,7 @@ select[multiple].input-lg {
   margin-right: -15px;
 }
 .ch-form{
-  background:#000; 
+  background:#000;
   border-radius: 20px;
 }
 .ch-form .ch-form-required label{
@@ -2220,6 +1953,12 @@ select {
   background-color: #d1d1d1;
   border-radius: 20px;
 }
+
+
+/*------------------------------------*\
+    #Buttons
+\*------------------------------------*/
+
 .btn, .ch-btn {
   display: inline-block;
   margin-bottom: 0;
@@ -2688,6 +2427,12 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+
+
+/*------------------------------------*\
+    #Component animations
+\*------------------------------------*/
+
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -2720,6 +2465,12 @@ tbody.collapse.in {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
+
+
+/*------------------------------------*\
+    #Dropdowns
+\*------------------------------------*/
+
 .caret {
   display: inline-block;
   width: 0;
@@ -2862,6 +2613,12 @@ tbody.collapse.in {
     right: auto;
   }
 }
+
+
+/*------------------------------------*\
+    #Button groups
+\*------------------------------------*/
+
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -3033,6 +2790,12 @@ tbody.collapse.in {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
+
+
+/*------------------------------------*\
+    #Input groups
+\*------------------------------------*/
+
 .input-group {
   position: relative;
   display: table;
@@ -3191,6 +2954,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 2;
   margin-left: -1px;
 }
+
+
+/*------------------------------------*\
+    #Navs
+\*------------------------------------*/
+
 .nav {
   margin-bottom: 0;
   padding-left: 0;
@@ -3383,6 +3152,164 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
+
+
+/*------------------------------------*\
+    #Navbar
+\*------------------------------------*/
+
+.navbar { display: none; }
+
+
+/*------------------------------------*\
+    #Breadcrumbs
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    #Pagination
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    #Pager
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    #Labels
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    #Badges
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Jumbotron
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    #Thumbnails
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Alerts
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    #Progress-bars
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Media
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Images
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Ist-group
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Panels
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Responsive-embed
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Wells
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Close
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Filters
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Modals
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Tooltip
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Popovers
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Carousel
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Mansory
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Utilities
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Responsive-utilitie
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Header
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Footer
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #Icons
+\*------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+  .btn > .caret,
+  .dropup > .btn > .caret {
+    border-top-color: #000 !important;
+  }
+  .label {
+    border: 1px solid #000;
+  }
+  .table {
+    border-collapse: collapse !important;
+  }
+  .table td,
+  .table th {
+    background-color: #fff !important;
+  }
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #ddd !important;
+  }
+}
+
+
+
+
+
+
+
 .navbar {
   position: relative;
   min-height: 50px;
