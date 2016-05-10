@@ -1,7 +1,7 @@
 /*
  * File name: tablet.css
  * Styles for tablet devices mostly
- * Theme: Minimalist
+ * Theme: Pcuervo
 */
 body {font-size: 90%;padding: 0 5px;}
 header {padding-top:0;}
@@ -10,7 +10,7 @@ header {padding-top:0;}
 #searchWrap.searchWrapper {	position:absolute;bottom:50%;margin-bottom:-20px;}
 .navWrapper .ch-g1-5{width:20%;float:left}
 .navWrapper .ch-g4-5 {width:80%;float:left}
-.vipImageWrapper, 
+.vipImageWrapper,
 .vipWrapper {float:left; display:block;}
 .vipImageWrapper {width:50%}
 .vipWrapper {width:50%}

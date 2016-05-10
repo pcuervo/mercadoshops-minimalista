@@ -1,7 +1,7 @@
 /*
  * File name: basic.css
  * Styles for mobile devices
- * Theme: Minimalist
+ * Theme: Pcuervo
 */
 body {font-family:  Arial, Helvetica, sans-serif;font-size: 100%; auto;background-color:#999;background-attachment:fixed;}
 @media screen and (max-width:480px) {
@@ -12,13 +12,13 @@ body {font-family:  Arial, Helvetica, sans-serif;font-size: 100%; auto;backgroun
 .wrapper.bottom{padding-bottom:10px;}
 .ch-container {margin:0; padding:10px;}
 #searchWrap.searchWrapper {position:static;display:block;right:25px;}
-.navWrapper .ch-g1-5, 
+.navWrapper .ch-g1-5,
 .navWrapper .ch-g4-5 {float:left;width:50%;display:block;}
 footer {border-top:1px dotted #000;position:relative;}
-.vipImageWrapper, 
+.vipImageWrapper,
 .vipWrapper {float:none;display:block;width:auto;}
 //header {padding-top:30px;}
 //.header-top{position:relative;}
 //.mainContent .ch-container {padding:10px;}
 //.dataEbit { float: right; padding: 10px; margin-top: -50px; padding-top: 50px;}
-	
+
