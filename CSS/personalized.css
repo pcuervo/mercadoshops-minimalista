@@ -261,9 +261,6 @@ a:hover {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-a:visited {
-  color: #F2AF0D;
-}
 
 small,
 .small {
