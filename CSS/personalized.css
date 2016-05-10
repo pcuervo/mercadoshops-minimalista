@@ -1326,15 +1326,12 @@ select[multiple].input-lg {
   margin-left: -15px;
   margin-right: -15px;
 }
+
 /* chico form Pcuervo */
 .ch-form{
-<<<<<<< HEAD
-  background:#000;
-=======
+  border-radius: 20px;
   padding: 20px;
   background:#000;
->>>>>>> e1f7a5de83fb88a7c5a6dba1281effef3fd450c1
-  border-radius: 20px;
 }
 .ch-form .ch-form-required label{
   color: #fff;
@@ -1518,11 +1515,8 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #333;
 }
-<<<<<<< HEAD
-.btn-primary, .ch-primary {
-=======
-.btn-primary, #contact-btn{
->>>>>>> e1f7a5de83fb88a7c5a6dba1281effef3fd450c1
+
+.btn-primary, .ch-primary, #contact-btn {
   color: #000;
   background-color: #FDD062;
   border-color: #fdc849;
@@ -6446,6 +6440,8 @@ footer {
 /*------------------------------------*\
     #Mercadoshops
 \*------------------------------------*/
+
+.component.page-user{ display: inline-block; }
 
 @media (min-width: 767px) and (max-width: 1200px) {
   .component.page-user{
