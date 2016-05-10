@@ -5838,7 +5838,7 @@ header .navbar-nav > li > a {
 header .navbar-nav > li > a:hover {
   color: #000;
 }
-
+a.submenu.opened{ background: #FFC841;}
 a.sub-menu-opener:hover,
 a.sub-menu-opener:focus {
   padding-left: 20px ;
