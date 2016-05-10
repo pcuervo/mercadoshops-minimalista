@@ -1175,7 +1175,6 @@ address {
     #Tables
 \*------------------------------------*/
 
-
 table {
   background-color: transparent;
 }
@@ -1917,12 +1916,44 @@ select[multiple].input-lg {
   margin-left: -15px;
   margin-right: -15px;
 }
+/* chico form Pcuervo */
 .ch-form{
+<<<<<<< HEAD
   background:#000;
+=======
+  padding: 20px;
+  background:#000;
+>>>>>>> e1f7a5de83fb88a7c5a6dba1281effef3fd450c1
   border-radius: 20px;
 }
 .ch-form .ch-form-required label{
   color: #fff;
+}
+.component.formContact, .section{
+  display: inline-block;
+}
+#frmContact.ch-form #msgContent {
+    width: inherit;
+}
+.component.formContact .title-component{
+  font-family: "proxima-nova";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.component.promoMP.payMethod{
+  float: right;
+  border-left: 2px solid #FDD062 !important;
+  padding: 20px !important;
+  margin: 20px 0;
+  width: 40%;
+}
+@media (min-width: 1200px) {
+  .component.promoMP.payMethod{
+      margin-right: 20px;
+  }
+}
+.ch-form-hint{
+  color: #D0021B;
 }
 @media (min-width: 768px) {
   .form-horizontal .control-label {
@@ -1945,8 +1976,9 @@ select[multiple].input-lg {
     padding-top: 6px;
     font-size: 12px;
   }
-  .ch-form{
-    width: 50%;
+  #frmContact.ch-form #msgContent,
+  .ch-form-row input{
+    width: 60%;
   }
 }
 select {
@@ -2076,18 +2108,30 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #333;
 }
+<<<<<<< HEAD
 .btn-primary, .ch-primary {
+=======
+.btn-primary, #contact-btn{
+>>>>>>> e1f7a5de83fb88a7c5a6dba1281effef3fd450c1
   color: #000;
   background-color: #FDD062;
   border-color: #fdc849;
 }
+#contact-btn{
+  font-family: "proxima-nova";
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .btn-primary:focus,
-.btn-primary.focus {
+.btn-primary.focus,
+#contact-btn:focus,
+#contact-btn.focus {
   color: #000;
   background-color: #fcc130;
   border-color: #c48b02;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+#contact-btn:hover {
   color: #000;
   background-color: #fcc130;
   border-color: #fcb60c;
@@ -3276,7 +3320,22 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 \*------------------------------------*/
 
 
+/*------------------------------------*\
+    #Mercadoshops
+\*------------------------------------*/
 
+@media (min-width: 767px) and (max-width: 1200px) {
+  .component.page-user{
+    width: 85%;
+    padding-left: 15%
+  }
+}
+@media (min-width: 1200px) {
+  .component.page-user{
+    width: 80%;
+    padding-left: 20%
+  }
+}
 
 
 
@@ -5320,10 +5379,10 @@ button.close {
 .icon-key-hole-2:before {
   content: '\e844';
 }
-/* '' */
+/* ''
 .icon-Inicio:before {
   content: '\e838';
-}
+}*/
 /* '' */
 .icon-xsmall {
   font-size: 1em;
@@ -5339,10 +5398,6 @@ button.close {
 }
 .modal-open {
   overflow: hidden;
-}
-
-a.icon-Inicio:first-child{
-  font-size: 2em;
 }
 
 .modal {
