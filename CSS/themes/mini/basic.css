@@ -3,7 +3,7 @@
  * Styles for mobile devices
  * Theme: Pcuervo
 */
-body {font-family:  Arial, Helvetica, sans-serif;font-size: 100%; auto;background-color:#999;background-attachment:fixed;}
+body {font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 100%; auto;background-color:#999;background-attachment:fixed;}
 @media screen and (max-width:480px) {
     body{background-image:none !important;}
 }
@@ -21,4 +21,3 @@ footer {border-top:1px dotted #000;position:relative;}
 //.header-top{position:relative;}
 //.mainContent .ch-container {padding:10px;}
 //.dataEbit { float: right; padding: 10px; margin-top: -50px; padding-top: 50px;}
-

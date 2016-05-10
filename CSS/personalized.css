@@ -3,9 +3,12 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|BenchNine);
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -1071,7 +1074,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #000;
@@ -1173,9 +1176,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
+  font-family: 'BenchNine', sans-serif;
   font-weight: 500;
   line-height: 1.1;
+  text-transform: uppercase;
   color: #000;
 }
 h1 small,
@@ -3009,7 +3013,7 @@ select {
   background-color: #d1d1d1;
   border-radius: 20px;
 }
-.btn {
+.btn, .ch-btn {
   display: inline-block;
   margin-bottom: 0;
   font-weight: bold;
@@ -3126,7 +3130,7 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #333;
 }
-.btn-primary {
+.btn-primary, .ch-primary {
   color: #000;
   background-color: #FDD062;
   border-color: #fdc849;
@@ -5835,6 +5839,7 @@ button.list-group-item-danger.active:focus {
   padding: 9px;
   border-radius: 3px;
 }
+
 .close {
   float: right;
   font-size: 21px;
@@ -7875,7 +7880,5 @@ footer {
   position: relative;
   z-index: 1;
 }
-footer h5 {
-  font-family: "ff-ernestine-web-pro";
-}
-/*# sourceMappingURL=bootstrap.css.map */
+
+.logo{ font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
