@@ -2239,11 +2239,11 @@ font-style:normal}
 	color: #00D;
 }
 
-/* Visited trigger */
+/* Visited trigger 
 .ch-expando-trigger:visited{
 	color:#800080;
 }
-
+*/
 /* Hover trigger */
 .ch-expando-trigger:hover {
 	text-decoration: underline;
