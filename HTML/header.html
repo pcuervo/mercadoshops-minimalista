@@ -65,7 +65,7 @@
 					<a class="[ text-uppercase ][ color-light ][ icon-shop icon-medium ][ padding-sides ]" href="/" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Inicio"></a>
 					<div class="[ inline ][ top-menu ]">
 						#foreach( $menuItem in $menuItemList )
-							<a class="[ text-uppercase ][ color-light ][ padding--sides ][ icon-$menuItem.name ]" title="$menuItem.name" href='$menuItem.target'>$menuItem.name</a>
+							<a class="[ text-uppercase ][ color-light ][ padding--sides ][ icon-$menuItem.name ][ menu-item menu-item-$menuItem.name ]" title="$menuItem.name" href='$menuItem.target'>$menuItem.name</a>
 						#end
 					</div>
 				</div> 
