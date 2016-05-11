@@ -41,18 +41,21 @@ body {
 }
 
 .main{
-  min-height: -moz-calc(100% - 102px);
-  min-height: -o-calc(100% - 102px);
-  min-height: -webkit-calc(100% - 102px);
-  min-height: calc(100% - 102px);
+  min-height: -moz-calc(100% - 180px);
+  min-height: -o-calc(100% - 180px);
+  min-height: -webkit-calc(100% - 180px);
+  min-height: calc(100% - 180px);
   position: relative;
-  @media (min-width: @screen-sm){
-    min-height: -moz-calc(100% - 260px);
-    min-height: -o-calc(100% - 260px);
-    min-height: -webkit-calc(100% - 260px);
-    min-height: calc(100% - 260px);
-  }
 }
+
+  @media (min-width: @screen-sm){
+    .main {
+      min-height: -moz-calc(100% - 260px);
+      min-height: -o-calc(100% - 260px);
+      min-height: -webkit-calc(100% - 260px);
+      min-height: calc(100% - 260px);
+    }
+  }
 
 input, button, select, textarea {
   font-family: inherit; font-size: inherit;
@@ -4166,9 +4169,10 @@ button.close {
 header {
   position: relative;
   z-index: 1;
-  height: 102px;
-  @media (min-width: 768px){ height: 260px; }
+  height: 180px;
 }
+
+@media (min-width: 768px){ header { height: 260px; } }
 
 header .navbar-nav > li:hover { background-color: #FDD062; }
 
