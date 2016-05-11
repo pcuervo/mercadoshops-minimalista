@@ -120,7 +120,7 @@
 .component.itemGallery .item-gallery{width:102%}
 .component.itemGallery h2{margin: 0 20px 10px 10px;max-height: 4.1em;overflow: hidden;line-height: 1em;/*font-size: 1.2em*/}
 .component.itemGallery li{float:left; width:25%;}
-.component.itemGallery li.background{background:none; height:301px;overflow:hidden;}
+.component.itemGallery li.background{background:none; height:350px;overflow:hidden;}
 .component.itemGallery .itemData li.ch-price {font-size:200%;padding:0;margin: 0 10px 10px 10px}
 .component.itemGallery .itemData li{float:none; width:auto; border:none; margin:0 0 5px 0;padding:0px;}
 .component.itemGallery article{padding:195px 0px 0 0px;position:relative;min-height: 100px}
