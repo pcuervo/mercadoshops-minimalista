@@ -11,7 +11,7 @@
 .button {border-style: solid;border-width: 1px;cursor: pointer;padding: 4px 6px;border-radius: 5px;background-image:url(//static.mercadoshops.com/static/images/spriteV1.png);}
 .title-component {font-size: 16px !important; font-style: normal !important;}
 .ch-price {font-size: 1em;}
-.component.vip span.ch-price.price{font-size: 17px}
+.component.vip span.ch-price.price{font-size: 32px}
 del {display: block; margin-bottom: 5px;}
 /*.colPrice del {color: #000}*/
 .promo-text {padding-right: 5px;}
@@ -363,7 +363,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.shipTable .colCant #updCartLink {display:block;}
 .component.shipTable .colCant .lblQuantity {display:none;}
 .component.shipTable .colPrice{width:18%; text-align:right;}
-.component.shipTable .colTotalPrice {float:right;width:auto;text-align:right; background: none; color: #fff; font-size: 1.5em;/*background-color:#eaeaea; border-radius:5px;*/}
+.component.shipTable .colTotalPrice {float:right;width:auto;text-align:right; background: none; color: #000; font-size: 1.5em;/*background-color:#eaeaea; border-radius:5px;*/}
 .component.shipTable .colCep {background-color:#eaeaea; border-radius:5px;}
 .component.shipTable .tbody {border-bottom:1px solid #eaeaea; background:white;}
 .component.shipTable .tbody:nth-last-child(1){border-bottom:none;}
@@ -900,7 +900,7 @@ aside .component.publicidad.v1.pt a{background: url(//static.mercadoshops.com/st
 .component.vip {margin:20px 0 30px 20px;width:auto;float:none;}
 .component.vip {position:relative;}
 .component.vip label {cursor: default;}
-.component.vip h1{line-height: 100%; font-weight:bold;margin-bottom:0px;font-size: 18px;padding-right:5px;}
+.component.vip h1{line-height: 100%; font-weight:bold;margin-bottom:0px;font-size: 36px;padding-right:5px;}
 .component.vip dt {display: none;}
 .component.vip dd {display:inline;margin:0 3px 0 0}
 .component.vip dd.installments a {color:#666; text-decoration:underline;}
@@ -921,8 +921,8 @@ aside .component.publicidad.v1.pt a{background: url(//static.mercadoshops.com/st
 .component.vip .ch-actions.buttonBuy a,
 .component.vip .ch-actions.buttonBuy input,
 .component.vip .ch-actions.buttonContact a,
-.component.vip .ch-actions.buttonContact input {float:left;margin:0 20px 0 0;padding:0px 15px;height:48px; line-height:48px;}
-.component.vip .ch-actions.buttonBuy .hasContact{margin: 0 10px 0 0;line-height: 48px;text-decoration:underline;font-size: 13px}
+.component.vip .ch-actions.buttonContact input {float:left;margin:0 20px 0 0;padding:0px 15px;height:48px; line-height:48px; font-family: "open sans";color: #000;}
+.component.vip .ch-actions.buttonBuy .hasContact{margin: 0 10px 0 0;line-height: 48px;font-size: 16px;border-left: solid 3px #cccccc;font-weight: bold;}
 .component.vip .share{float: left;padding-left:0px;display: block;margin: 15px 0 30px 0;padding-top: 0px;}
 .component.vip .shareLabel {display:none;}
 .component.vip #ship-addr-label-vip {margin-right:0;}
@@ -964,10 +964,11 @@ aside .component.publicidad.v1.pt a{background: url(//static.mercadoshops.com/st
 .VariationList{float:left;margin-right: 10px;}
 .ShippingData .freeShipping i, .ShippingData .freeShipping{color:#009933;}
 .ch-box-error{display:none;}
-.vipSocials{display: block;float: left;padding: 8px 5px;margin: 5px 0 25px 0}
+.vipSocials{display: block;float: left;padding: 8px 5px;margin: 5px 0 25px 0;border-top: solid 3px #FDD36E;}
 .sharesButtons li{display:inline;}
 .sharesButtons{margin-right: 10px}
 .vipSocials span, .sharesButtons{float:left;}
+.sharesButtons a { color: #000; }
 /*.sharesButtons a.ch-btn.ch-btn-small.btn-grey,.btn-grey{padding:0.258em 0.7em;border:1px solid #9C9696;background: -webkit-linear-gradient(#C8C8C8, #9C9696);background: -moz-linear-gradient(#C8C8C8, #9C9696);background: -o-linear-gradient(#C8C8C8, #9C9696);background: linear-gradient(#C8C8C8, #9C9696);	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C8C8C8', endColorstr='#9C9696',GradientType=0 ); IE6-8 box-shadow: 0 1px #FFF inset;color:#333;}
 .sharesButtons a.ch-btn.ch-btn-small.btn-grey i{font-size: 10px}*/
 a.ch-btn.ch-btn-small.btn-grey:hover{text-decoration: none}
@@ -1034,6 +1035,15 @@ dl.priceInfo.promotionPrice dd.installments span.withMP, dl.priceInfo dd.install
 	min-height: 3.6em;
 }
 
+dd.installments i.ch-icon-credit-card{
+    font-size: 2em;
+    color: #0D71BA;
+}
+ul.MPVipPaymethods a.ch-points-ltrt#allPayments{
+ text-decoration: none;
+ font-size: 16px;
+ font-weight: bold;
+}
 /*.component.itemGallery .item-gallery h2 {
 	min-height: 2.6em;
 }*/
@@ -1299,9 +1309,13 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
     .component.vip .no-stock-pt label {border:none; padding: 0 0 0 25px; margin: 0; background-color: transparent; background-position: -145px -42px;}
     .component.prodCarousel p.promoRibbonHomeStarred {background: url("//static.mercadoshops.com/static/images/promoImageTagCartFlip.png") no-repeat scroll -1px 0;left:140px;}
 }
+article.component.vip header{ height: 120px; }
+article.component.vip header{ height: 120px; }
 
 #frmContact.ch-form .ch-actions{margin:0; text-align:center;}
-#frmContact.ch-form #msgContent {width:275px;}
+#frmContact.ch-form #msgContent {width:275px; }
+
+#cartForm.ch-form-{background-color: #EAEAEA; }
 
 /*
  * modal cep + comprar

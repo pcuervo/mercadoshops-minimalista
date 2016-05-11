@@ -3192,6 +3192,7 @@ form .ico{display:inline-block;}
 /* Trigger ON */
 .ch-tabNavigator .ch-tab-trigger-on,
 .ch-tabNavigator .ch-tab-trigger-on:hover {
+	padding: 10px 20px;
 	background-image: -o-linear-gradient(top, #F0F0F0, #FFFFFF 25px);
 	background-image: -ms-linear-gradient(top, #F0F0F0, #FFFFFF 25px);
 	background-image: -moz-linear-gradient(top, #F0F0F0, #FFFFFF 25px);
@@ -3204,6 +3205,10 @@ form .ico{display:inline-block;}
 	cursor:default;
 	font-weight: bold;
 	text-shadow: 2px 0 2px rgba(255, 255, 255, .5);
+	background: #FDD062;
+    border: none;
+    /* text-align: center; */
+    font-size: 20px;
 }
 
 .lt-ie10 .ch-tabNavigator .ch-tab-trigger-on,
