@@ -531,7 +531,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.categoriesPath li .selected{font-weight: bold;}
 .component.categoriesPath li.qtyResults{background-position: 0 -61px;font-weight: normal;margin-top: 3px;overflow: visible;}
 .component.categoriesPath li.qtyResults h2 {display: inline;line-height: 1px;margin: 0;overflow: visible;font-weight:bold;}
-
+.component.categoriesPath .background { background-color: transparent; }
 /*
  * Categories List
  */
@@ -676,16 +676,17 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 /*
  * Links for listing wiew mode
  */
-.component.viewMode{margin:0px;text-align:left;padding-left:10px}
-.component.viewMode #lnk-list.selected-link {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") 0px -56px no-repeat;display: inline-block;width: 54px;text-indent: -9999px;}
+.component.viewMode{margin:0px;text-align:center;padding-left:10px}
+.component.viewMode #lnk-list.selected-link {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") 4px -56px no-repeat;display: inline-block;width: 54px;text-indent: -9999px;}
 .component.viewMode #lnk-list {display:inline-block;}
-.component.viewMode #lnk-list a {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -18px -56px no-repeat;display:block;width: 54px;text-indent: -9999px;}
+.component.viewMode #lnk-list a {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -17px -56px no-repeat;display:block;width: 55px;text-indent: -9999px; margin-left: 20px; }
 /*.component.viewMode #lnk-list a:hover {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") 0px -56px no-repeat;display: inline-block;width: 18px;text-indent: -9999px;}*/
-.component.viewMode #lnk-gallery.selected-link {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -36px -56px no-repeat;display: inline-block;width: 18px;text-indent: -9999px;}
+.component.viewMode #lnk-gallery.selected-link {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -36px -56px no-repeat;display: inline-block;width: 18px;text-indent: -9999px;display: none;}
 .component.viewMode #lnk-gallery {display:inline-block;}
 .component.viewMode #lnk-gallery a {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -54px -56px no-repeat;display:block;width: 18px;text-indent: -9999px;}
 .component.viewMode #lnk-gallery a:hover {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -54px -56px no-repeat;display: inline-block;width: 18px;text-indent: -9999px;}
 
+.component.viewMode span:first-child { margin:0 0 10px 0; display: block; }
 /*
  * Filter, pager and order
  */
@@ -703,14 +704,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 	.component.orderList dd{margin-left: 5px;padding-left: 5px;}
 }
 
-.component.orderList dd a {
-    background: transparent url("images/mayorprecio.png") -18px -56px no-repeat;
-    display: block;
-    width: 18px;
-    text-indent: -9999px;
-    color: transparent;
-}
-
+dl.component.orderList { margin-bottom: 0px; }
 /*
  * Social Horizontal Ad
  */
