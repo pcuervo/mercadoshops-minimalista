@@ -698,11 +698,17 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.orderList dd{border-left: 1px solid #CECECE;float: left;margin-left: 10px;padding-left: 10px;}
 .component.orderList dt,
 .component.orderList dd.first {border:none;}
+.component.orderList dd.first{ background-image: url(images/mayorprecio.png );background-size: 30px;background-repeat: no-repeat;background-position: center center; }
+.component.orderList dd:nth-child(3) {background-image: url(images/menorprecio.png );background-size: 30px;background-repeat: no-repeat;background-position: center center; }
+.component.orderList dd strong,
+.component.orderList dd a { font-size: 31px; color: transparent; }
 @media screen and (max-width:480px){
 	.component.orderList dt{display:none;}
 	.component.orderList dd{margin-left: 5px;padding-left: 5px;}
 }
 dl.component.orderList { margin-bottom: 0px; }
+.component.orderList dt{ margin-bottom: 10px; }
+
 /*
  * Social Horizontal Ad
  */
@@ -1031,7 +1037,7 @@ dl.priceInfo.promotionPrice dd.installments span.withMP, dl.priceInfo dd.install
 .component.searchResults .component.item-gallery h2 {
 	min-height: 3.6em;
 }
-
+.component.searchResults .background { border-bottom: 1px solid #000; }
 /*.component.itemGallery .item-gallery h2 {
 	min-height: 2.6em;
 }*/
