@@ -295,6 +295,7 @@ a:focus {outline:none;}
  * Common Styles -cleaning inherit styles from old framework and chicoUi
  */
 .title-component {margin:10px 0; padding:5px 0;}
+#payMethod .title-component { padding: 10px; background-color: #FDD062; text-align: center; text-transform: inherit; }
 .component, .section{display:block;float:none;}
 .component .decimal{display:none;}
 li.colPrice .decimal {
@@ -523,10 +524,11 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 /*
  *Categories Path
  */
-.component.categoriesPath {padding:7px;border-bottom:1px solid #cecece;}
+.component.categoriesPath {padding:7px;border-bottom:1px solid #FDD062;}
 .component.categoriesPath li{background: url("//static.mercadoshops.com/static/images/themes/basic/sprite.png") no-repeat scroll 0 -61px transparent;float: left;line-height: 15px;margin-right: 6px;overflow: visible;padding-left: 10px;}
 .component.categoriesPath li.first{background:none;}
 .component.categoriesPath li.selected{font-weight: bold;}
+.component.categoriesPath li .selected{font-weight: bold;}
 .component.categoriesPath li.qtyResults{background-position: 0 -61px;font-weight: normal;margin-top: 3px;overflow: visible;}
 .component.categoriesPath li.qtyResults h2 {display: inline;line-height: 1px;margin: 0;overflow: visible;font-weight:bold;}
 
@@ -1004,7 +1006,7 @@ dl.priceInfo.promotionPrice dd.installments span.withMP, dl.priceInfo dd.install
 }
 
 .hideSemJurosMessage {
-	display:none;	
+	display:none;
 }
 
 .semjuros {
@@ -1012,7 +1014,7 @@ dl.priceInfo.promotionPrice dd.installments span.withMP, dl.priceInfo dd.install
 }
 
 .semjuros-container .ch-icon-credit-card {
-	vertical-align: middle;	
+	vertical-align: middle;
 	color: #468847;
 }
 
@@ -1046,51 +1048,51 @@ dl.priceInfo.promotionPrice dd.installments span.withMP, dl.priceInfo dd.install
 	.component.searchResults .component.item-gallery h2 {
 		min-height: inherit;
 	}
-	
+
 	.component.searchResults  li.row.one-promo {
 		height: inherit;
 	}
-	
+
 	.component.searchResults .component.item-gallery article.one-promo {
 		height: inherit;
 	}
-	
+
 	.component.searchResults  li.row.two-promos {
 		height: inherit;
 	}
-	
+
 	.component.searchResults .component.item-gallery article.two-promos {
 		height: inherit;
 	}
-	
+
 	.component.searchResults  li.row.three-promos {
 		height: inherit;
 	}
-	
+
 	.component.searchResults .component.item-gallery article.three-promos {
 		height: inherit;
 	}
-	
+
 	.component.itemGallery li.background.one-promo {
 		height: inherit;
 	}
-	
+
 	.component.itemGallery li.background.one-promo {
 		height: inherit;
 	}
-	
+
 	.component.itemGallery li.background.two-promos {
 		height: inherit;
 	}
-	
+
 	.component.itemGallery li.background.three-promos {
 		height: inherit;
 	}
-	
+
 	.component.itemGallery li.background article.two-promos {
 		height: inherit;
 	}
-	
+
 	.component.itemGallery li.background article.three-promos {
 		height: inherit;
 	}
