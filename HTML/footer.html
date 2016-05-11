@@ -1,9 +1,15 @@
 <footer class="[ bg-dark ][ padding--top-bottom--large ]">
 	<div class="[ container ]">
 		<div class="[ row ]">
-			<div class="[ col-xs-12 col-sm-offset-4 col-sm-4  ]">
-				<img class="[ img-responsive ][ center-block ][ margin-bottom ]" src="images/logo-blanco.png" alt="">
-			</div>
+			#if( $hasLogo )
+				<div class="[ col-xs-12 col-sm-offset-4 col-sm-4 ]">
+					<img class="[ img-responsive ][ center-block ][ margin-bottom ]" src="/images/logo.jpg?"  alt="raldezamacona" title="raldezamacona">
+				</div>
+			#else
+				<div class="[ col-xs-12 ][ component txt-logo ][ text-center ][ margin-bottom--large ]">
+					<a href="/" title="Inicio" class="[ logo ][ color-light ]">type shirts</a>
+				</div>
+			#end
 		</div>
 
 		<div class="[ row ]">
@@ -52,7 +58,7 @@
 							<a href="/contact" class="[ icon-mail ][ color-light ]" > envíar mensaje </a>
 						</dd>
 					</dl>
-				</address>					
+				</address>
 			</div>
 		</div>
 

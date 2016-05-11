@@ -173,24 +173,23 @@
 					<!-- novedades pequeño cuervo  -->
 					<div class="[ container ]">
 						<div class="[ row ][ margin-top--large ]">
-							<div class="[ col-xs-12 col-sm-6 ]">
-							<div class="[ text-right ][ bg-image img-banner1 ][ padding margin-bottom ]">
-								<h3 class="[ text-uppercase ][ color-light ]"><strong>Mujer</strong></h3>
-								<p class="[ color-light ]"><strong>Variedad de modelos, telas y diseños</strong></p>
-								<a href="categorias.html"><button class="[ btn btn-primary ]">Ver Más</button></a>
-							</div>
-							</div>
-							<div class="[ col-xs-12 col-sm-6 ]">
-							<div class="[ text-right ][ bg-image img-banner2 ][ padding margin-bottom ]">
-								<h3 class="[ text-uppercase ][ color-light ]"><strong>Hombre</strong></h3>
-								<p class="[ color-light ]"><strong>Variedad de modelos, telas y diseños</strong></p>
-								<a href="categorias.html"><button class="[ btn btn-primary ]">Ver Más</button></a>
-							</div>
-							</div>
+							#foreach ($newsItem in $newsItemList)
+								<div class="[ col-xs-12 col-sm-6 ]">
+									#if($newsItem.hasImages)
+										<div class="[ text-right ][ bg-image ][ padding margin-bottom ]" style="background-image: url( $newsItem.imageUrl );">
+											<h3 class="[ text-uppercase ][ color-light ]"><strong>$newsItem.title</strong></h3>
+											<p class="[ color-light ]"><strong>$newsItemsubtitle</strong></p>
+											<a href="$newsItem.url"><button class="[ btn btn-primary ]">Ver Más</button></a>
+										</div>
+									#end
+								</div>
+							#end
 						</div>
 					</div>
 
-					<h3 class="title-component">Novedades</h3>
+				</div>
+
+					<!-- <h3 class="title-component">Novedades</h3>
 					<div class="ch-carousel" data-max-items="$newsMaxItemsPerPage">
 						<ul class="list-prod">
 							#foreach ($newsItem in $newsItemList)
@@ -198,9 +197,9 @@
 									<figure>
 										<a href="$newsItem.url">
 											#if($newsItem.hasImages)
-											<img src="$newsItem.imageUrl" title="$newsItem.title" />
+												<img src="$newsItem.imageUrl" title="$newsItem.title" />
 											#else
-											<img src="$newsItem.imageUrl" alt="Sin Foto" title="Sin Foto">
+												<img src="$newsItem.imageUrl" alt="Sin Foto" title="Sin Foto">
 											#end
 											#if( $newsItem.showLastAvailable )
 												<span class="lastProd last-MX">Últimos Disponibles</span>
@@ -287,7 +286,7 @@
 							#end
 						</ul>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- Productos destacados -->
 				<nav class="component itemGallery clearfix">
