@@ -686,7 +686,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.viewMode #lnk-gallery a {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -54px -56px no-repeat;display:block;width: 18px;text-indent: -9999px;}
 .component.viewMode #lnk-gallery a:hover {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -54px -56px no-repeat;display: inline-block;width: 18px;text-indent: -9999px;}
 
-.component.viewMode span:first-child { margin:0 0 10px 0; display: block; }
+.component.viewMode span:first-child { margin:0 6px 10px 0; display: block; text-align: right; }
 /*
  * Filter, pager and order
  */
@@ -695,7 +695,6 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.ch-pagination{text-align:center;clear:both; display:block;}
 .component.ch-pagination li{display:inline;}
 .component.orderList {float:right;}
-.component.orderList dt,
 .component.orderList dd{border-left: 1px solid #CECECE;float: left;margin-left: 10px;padding-left: 10px;}
 .component.orderList dt,
 .component.orderList dd.first {border:none;}
@@ -703,7 +702,6 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 	.component.orderList dt{display:none;}
 	.component.orderList dd{margin-left: 5px;padding-left: 5px;}
 }
-
 dl.component.orderList { margin-bottom: 0px; }
 /*
  * Social Horizontal Ad
