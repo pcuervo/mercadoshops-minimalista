@@ -40,7 +40,7 @@ body {
   background-color: #fff;
 }
 
-.main{
+.main-wrapper{
   min-height: -moz-calc(100% - 180px);
   min-height: -o-calc(100% - 180px);
   min-height: -webkit-calc(100% - 180px);
