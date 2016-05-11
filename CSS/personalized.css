@@ -5153,39 +5153,22 @@ button.close {
 .no-decoration {
   text-decoration: none!important;
 }
-.shadow {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-.color-primary {
-  color: #FDD062;
-}
-.color-dark {
-  color: #000;
-}
-.color-secondary {
-  color: #0D71BA;
-}
-.color-tertiary {
-  color: #D0021B;
-}
-.color-light {
-  color: #fff;
-}
-.bg-light {
-  background-color: #fff;
-}
-.bg-dark {
-  background-color: #000;
-}
-.bg-primary {
-  background-color: #FDD062;
-}
-.bg-tertiary {
-  background-color: #D0021B;
-}
-.bg-gray-base {
-  background-color: #5a5a5a;
-}
+.shadow { box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);}
+
+
+.color-primary    { color: #FDD062; }
+.color-dark       { color: #000; }
+.color-secondary  { color: #0D71BA; }
+.color-tertiary   { color: #D0021B;}
+.color-light      { color: #fff; }
+.color-gray-base  { color: #5a5a5a; }
+
+.bg-light     { background-color: #fff; }
+.bg-dark      { background-color: #000; }
+.bg-primary   { background-color: #FDD062;}
+.bg-tertiary  { background-color: #D0021B; }
+.bg-gray-base { background-color: #5a5a5a; }
+
 .width-auto {
   width: auto;
 }
@@ -5868,7 +5851,7 @@ a.sub-menu-opener:focus {
   max-height: 10000px;
 }
 
-.logo{ font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.logo{ font-family: "proxima nova","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 5em;}
 
 /*------------------------------------*\
     #Footer
