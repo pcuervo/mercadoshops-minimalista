@@ -118,7 +118,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
-  margin-top: 20px; margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .small, h2 .small, .h2 .small, h3 .small, .h3 .small {
@@ -126,7 +126,7 @@ h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .s
 }
 
 h4, .h4, h5, .h5, h6, .h6 {
-  margin-top: 10px; margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small, h4 .small, .h4 .small, h5 .small, .h5 .small, h6 .small, .h6 .small {
@@ -4361,9 +4361,14 @@ footer .logo{
     padding-left: 15%
   }
 }
+
 @media (min-width: 1200px) {
   .component.page-user{
     width: 80%;
     padding-left: 20%
   }
+}
+
+.newsProduct--product{
+  height: 300px;
 }
