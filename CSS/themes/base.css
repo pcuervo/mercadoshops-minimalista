@@ -656,7 +656,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
     .component.searchResults .item-list .itemPrice {position:static; text-align:left;}
 }
 .component.searchResults .rowsWrapper {clear:both; width:100% ;overflow:hidden;}
-.component.searchResults .component.item-gallery li{float:left;padding:0px;height:325px; overflow:hidden;width:25%;}
+.component.searchResults .component.item-gallery li{float:left;padding:0 10px;height:360px; overflow:hidden;width:25%;text-align: center;}
 .component.searchResults .component.item-gallery .itemPrice {position:relative;margin-left: 10px}
 .component.searchResults .component.item-gallery .itemPrice li{float:none; width:auto; border:none; margin:0 10px 10px 10px;padding:0px;height:auto;}
 .component.searchResults .component.item-gallery article{padding:190px 0px 0 0px;position:relative;border-right:1px solid #eaeaea;border-bottom:1px solid #eaeaea;height:134px;}
@@ -686,7 +686,6 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.viewMode #lnk-gallery a {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -54px -56px no-repeat;display:block;width: 18px;text-indent: -9999px;}
 .component.viewMode #lnk-gallery a:hover {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -54px -56px no-repeat;display: inline-block;width: 18px;text-indent: -9999px;}
 
-.component.viewMode span:first-child { margin:0 6px 10px 0; display: block; text-align: right; }
 /*
  * Filter, pager and order
  */
@@ -695,19 +694,20 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.ch-pagination{text-align:center;clear:both; display:block;}
 .component.ch-pagination li{display:inline;}
 .component.orderList {float:right;}
+.component.orderList dt,
 .component.orderList dd{border-left: 1px solid #CECECE;float: left;margin-left: 10px;padding-left: 10px;}
 .component.orderList dt,
 .component.orderList dd.first {border:none;}
-.component.orderList dd.first{ background-image: url(images/mayorprecio.png );background-size: 30px;background-repeat: no-repeat;background-position: center center; }
-.component.orderList dd:nth-child(3) {background-image: url(images/menorprecio.png );background-size: 30px;background-repeat: no-repeat;background-position: center center; }
-.component.orderList dd strong,
-.component.orderList dd a { font-size: 31px; color: transparent; }
 @media screen and (max-width:480px){
 	.component.orderList dt{display:none;}
 	.component.orderList dd{margin-left: 5px;padding-left: 5px;}
 }
+.component.orderList dd{ font-size: 19px; font-family: 'BenchNine', sans-serif; text-transform: capitalize; letter-spacing: 1.5px; }
+.component.orderList dd a:hover{ color: #7D7C7A; }
+.component.orderList dt,
+.component.viewMode span:first-child{ font-size: 16px; line-height: 27px; font-family: 'BenchNine', sans-serif; text-transform: uppercase; letter-spacing: 1.5px; }
 dl.component.orderList { margin-bottom: 0px; }
-.component.orderList dt{ margin-bottom: 10px; }
+.component.orderList dd strong { border-bottom: 2px solid #FDD062; }
 
 /*
  * Social Horizontal Ad
@@ -972,8 +972,8 @@ aside .component.publicidad.v1.pt a{background: url(//static.mercadoshops.com/st
 .sharesButtons li{display:inline;}
 .sharesButtons{margin-right: 10px}
 .vipSocials span, .sharesButtons{float:left;}
-/*.sharesButtons a.ch-btn.ch-btn-small.btn-grey,.btn-grey{padding:0.258em 0.7em;border:1px solid #9C9696;background: -webkit-linear-gradient(#C8C8C8, #9C9696);background: -moz-linear-gradient(#C8C8C8, #9C9696);background: -o-linear-gradient(#C8C8C8, #9C9696);background: linear-gradient(#C8C8C8, #9C9696);	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C8C8C8', endColorstr='#9C9696',GradientType=0 ); IE6-8 box-shadow: 0 1px #FFF inset;color:#333;}
-.sharesButtons a.ch-btn.ch-btn-small.btn-grey i{font-size: 10px}*/
+.sharesButtons a.ch-btn.ch-btn-small.btn-grey,.btn-grey{padding:0.258em 0.7em;border:1px solid #9C9696;background: -webkit-linear-gradient(#C8C8C8, #9C9696);background: -moz-linear-gradient(#C8C8C8, #9C9696);background: -o-linear-gradient(#C8C8C8, #9C9696);background: linear-gradient(#C8C8C8, #9C9696);	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C8C8C8', endColorstr='#9C9696',GradientType=0 ); /* IE6-8 */box-shadow: 0 1px #FFF inset;color:#333;}
+.sharesButtons a.ch-btn.ch-btn-small.btn-grey i{font-size: 10px}
 a.ch-btn.ch-btn-small.btn-grey:hover{text-decoration: none}
 .textShare{display: block;padding: 7px 4px 0 0;}
 .vipSocials span#fb-like-button{padding-top: 4px}
@@ -983,7 +983,7 @@ a.ch-btn.ch-btn-small.btn-grey:hover{text-decoration: none}
 .ch-icon-money-sign, .customVipPaymethods, .PaymentAll{display: inline;}
 /*.customVipPaymethods{display: inline-block;text-overflow: ellipsis;overflow: hidden;max-width: 260px;white-space: nowrap;}*/
 .VipLastOnes{width: 62%; height:10%; background-color:#FDD062; z-index:10; padding: 10px; font-size:15px; transform:rotate(35deg);-ms-transform:rotate(35deg); /* IE 9 */-webkit-transform:rotate(35deg); /* Safari and Chrome */;text-align: center; position: absolute; right:-15%; top:10%;}
-.VipLastOnes span{color: #000; font-weight: bold; font-family: 'Open Sans', sans-serif;}
+.VipLastOnes span{color: #000; font-weight: bold; font-family: "proxima-nova"}
 .NonStock{width: 62%; height: 4%; background-color:#B9042F; z-index:10; padding: 10px; font-size:13px; transform:rotate(-35deg);-ms-transform:rotate(-35deg); /* IE 9 */-webkit-transform:rotate(-35deg); /* Safari and Chrome */;text-align: center; position: absolute; left:-13%; top:10%;}
 .NonStock span{color: #fff;text-shadow: 1px 1px 2px #333;}
 /* Prevent the zooming to be canceled if hovering over a ribbon - Ribbon z-index:10 */

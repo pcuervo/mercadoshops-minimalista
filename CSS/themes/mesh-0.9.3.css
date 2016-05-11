@@ -65,7 +65,7 @@ vertical-align: top;
 .ch-g3-8 {width: 37.5%;}
 .ch-g1-3r { width:33.34%; } /* Rounding - If you want 3 equal columns, one of them has to be ch-g1-3r to reach 100% */
 .ch-g1-3, { width:33.33%; }
- .ch-g2-6 { width: 110px; }
+ .ch-g2-6 { width: 150px; }
 .ch-g3-10 {width: 30%;}
 .ch-g1-4, .ch-g2-8 { width:25%;}
 .ch-g1-5, .ch-g2-10 { width:20%;}
