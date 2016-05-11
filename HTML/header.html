@@ -1,4 +1,4 @@
-<header>
+<header  class="[ js-header ]">
 	<!-- Mobile menu Pequeño Cuervo -->
 	<div class="[ bg-dark ][ visible-xs ][ relative ]">
 		<button class="[ btn-mobile-menu ][ js-mobile-nav-opener ]">
@@ -65,11 +65,11 @@
 					<a class="[ text-uppercase ][ color-light ][ icon-shop icon-medium ][ padding-sides ]" href="/" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Inicio"></a>
 					<div class="[ inline ][ top-menu ]">
 						#foreach( $menuItem in $menuItemList )
-							<a class="[ text-uppercase ][ color-light ][ padding--sides ][ icon-$menuItem.name ]" title="$menuItem.name" href='$menuItem.target'>$menuItem.name</a>
+							<a class="[ text-uppercase ][ color-light ][ padding--sides ][ icon-$menuItem.name ][ menu-item menu-item-$menuItem.name ]" title="$menuItem.name" href='$menuItem.target'>$menuItem.name</a>
 						#end
 					</div>
-				</div> 
-				
+				</div>
+
 				<div class="[ col-sm-3 col-md-3 ]">
 					<form class="[ input-group ]" >
 						<input type="hidden" name="view" value="result">
@@ -155,3 +155,4 @@
 	</div>
 
 </header>
+<div class="[ main ]">

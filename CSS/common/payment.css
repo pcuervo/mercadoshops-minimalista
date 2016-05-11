@@ -13,7 +13,8 @@
 .customPaymentNot{margin-bottom: 15px}
 .paymentCustomName label.label-check{margin-right:0;top:2px;}
 section#payMethod span.mpPayment, aside#payMethod span.mpPayment{width:95px;}
-section#payMethod p.pay-safe { margin:10px 0; }
+section#payMethod p.pay-safe { margin:10px 0 30px 0; }
+#payMethod .ch-icon-credit-card { margin-right: 10px; font-size: 1em; }
 section#payMethod ul#payMethod, aside#payMethod ul#payMethod{padding:11px 0 0 0; display:inline-block;margin-bottom: 15px}
 aside#payMethod ul#payMethod li{list-style-type: none}
 aside#payMethod ul#payMethod{margin-bottom: 5px}
@@ -160,9 +161,11 @@ ul.mp-promo-mlb li.card-mlb-big-melicard{background-position:0 -252px}
 .card-MLM-debvisa{background-position: 0 -221px;width:76px}
 .card-MLM-sivale{background-position: 1px -244px;width:51px;}
 /*MLM-shipping big cards*/
-ul.mp-promo-mlm {margin-left:5px;}
+ul.mp-promo-mlm {margin-left:5px; padding-top: 10px 0; }
 ul.mp-promo-mlm li{height:35px;clear:both;background: url(//static.mercadoshops.com/static/images/sprite_mlm_12x.png) no-repeat;margin:15px 0;padding:0 0 0 90px;line-height:38px }
 ul.mp-promo-mlm li.card-mlm-big-visa{background-position:0 0}
+#payMethod ul.mp-promo-mlm li.card-mlm-big-visa { margin-bottom: 30px; }
+@media (max-width: 641px) { #payMethod ul.mp-promo-mlm li.card-mlm-big-visa {margin-bottom: 70px; }}
 ul.mp-promo-mlm li.card-mlm-big-master{background-position:4px -37px}
 ul.mp-promo-mlm li.card-mlm-big-amex{background-position:4px -78px}
 ul.mp-promo-mlm li.card-mlm-big-santander{background-position:0px -115px;padding:0 0 0 100px}
@@ -271,7 +274,7 @@ p.ch-points-ltrt{cursor: pointer}
 /*Carousel ChicoUI*/
 .paymethodsVipContent div.ch-carousel{width:350px;top:-20px;left:109px;}
 ul.payMethod{width:250px; height:35px; margin:0; padding: 0}
-ul.payMethod li, ul#payMethod li{width:55px;height: 27px;text-indent: -9999px;margin:0 5px 0 0; padding:0;opacity:0.8;}
+ul.payMethod li, ul#payMethod li{height: 27px;text-indent: -9999px;margin:10px 15px 10px 0; padding:0;opacity:0.8;}
 ul#payMethod li{float:left;}
 ul.pmethod-carrito li{list-style-type: none}
 .customVipPaymethods {margin-top: 0; vertical-align: bottom}
@@ -317,6 +320,7 @@ table th.alignRight {
 #ordersTable strong{font-size: 13px}
 
 /*paymethods-shipping*/
+.shippingPaymethodContent{ padding: 0 10px; }
 .shippingPaymethodContent ul.customVipPaymethods{margin-bottom: 20px}
 
 #checkout-payment-step-1item li,

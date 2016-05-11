@@ -24,9 +24,19 @@
 				</div><!-- /input-group -->
 			</div>
 
-			<div class="[ col-xs-12 col-sm-4 ]">
+			<div class="[ row ]">
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<h4 class="[ color-primary ]">NEWSLETTER</h4>
+					<div class="[ input-group ][ width-80 ]">
+						<input type="text" class="[ form-control ]" placeholder="your@mail.com…">
+						<span class="[ input-group-btn ]">
+							<button class="[ btn btn-primary ]" type="submit">
+							<span class="[ relative ]"></span>SUSCRIBE</button>
+						</span>
+					</div><!-- /input-group -->
+				</div>
 				<address class="component link">
-					<dl>
+					<dl class="socialData [ col-xs-12 col-sm-4 ] ">
 						<dt><h4 class="[ color-primary ]">SÍGUENOS</h4></dt>
 						<a href="#" class="[ color-light ][ icon-logo-facebook icon-small ]"></a>
 						<a href="#" class="[ color-light ][ icon-logo-twitter-bird icon-small ]"></a>
@@ -37,21 +47,16 @@
 						<a href="#" class="[ color-light ][ icon-logo-tumblr icon-small ]"></a>
 						<a href="#" class="[ color-light ][ icon-logo-whatsapp icon-small ]"></a>
 						<div class="[ margin-top ]">
-							<dd id="fb-button"></dd>
+							<dd id="fb-button">
+							</dd>
 							<g:plusone size="medium" count="false" href="http://www.hola.pcorbeau.com"></g:plusone>
 						</div>
 					</dl>
-				</address>
-			</div>
-			<div class="[ col-xs-12 col-sm-4 ]">
-				<address class="component link">
-					<dl class="companyData [ color-light ]">
-						<dt><h4 class="[ color-primary ]]">CONTÁCTANOS</h4></dt>
-						<dd>raldezamacona</dd>
+					<dl class="companyData [ color-light ][ col-xs-12 col-sm-4 ]">
+						<dt><h4 class="[ color-primary ]">CONTÁCTANOS</h4></dt>
+						<dd>Type shirts</dd>
 						#if($showContactFooter)
-							<dd>Agrarismo 52,</dd>
-							<dd>Miguel Hidalgo, D.F., México. 11800 </dd>
-							<dd>hello@pcuervo.com</dd>
+							<dd>Aguascalientes</dd>
 							<dd> 5543367589</dd>
 						#end
 						<dd>
@@ -62,10 +67,10 @@
 			</div>
 		</div>
 
-		<div>
+		<div class="[ row ]">
 			<div class="[ col-xs-12 ][ text-center ][ margin-top-bottom ]">
 				<a class="[ margin-top-bottom padding--sides ][ color-primary ]" href="/terminos-condicines_4xST">Términos y condiciones</a>
-				<a class="[ margin-top-bottom padding--sides ][ border-left-primary ][ color-primary ]" href="/politica-de-devoluciones_5xSTl">Politica de Devolucion</a>
+				<a class="[ margin-top-bottom padding--sides ][ border-left-primary ][ color-primary ]" href="/politica-de-devoluciones_5xST">Politica de Devolucion</a>
 				<a class="[ margin-top-bottom padding--sides ][ border-left-primary ][ color-primary ]" href="faq.html">Preguntas frecuentes</a>
 			</div>
 
@@ -78,17 +83,17 @@
 				</div>
 				<div style="clear:both;"></div>
 			#end
+			<div class="[ col-xs-12 ][ color-gray-base ][ text-center ]">
+				Powered by <a class="link [ color-gray-base ] " href="http://www.mercadoshops.com.mx" title="MercadoShops">MercadoShops</a>
+			</div>
+
 		</div>
-		<div class="[ col-xs-12 ][ color-gray-base ][ text-center ]">
-			Powered by <a class="link [ color-gray-base ] " href="http://www.mercadoshops.com.mx" title="MercadoShops">MercadoShops</a>
-		</div>
-	</div>
-</footer>
+	</footer>
+</div>
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://pcuervo.com/mercadoshops/js/functions.js"></script>
-
 
 <script>
 	$( document ).ready(function() {
@@ -96,12 +101,14 @@
 		 * On ready
 		**/
 
-
-
+		footerBottom();
 
 		/**
 		 * Triggered
 		**/
+
+		$(window).resize(function () { footerBottom(); });
+
 		$('.js-mobile-nav-opener, .js-mobile-nav-closer').on('click', function(){
 			console.log('click');
 		    toggleClass( '.mobile-nav', 'opened' );
@@ -114,4 +121,3 @@
 		})
 	});
 </script>
-

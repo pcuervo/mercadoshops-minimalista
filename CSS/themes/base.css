@@ -295,6 +295,7 @@ a:focus {outline:none;}
  * Common Styles -cleaning inherit styles from old framework and chicoUi
  */
 .title-component {margin:10px 0; padding:5px 0;}
+#payMethod .title-component { padding: 10px; background-color: #FDD062; text-align: center; text-transform: inherit; }
 .component, .section{display:block;float:none;}
 .component .decimal{display:none;}
 li.colPrice .decimal {
@@ -311,10 +312,11 @@ li.colPrice a {
 .ch-dropdown .button {background-position:left 0px;background-image: url("//static.mercadoshops.com/static/images/spriteV1.png");}
 .ch-secondary.button:hover,
 .ch-dropdown .button:hover {background-position:left -53px;background-image: url("//static.mercadoshops.com/static/images/spriteV1.png");}
-.ch-primary.button,
-.ch-main.button {background-position:0 -174px;background-image: url("//static.mercadoshops.com/static/images/spriteV1.png");}
-.ch-primary.button:hover,
-.ch-main.button:hover {background-position:0 -174px;background-image: url("//static.mercadoshops.com/static/images/spriteV1.png");}
+.ch-primary.button{ box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);}
+/*.ch-primary.button,
+.ch-main.button {background-position:0 -174px;background-image: url("//static.mercadoshops.com/static/images/spriteV1.png");}*/
+/*.ch-primary.button:hover,
+.ch-main.button:hover {background-position:0 -174px;background-image: url("//static.mercadoshops.com/static/images/spriteV1.png");}*/
 .ch-dropdown-content {border: 1px solid #CCC;}
 a {text-decoration: none;}
 a:hover {text-decoration: underline;}
@@ -350,7 +352,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.shipTable #cep-label {background-color:#eaeaea;margin-left:0px !important;width:80px !important;padding:5px 4px;text-align:left;}
 .component.shipTable .carritoresp {width:100%;}
 .component.shipTable .filas {display:block; clear:both;}
-.component.shipTable .thead {border-radius:5px;background-color:#eaeaea;}
+.component.shipTable .thead {/*border-radius:5px;*/background-color: #FDD062;}
 .component.shipTable .thead li {font-weight:bold;min-height:20px}
 .component.shipTable .thead li, .component.shipTable .tbody li {float:left;display:inline-block;padding:1%;position:relative;}
 .component.shipTable .colProd {width:61%}
@@ -361,7 +363,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.shipTable .colCant #updCartLink {display:block;}
 .component.shipTable .colCant .lblQuantity {display:none;}
 .component.shipTable .colPrice{width:18%; text-align:right;}
-.component.shipTable .colTotalPrice {float:right;width:auto;text-align:right; background-color:#eaeaea;border-radius:5px;}
+.component.shipTable .colTotalPrice {float:right;width:auto;text-align:right; background: none; color: #fff; font-size: 1.5em;/*background-color:#eaeaea; border-radius:5px;*/}
 .component.shipTable .colCep {background-color:#eaeaea; border-radius:5px;}
 .component.shipTable .tbody {border-bottom:1px solid #eaeaea; background:white;}
 .component.shipTable .tbody:nth-last-child(1){border-bottom:none;}
@@ -522,10 +524,11 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 /*
  *Categories Path
  */
-.component.categoriesPath {padding:7px;border-bottom:1px solid #cecece;}
-.component.categoriesPath li{background: url("//static.mercadoshops.com/static/images/themes/basic/sprite.png") no-repeat scroll 0 -61px transparent;float: left;line-height: 15px;margin-right: 6px;overflow: visible;padding-left: 10px;}
+.component.categoriesPath {padding:7px;border-bottom:4px solid #FDD062;}
+.component.categoriesPath li{background: url("//static.mercadoshops.com/static/images/themes/basic/sprite.png") no-repeat scroll 0 -61px transparent;float: left;line-height: 15px;margin-right: 6px;overflow: visible;padding-left: 10px; font-size: 16px; font-family: 'BenchNine', sans-serif; text-transform: uppercase; letter-spacing: 1.5px; }
 .component.categoriesPath li.first{background:none;}
 .component.categoriesPath li.selected{font-weight: bold;}
+.component.categoriesPath li .selected{font-weight: bold;}
 .component.categoriesPath li.qtyResults{background-position: 0 -61px;font-weight: normal;margin-top: 3px;overflow: visible;}
 .component.categoriesPath li.qtyResults h2 {display: inline;line-height: 1px;margin: 0;overflow: visible;font-weight:bold;}
 
@@ -674,14 +677,14 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
  * Links for listing wiew mode
  */
 .component.viewMode{margin:0px;text-align:left;padding-left:10px}
-.component.viewMode #lnk-list.selected-link {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") 0px -56px no-repeat;display: inline-block;width: 18px;text-indent: -9999px;}
+.component.viewMode #lnk-list.selected-link {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") 0px -56px no-repeat;display: inline-block;width: 54px;text-indent: -9999px;}
 .component.viewMode #lnk-list {display:inline-block;}
-.component.viewMode #lnk-list a {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -18px -56px no-repeat;display:block;width: 18px;text-indent: -9999px;}
-.component.viewMode #lnk-list a:hover {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") 0px -56px no-repeat;display: inline-block;width: 18px;text-indent: -9999px;}
+.component.viewMode #lnk-list a {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -18px -56px no-repeat;display:block;width: 54px;text-indent: -9999px;}
+/*.component.viewMode #lnk-list a:hover {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") 0px -56px no-repeat;display: inline-block;width: 18px;text-indent: -9999px;}*/
 .component.viewMode #lnk-gallery.selected-link {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -36px -56px no-repeat;display: inline-block;width: 18px;text-indent: -9999px;}
 .component.viewMode #lnk-gallery {display:inline-block;}
 .component.viewMode #lnk-gallery a {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -54px -56px no-repeat;display:block;width: 18px;text-indent: -9999px;}
-.component.viewMode #lnk-gallery a:hover {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -36px -56px no-repeat;display: inline-block;width: 18px;text-indent: -9999px;}
+.component.viewMode #lnk-gallery a:hover {background: transparent url("//static.mercadoshops.com/static/images/themes/smoked/sprite.png") -54px -56px no-repeat;display: inline-block;width: 18px;text-indent: -9999px;}
 
 /*
  * Filter, pager and order
@@ -698,6 +701,14 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 @media screen and (max-width:480px){
 	.component.orderList dt{display:none;}
 	.component.orderList dd{margin-left: 5px;padding-left: 5px;}
+}
+
+.component.orderList dd a {
+    background: transparent url("images/mayorprecio.png") -18px -56px no-repeat;
+    display: block;
+    width: 18px;
+    text-indent: -9999px;
+    color: transparent;
 }
 
 /*
@@ -973,8 +984,8 @@ a.ch-btn.ch-btn-small.btn-grey:hover{text-decoration: none}
 .VariationNoStock{color: #B20000}
 .ch-icon-money-sign, .customVipPaymethods, .PaymentAll{display: inline;}
 /*.customVipPaymethods{display: inline-block;text-overflow: ellipsis;overflow: hidden;max-width: 260px;white-space: nowrap;}*/
-.VipLastOnes{width: 62%; height:4%; background-color:#CED6B3; z-index:10; padding: 10px; font-size:15px; transform:rotate(35deg);-ms-transform:rotate(35deg); /* IE 9 */-webkit-transform:rotate(35deg); /* Safari and Chrome */;text-align: center; position: absolute; right:-15%; top:10%;}
-.VipLastOnes span{color: #000;}
+.VipLastOnes{width: 62%; height:10%; background-color:#FDD062; z-index:10; padding: 10px; font-size:15px; transform:rotate(35deg);-ms-transform:rotate(35deg); /* IE 9 */-webkit-transform:rotate(35deg); /* Safari and Chrome */;text-align: center; position: absolute; right:-15%; top:10%;}
+.VipLastOnes span{color: #000; font-weight: bold; font-family: "proxima-nova"}
 .NonStock{width: 62%; height: 4%; background-color:#B9042F; z-index:10; padding: 10px; font-size:13px; transform:rotate(-35deg);-ms-transform:rotate(-35deg); /* IE 9 */-webkit-transform:rotate(-35deg); /* Safari and Chrome */;text-align: center; position: absolute; left:-13%; top:10%;}
 .NonStock span{color: #fff;text-shadow: 1px 1px 2px #333;}
 /* Prevent the zooming to be canceled if hovering over a ribbon - Ribbon z-index:10 */
@@ -1003,7 +1014,7 @@ dl.priceInfo.promotionPrice dd.installments span.withMP, dl.priceInfo dd.install
 }
 
 .hideSemJurosMessage {
-	display:none;	
+	display:none;
 }
 
 .semjuros {
@@ -1011,7 +1022,7 @@ dl.priceInfo.promotionPrice dd.installments span.withMP, dl.priceInfo dd.install
 }
 
 .semjuros-container .ch-icon-credit-card {
-	vertical-align: middle;	
+	vertical-align: middle;
 	color: #468847;
 }
 
@@ -1045,51 +1056,51 @@ dl.priceInfo.promotionPrice dd.installments span.withMP, dl.priceInfo dd.install
 	.component.searchResults .component.item-gallery h2 {
 		min-height: inherit;
 	}
-	
+
 	.component.searchResults  li.row.one-promo {
 		height: inherit;
 	}
-	
+
 	.component.searchResults .component.item-gallery article.one-promo {
 		height: inherit;
 	}
-	
+
 	.component.searchResults  li.row.two-promos {
 		height: inherit;
 	}
-	
+
 	.component.searchResults .component.item-gallery article.two-promos {
 		height: inherit;
 	}
-	
+
 	.component.searchResults  li.row.three-promos {
 		height: inherit;
 	}
-	
+
 	.component.searchResults .component.item-gallery article.three-promos {
 		height: inherit;
 	}
-	
+
 	.component.itemGallery li.background.one-promo {
 		height: inherit;
 	}
-	
+
 	.component.itemGallery li.background.one-promo {
 		height: inherit;
 	}
-	
+
 	.component.itemGallery li.background.two-promos {
 		height: inherit;
 	}
-	
+
 	.component.itemGallery li.background.three-promos {
 		height: inherit;
 	}
-	
+
 	.component.itemGallery li.background article.two-promos {
 		height: inherit;
 	}
-	
+
 	.component.itemGallery li.background article.three-promos {
 		height: inherit;
 	}
