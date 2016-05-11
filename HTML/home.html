@@ -52,121 +52,123 @@
 					</div>
 				#end
 
-				<section class="component prominentProd prodCarousel ch-g1">
-					<div class="ch-carousel" data-max-items="$outstandingMaxItemsPerPage">
-						<ul>
-							#foreach ($outstandingItem in $outstandingItemList)
-								<li>
-									<article class="clearfix">
-										<h2>
-											<a title="$outstandingItem.title" href="$outstandingItem.url" class="title">$outstandingItem.title</a>
-										</h2>
-										<figure>
-											<a href="$outstandingItem.url" title="$outstandingItem.title" class="link">
-												#if( $outstandingItem.hasImages )
-													<img src="$outstandingItem.imageUrl" alt="$outstandingItem.title" title="$outstandingItem.title">
-												#else
-													<img alt="Sin Foto" title="Sin Foto" src="$outstandingItem.imageUrl"/>
-												#end
-											</a>
-											#if($outstandingItem.hasPromotion)
-												#if($outstandingItem.promotion.isDiscountTypePrice)
-													<p class="promoRibbonHomeStarred">
-														<span>$outstandingItem.promotion.discountPercent</span>&#37; <strong>OFF</strong>
-													</p>
-												#elseif ($outstandingItem.promotion.isDiscountTypeQuantity && "MX" != "BR")
-													<p class="promoRibbonHomeStarred">
-														<strong class="promoQtyBuy">$outstandingItem.promotion.quantityTake<span class="promoQtyBuyX">x</span>$outstandingItem.promotion.quantityBuy</strong>
-													</p>
-												#end
-											#end
-										</figure>
-
-										#set ($galleryItem = $outstandingItem)
-										#set ($galleryPromotion = $outstandingItem.promotion)
-
-										<dl id="homePrice" >
-											#if ($galleryItem.hasPriceWithDiscount())
-												<del class="ch-price price [ text-bold color-dark ]">
-											#end
-
-												<dd>
-													#if( $RegionalConfig.useDecimals($country) )
-														<span class="#if (!$galleryItem.hasPriceWithDiscount())ch-price#end price">
-															$CurrencyHelper.getCurrencySymbol("$shop.locale.country", "$galleryItem.currencyId") $galleryItem.getSplitPrice()[0]<span class="decimal">,</span><sup>$galleryItem.getSplitPrice()[1]</sup>
-														</span>
+				#if ( $outstandingItem )
+					<section class="component prominentProd prodCarousel ch-g1">
+						<div class="ch-carousel" data-max-items="$outstandingMaxItemsPerPage">
+							<ul>
+								#foreach ($outstandingItem in $outstandingItemList)
+									<li>
+										<article class="clearfix">
+											<h2>
+												<a title="$outstandingItem.title" href="$outstandingItem.url" class="title">$outstandingItem.title</a>
+											</h2>
+											<figure>
+												<a href="$outstandingItem.url" title="$outstandingItem.title" class="link">
+													#if( $outstandingItem.hasImages )
+														<img src="$outstandingItem.imageUrl" alt="$outstandingItem.title" title="$outstandingItem.title">
 													#else
-														<span class="#if (!$galleryItem.hasPriceWithDiscount())ch-price#end price">
-															$CurrencyHelper.getCurrencySymbol("$shop.locale.country", "$galleryItem.currencyId") $galleryItem.getSplitPrice()[0]
-														</span>
+														<img alt="Sin Foto" title="Sin Foto" src="$outstandingItem.imageUrl"/>
 													#end
-												</dd>
+												</a>
+												#if($outstandingItem.hasPromotion)
+													#if($outstandingItem.promotion.isDiscountTypePrice)
+														<p class="promoRibbonHomeStarred">
+															<span>$outstandingItem.promotion.discountPercent</span>&#37; <strong>OFF</strong>
+														</p>
+													#elseif ($outstandingItem.promotion.isDiscountTypeQuantity && "MX" != "BR")
+														<p class="promoRibbonHomeStarred">
+															<strong class="promoQtyBuy">$outstandingItem.promotion.quantityTake<span class="promoQtyBuyX">x</span>$outstandingItem.promotion.quantityBuy</strong>
+														</p>
+													#end
+												#end
+											</figure>
 
-											#if ($galleryItem.hasPriceWithDiscount())
-												</del>
-											#end
+											#set ($galleryItem = $outstandingItem)
+											#set ($galleryPromotion = $outstandingItem.promotion)
 
-											#if ($galleryItem.hasPriceWithDiscount())
+											<dl id="homePrice" >
 												#if ($galleryItem.hasPriceWithDiscount())
-													<ins>
+													<del class="ch-price price [ text-bold color-dark ]">
 												#end
 
-												<dd>
-													#if( $RegionalConfig.useDecimals($country) )
-														<span class="ch-price price [ text-bold color-dark ]">$CurrencyHelper.getCurrencySymbol("$shop.locale.country", "$galleryItem.currencyId") $galleryItem.getSplitPriceWithDiscount()[0]<span class="decimal">,</span><sup>$galleryItem.getSplitPriceWithDiscount()[1]</sup></span>
-													#else
-														<span class="ch-price price [ text-bold color-dark ]">$CurrencyHelper.getCurrencySymbol("$shop.locale.country", "$galleryItem.currencyId") $galleryItem.getSplitPriceWithDiscount()[0]</span>
-													#end
-												</dd>
+													<dd>
+														#if( $RegionalConfig.useDecimals($country) )
+															<span class="#if (!$galleryItem.hasPriceWithDiscount())ch-price#end price">
+																$CurrencyHelper.getCurrencySymbol("$shop.locale.country", "$galleryItem.currencyId") $galleryItem.getSplitPrice()[0]<span class="decimal">,</span><sup>$galleryItem.getSplitPrice()[1]</sup>
+															</span>
+														#else
+															<span class="#if (!$galleryItem.hasPriceWithDiscount())ch-price#end price">
+																$CurrencyHelper.getCurrencySymbol("$shop.locale.country", "$galleryItem.currencyId") $galleryItem.getSplitPrice()[0]
+															</span>
+														#end
+													</dd>
 
 												#if ($galleryItem.hasPriceWithDiscount())
-													</ins>
+													</del>
 												#end
+
+												#if ($galleryItem.hasPriceWithDiscount())
+													#if ($galleryItem.hasPriceWithDiscount())
+														<ins>
+													#end
+
+													<dd>
+														#if( $RegionalConfig.useDecimals($country) )
+															<span class="ch-price price [ text-bold color-dark ]">$CurrencyHelper.getCurrencySymbol("$shop.locale.country", "$galleryItem.currencyId") $galleryItem.getSplitPriceWithDiscount()[0]<span class="decimal">,</span><sup>$galleryItem.getSplitPriceWithDiscount()[1]</sup></span>
+														#else
+															<span class="ch-price price [ text-bold color-dark ]">$CurrencyHelper.getCurrencySymbol("$shop.locale.country", "$galleryItem.currencyId") $galleryItem.getSplitPriceWithDiscount()[0]</span>
+														#end
+													</dd>
+
+													#if ($galleryItem.hasPriceWithDiscount())
+														</ins>
+													#end
+												#end
+											</dl>
+
+											#set ($psjItem = $outstandingItem)
+											#if($psjItem && $psjItem.preferredInstallment.isHasZeroRate() && $psjItem.preferredInstallment.installments > 1)
+												<div class="semjuros-container">
+													#set($price = $PriceUtils.getInstallmentsPriceWithDeduction($shop.locale.country, $psjItem.currencyId, $psjItem.discountPrice, $psjItem.preferredInstallment.installments))
+													<i class="ch-icon-credit-card"></i>
+													$psjItem.preferredInstallment.installments
+													$i18n.tr("cuotas de")
+
+													#if($RegionalConfig.useDecimals($shop.locale.country))
+														<span class="ch-price price [ text-bold color-dark ]">
+															$CurrencyHelper.getCurrencySymbol($shop.locale)
+															$price[0]<span class="decimal">,</span><sup>$price[1]</sup>
+														</span>
+													#else
+														<span class="ch-price price [ text-bold color-dark ]">
+															$CurrencyHelper.getCurrencySymbol($shop.locale)
+															$price[0]
+														</span>
+													#end
+
+													<span id="semjuros-installment-text" class="semjuros ms-promo-text__lower"> $i18n.tr("Sin interés")</span>
+												</div>
 											#end
-										</dl>
+											#if($outstandingItem.hasPromotion && $outstandingItem.promotion.isDiscountTypeQuantity && "MX" == "BR")
+												<p class="promoTagMlb">Leve $outstandingItem.promotion.quantityTake pague $outstandingItem.promotion.quantityBuy</p>
+											#end
 
-										#set ($psjItem = $outstandingItem)
-										#if($psjItem && $psjItem.preferredInstallment.isHasZeroRate() && $psjItem.preferredInstallment.installments > 1)
-											<div class="semjuros-container">
-												#set($price = $PriceUtils.getInstallmentsPriceWithDeduction($shop.locale.country, $psjItem.currencyId, $psjItem.discountPrice, $psjItem.preferredInstallment.installments))
-												<i class="ch-icon-credit-card"></i>
-												$psjItem.preferredInstallment.installments
-												$i18n.tr("cuotas de")
-
-												#if($RegionalConfig.useDecimals($shop.locale.country))
-													<span class="ch-price price [ text-bold color-dark ]">
-														$CurrencyHelper.getCurrencySymbol($shop.locale)
-														$price[0]<span class="decimal">,</span><sup>$price[1]</sup>
+											#if($outstandingItem.hasPromotion && $outstandingItem.promotion.isFreeShipping && $outstandingItem.send)
+												<div class="promotionFreeShippingStarred">
+													<span class="arrow-left"></span>
+													<span class="freeShippingText">
+														Envío gratis
 													</span>
-												#else
-													<span class="ch-price price [ text-bold color-dark ]">
-														$CurrencyHelper.getCurrencySymbol($shop.locale)
-														$price[0]
-													</span>
-												#end
-
-												<span id="semjuros-installment-text" class="semjuros ms-promo-text__lower"> $i18n.tr("Sin interés")</span>
-											</div>
-										#end
-										#if($outstandingItem.hasPromotion && $outstandingItem.promotion.isDiscountTypeQuantity && "MX" == "BR")
-											<p class="promoTagMlb">Leve $outstandingItem.promotion.quantityTake pague $outstandingItem.promotion.quantityBuy</p>
-										#end
-
-										#if($outstandingItem.hasPromotion && $outstandingItem.promotion.isFreeShipping && $outstandingItem.send)
-											<div class="promotionFreeShippingStarred">
-												<span class="arrow-left"></span>
-												<span class="freeShippingText">
-													Envío gratis
-												</span>
-											</div>
-										#end
-										<div class="itemFeatures">$outstandingItem.subtitle</div>
-									</article>
-								</li>
-							#end
-						</ul>
-					</div>
-				</section>
+												</div>
+											#end
+											<div class="itemFeatures">$outstandingItem.subtitle</div>
+										</article>
+									</li>
+								#end
+							</ul>
+						</div>
+					</section>
+				#end
 
 				<div class="[ component ][ newsProduct ][ clearfix ]">
 					<div class="[ container ]">
