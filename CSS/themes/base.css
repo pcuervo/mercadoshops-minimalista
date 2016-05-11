@@ -968,8 +968,8 @@ aside .component.publicidad.v1.pt a{background: url(//static.mercadoshops.com/st
 .sharesButtons li{display:inline;}
 .sharesButtons{margin-right: 10px}
 .vipSocials span, .sharesButtons{float:left;}
-.sharesButtons a.ch-btn.ch-btn-small.btn-grey,.btn-grey{padding:0.258em 0.7em;border:1px solid #9C9696;background: -webkit-linear-gradient(#C8C8C8, #9C9696);background: -moz-linear-gradient(#C8C8C8, #9C9696);background: -o-linear-gradient(#C8C8C8, #9C9696);background: linear-gradient(#C8C8C8, #9C9696);	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C8C8C8', endColorstr='#9C9696',GradientType=0 ); /* IE6-8 */box-shadow: 0 1px #FFF inset;color:#333;}
-.sharesButtons a.ch-btn.ch-btn-small.btn-grey i{font-size: 10px}
+/*.sharesButtons a.ch-btn.ch-btn-small.btn-grey,.btn-grey{padding:0.258em 0.7em;border:1px solid #9C9696;background: -webkit-linear-gradient(#C8C8C8, #9C9696);background: -moz-linear-gradient(#C8C8C8, #9C9696);background: -o-linear-gradient(#C8C8C8, #9C9696);background: linear-gradient(#C8C8C8, #9C9696);	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C8C8C8', endColorstr='#9C9696',GradientType=0 ); IE6-8 box-shadow: 0 1px #FFF inset;color:#333;}
+.sharesButtons a.ch-btn.ch-btn-small.btn-grey i{font-size: 10px}*/
 a.ch-btn.ch-btn-small.btn-grey:hover{text-decoration: none}
 .textShare{display: block;padding: 7px 4px 0 0;}
 .vipSocials span#fb-like-button{padding-top: 4px}
