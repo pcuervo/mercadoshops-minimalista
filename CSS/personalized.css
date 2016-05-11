@@ -4029,8 +4029,11 @@ button.close {
 @media (min-width: 768px) {
   .padding--left--small--sm { padding-left: 6px; }
   .padding--right--small--sm { padding-right: 6px; }
+  .padding--sides--small--sm { padding-left: 12px; }
 }
-
+@media (min-width: 992px) {
+  .padding--sides--md { padding-left: 24px; padding-right: 24px; }
+}
 .no-margin { margin: 0 !important; }
 
 .margin-auto { margin: auto; }
