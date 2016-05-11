@@ -1,15 +1,15 @@
 <header>
 	<!-- Mobile menu Pequeño Cuervo -->
 	<div class="[ bg-dark ][ visible-xs ][ relative ]">
-		<button class="[ js-mobile-nav-opener ]">
+		<button class="[ btn-mobile-menu ][ js-mobile-nav-opener ]">
 			<span class="[ icon-menu-1 icon-small ][ color-light ]"></span>
 		</button>
 		<div class="[ mobile-nav ][ js-mobile-nav ][ width-100 ][ absolute ]">
-			<button class="[ js-mobile-nav-closer ]">
-				<span class="[ icon-close ][ color-dark ]"></span>
+			<button class="[ btn-close ][ pull-left ][ js-mobile-nav-closer ]">
+				<span class="[ icon-close icon-small ][ color-dark ]"></span>
 			</button>
 			<a class="[ text-center text-uppercase ][ pull-right ]" href='index.html'>
-				<i class="[ icon-shop icon-small ]"></i>
+				<i class="[ icon-shop icon-medium ]"></i>
 			</a>
 
 			<form class="[ inline-flex ][ input-group ][ padding--sides ][ margin-top-bottom ]" id="searchForm" method="get" action="/jm/com.mercadoshops.web.frontend.page.PageController">
@@ -22,7 +22,7 @@
 				</span>
 			</form><!-- /search -->
 
-			<nav class="[ text-bold ]">
+			<nav class="[ text-bold ][ nav-menu-mobile ]">
 				#foreach( $menuItem in $menuItemList )
 					<a class="[ text-center text-uppercase ][ block ][ padding ][ border-bottom-primary-darken ]" title="$menuItem.name" href='$menuItem.target'>$menuItem.name</a>
 				#end
@@ -31,6 +31,7 @@
 					<div class="[ sub-menu-wrapper ]">
 						<a class="[ text-center text-uppercase ][ block ][ padding ][ border-bottom-primary-darken ][ sub-menu-opener js-sub-menu-opener ]">$categoryLevel1.name</a>
 						#if($categoryLevel1.hasSubCategories)
+							<span class="[ icon-down-open ]"></span>
 							<div class="[ sub-menu ]">
 								#foreach($categoryLevel2 in $categoryLevel1.subCategories)
 									<a class="[ text-center text-uppercase ][ block ][ padding--small ][ sub-menu-opener js-sub-menu-opener ]" href="$categoryLevel2.url">$categoryLevel2.name</a>
