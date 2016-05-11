@@ -972,8 +972,8 @@ aside .component.publicidad.v1.pt a{background: url(//static.mercadoshops.com/st
 .sharesButtons li{display:inline;}
 .sharesButtons{margin-right: 10px}
 .vipSocials span, .sharesButtons{float:left;}
-.sharesButtons a.ch-btn.ch-btn-small.btn-grey,.btn-grey{padding:0.258em 0.7em;border:1px solid #9C9696;background: -webkit-linear-gradient(#C8C8C8, #9C9696);background: -moz-linear-gradient(#C8C8C8, #9C9696);background: -o-linear-gradient(#C8C8C8, #9C9696);background: linear-gradient(#C8C8C8, #9C9696);	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C8C8C8', endColorstr='#9C9696',GradientType=0 ); /* IE6-8 */box-shadow: 0 1px #FFF inset;color:#333;}
-.sharesButtons a.ch-btn.ch-btn-small.btn-grey i{font-size: 10px}
+/*.sharesButtons a.ch-btn.ch-btn-small.btn-grey,.btn-grey{padding:0.258em 0.7em;border:1px solid #9C9696;background: -webkit-linear-gradient(#C8C8C8, #9C9696);background: -moz-linear-gradient(#C8C8C8, #9C9696);background: -o-linear-gradient(#C8C8C8, #9C9696);background: linear-gradient(#C8C8C8, #9C9696);	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C8C8C8', endColorstr='#9C9696',GradientType=0 ); IE6-8 box-shadow: 0 1px #FFF inset;color:#333;}
+.sharesButtons a.ch-btn.ch-btn-small.btn-grey i{font-size: 10px}*/
 a.ch-btn.ch-btn-small.btn-grey:hover{text-decoration: none}
 .textShare{display: block;padding: 7px 4px 0 0;}
 .vipSocials span#fb-like-button{padding-top: 4px}
@@ -983,7 +983,7 @@ a.ch-btn.ch-btn-small.btn-grey:hover{text-decoration: none}
 .ch-icon-money-sign, .customVipPaymethods, .PaymentAll{display: inline;}
 /*.customVipPaymethods{display: inline-block;text-overflow: ellipsis;overflow: hidden;max-width: 260px;white-space: nowrap;}*/
 .VipLastOnes{width: 62%; height:10%; background-color:#FDD062; z-index:10; padding: 10px; font-size:15px; transform:rotate(35deg);-ms-transform:rotate(35deg); /* IE 9 */-webkit-transform:rotate(35deg); /* Safari and Chrome */;text-align: center; position: absolute; right:-15%; top:10%;}
-.VipLastOnes span{color: #000; font-weight: bold; font-family: "proxima-nova"}
+.VipLastOnes span{color: #000; font-weight: bold; font-family: 'Open Sans', sans-serif;}
 .NonStock{width: 62%; height: 4%; background-color:#B9042F; z-index:10; padding: 10px; font-size:13px; transform:rotate(-35deg);-ms-transform:rotate(-35deg); /* IE 9 */-webkit-transform:rotate(-35deg); /* Safari and Chrome */;text-align: center; position: absolute; left:-13%; top:10%;}
 .NonStock span{color: #fff;text-shadow: 1px 1px 2px #333;}
 /* Prevent the zooming to be canceled if hovering over a ribbon - Ribbon z-index:10 */
