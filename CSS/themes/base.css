@@ -435,9 +435,9 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 
 	/* Until this point only products and qty columns will be visible */
 	.component.shipTable .thead .deleteRow{display: none;}
-	.component.shipTable .thead li {padding-left: 15px;}
+	.component.shipTable .thead li {padding-left: 50px;}
 
-	.component.shipTable .tbody li.colTitulo {float:left; display:block; width:46%; padding-left: 50px}
+	.component.shipTable .tbody li.colTitulo {float:left; display:block; width:46%; padding-left: 4px}
 	.component.shipTable .tbody .colCant {width:22%; float:left;text-align: right}
 	.component.shipTable .tbody .colPrice {position:absolute; top:0; right:0;}
 	.component.shipTable .tbody .colPrice.cart-item-price {width: 23%;text-align: right;}
