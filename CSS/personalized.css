@@ -2297,6 +2297,7 @@ textarea.input-group-sm > .form-control,, textarea.input-group-sm > .input-group
 
 .nav-tabs .dropdown-menu { border-top-right-radius: 0; border-top-left-radius: 0; margin-top: -1px; }
 
+.nav-menu-mobile a{ color: #000; }
 .nav-menu-mobile a:hover{
   color: #fff;
   background: #fcb916;

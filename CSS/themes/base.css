@@ -696,7 +696,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.ch-pagination{text-align:center;clear:both; display:block;}
 .component.ch-pagination li{display:inline;}
 .component.ch-pagination li.current{ padding: 5px 8px; background-color: #FDD062; font-family: 'BenchNine', sans-serif;font-size: 17px; letter-spacing: 1px; }
-.component.ch-pagination li a { border: 1px solid #FDD062; font-family: 'BenchNine', sans-serif; letter-spacing: 1px; font-size: 17px; }
+.component.ch-pagination li a { border: 1px solid #FDD062; font-family: 'BenchNine', sans-serif; letter-spacing: 1px; font-size: 17px; color: #000; text-decoration: none; }
 .component.orderList {float:right;}
 .component.orderList dt,
 .component.orderList dd{border-left: 1px solid #CECECE;float: left;margin-left: 10px;padding-left: 10px;}
@@ -1257,9 +1257,7 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 .promoRibbonHome, .promoRibbonHomeStarred {
 	padding: 7px 20px;
 	background-color: #D0021B;
-	position: absolute;
-	bottom: -20px;
-	left: 1px;
+	position: absolute; top: 0px; left: 0px;
 	text-align: center;
 	color: #fff;
 	font-size: 12px;
