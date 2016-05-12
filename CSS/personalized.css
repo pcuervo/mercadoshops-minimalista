@@ -76,10 +76,6 @@ a:focus {
   outline-offset: -2px;
 }
 
-a:visited {
-  color: #ccc041;
-}
-
 hr {
   margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 2px solid #000;
 }
@@ -122,6 +118,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
@@ -1263,7 +1260,6 @@ textarea.input-lg, select[multiple].input-lg { height: auto; }
     font-size: 12px;
   }
   #frmContact.ch-form #msgContent,
-  .ch-form-row input{ width: 60%; }
 }
 
 select {
@@ -1271,14 +1267,17 @@ select {
   border-radius: 20px;
 }
 
-/* chico form Pcuervo */
-.ch-form{
-  padding: 20px;
-  border-radius: 20px;
-  background:#000;
+.ch-form{ }
+
+.ch-form label{
+  width: 100%;
+  color: #000;
+  text-align: left;
 }
 
-.ch-form .ch-form-required label{ color: #fff; }
+.ch-form-row input, .ch-form-row textarea{
+ width: 100%;
+}
 
 .component.formContact, .section{ display: inline-block; }
 
