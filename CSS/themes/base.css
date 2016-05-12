@@ -1473,6 +1473,7 @@ li.itemFeatures,div.itemFeatures{color:#A7A7A7;font-size: 11px}
 
 .content-list img{
 	vertical-align: middle;
+	width: 100%;
 }
 .choose-desc .var-val {display: inline; margin-left: 10px;}
 /*Vip Variations*/
