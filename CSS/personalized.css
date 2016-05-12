@@ -1291,7 +1291,8 @@ select {
 #cartForm.ch-form #total-to-pay.ch-price.price{
   font-size: 1.5em;
   color: #666 !important;
-  margin-left: 15px;
+  display: block;
+  margin: 20px;
 }
 
 .component.formContact .title-component{
