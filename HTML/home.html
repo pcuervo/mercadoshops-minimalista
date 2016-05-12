@@ -22,10 +22,9 @@
 						</div>
 					</div>
 				#end
-
 				<!-- Carousel -->
 				#if($showContent)
-					<div class="box-content-list ch-g1 [ margin-bottom--large ]">
+					<div class="box-content-list ch-g1">
 						#if($showContentImage)
 							<div  class="ch-carousel" data-max-items="1">
 								<ul class="content-list">
@@ -55,16 +54,17 @@
 				#end
 
 				#if ( $outstandingItemList )
+					<h2 class="[ text-center ]">Productos destacados</h2>
+					<div class="[ clear ]"></div>
 					<section class="[ container ] component prominentProd prodCarousel ch-g1">
-						<h2 class="[ text-center text-uppercase text-bold ][ margin-bottom ]">Productos destacados</h2>
 						<div class="ch-carousel" data-max-items="$outstandingMaxItemsPerPage">
 							<ul>
 								#foreach ($outstandingItem in $outstandingItemList)
 									<li>
 										<article class="clearfix">
-											<h3>
+											<h2>
 												<a title="$outstandingItem.title" href="$outstandingItem.url" class="title">$outstandingItem.title</a>
-											</h3>
+											</h2>
 											<figure>
 												<a href="$outstandingItem.url" title="$outstandingItem.title" class="link">
 													#if( $outstandingItem.hasImages )
@@ -193,14 +193,17 @@
 
 				</div>
 
-				<!-- Galría -->
+				<!-- Productos destacados -->
 				<div class="[ component itemGallery clearfix ]">
 					<div class="[ container ]">
-						<h2 class="[ text-center text-uppercase ][ margin-bottom ][ text-bold ]">Galería</h2>
+						<h2 class="[ text-center text-uppercase ][ margin-bottom ][ text-bold ]">Productos destacados</h2>
 						<ul class="[ item-gallery ][ text-center ]">
 							#foreach ($galleryItem in $galleryItemList)
-								<li class="$promotionCssClass">
+								<li class="background $promotionCssClass">
 									<article class="clearfix $promotionCssClass">
+										<h3>
+											<a href="$galleryItem.url" title="$galleryItem.title" class="title">$galleryItem.title</a>
+										</h3>
 										<ul class="itemData clearfix">
 											<li>
 												<figure class="background">
@@ -224,15 +227,11 @@
 												</figure>
 											</li>
 
-											<h3>
-											    <a href="$galleryItem.url" title="$galleryItem.title" class="title">$galleryItem.title</a>
-											</h3>
-
 											#set ($galleryPromotion = $galleryItem.promotion)
 
 											<dl id="homePrice" >
 												#if ($galleryItem.hasPriceWithDiscount())
-													<del class="ch-price price [ text-bold color-dark ]">
+													<del class="ch-price price [ text-bold color-dark ] [ color-dark ] [ ]">
 												#end
 												<dd>
 													#if( $RegionalConfig.useDecimals($country) )
