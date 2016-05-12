@@ -68,7 +68,7 @@
 .component.searchResults .item-list .lastProd{top:0px;right: 0px;z-index:1000;position: absolute;width: 65px;height: 64px;text-indent: -9999px;background-image: url("//static.mercadoshops.com/static/images/themes/basic/sprite.png");background-repeat: no-repeat;}
 .component.searchResults .component.item-gallery {overflow:hidden;width:auto;border-top:1px solid #eaeaea;padding-top:10px;margin-right:-4px;}
 .component.searchResults .component.item-gallery .item-gallery{width:102%}
-.component.searchResults .component.item-gallery h2{max-height:3.6em; overflow: hidden;display: block;line-height: 1.2em;margin: 35px 10px 5px 10px;}
+.component.searchResults .component.item-gallery h2{max-height:3.6em; overflow: hidden;display: block;line-height: 1.2em;margin: 15px 10px 5px 10px;}
 .component.searchResults .component.item-gallery .itemPrice {top:0px;}
 .component.searchResults .component.item-gallery figure a img{max-width:95%;}
 .component.searchResults .component.item-gallery img {max-width:100%}
