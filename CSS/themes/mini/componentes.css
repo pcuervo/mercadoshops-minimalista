@@ -26,7 +26,7 @@
 /*Product Carousel
 */
 .component.prodCarousel article h2{float:left;width:370px;font-size:95%;line-height:130%;font-weight:bold;margin-bottom:10px;}
-.component.prodCarousel .ch-price {font-size:150%;float:left;clear:left;}
+.component.prodCarousel .ch-price {font-size:150%;}
 .component.prodCarousel .itemFeatures {line-height:100%;margin-bottom:10px;float:left;word-wrap:break-word;width:370px;clear:left;}
 .component.prodCarousel li{height:400px !important;}
 
@@ -243,7 +243,7 @@
 /* Stared
 */
 .component.prominentProd {padding:0px;width:100%;margin:0 auto;border-bottom: 1px dotted #CCC;}
-.component.prominentProd h3{float:left;font-size:200% !important; line-height:1em; font-weight:bold; margin-bottom:30px;}
+.component.prominentProd h3{ font-size:200% !important; line-height:1em;  }
 .component.prominentProd h3 a{display:block;}
 .component.prominentProd figure{position:relative; width:50%;}
 .component.prominentProd .ch-price {font-weight:bold;margin-bottom: 20px;}

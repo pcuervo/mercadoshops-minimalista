@@ -796,7 +796,7 @@ dl.component.orderList { margin-bottom: 0px; }
 .component.prominentProd h2{float:none;margin-bottom:30px;}
 .component.prominentProd figure{float:right;}
 .component.prominentProd figure img{max-width:100%;}
-.component.prominentProd .ch-price {float:left;clear:left;font-size:180%;margin-bottom:10px;}
+.component.prominentProd .ch-price {font-size:180%;margin-bottom:10px;}
 .component.prominentProd .itemData {display:inline; float:left; width:42%; }
 .component.prominentProd .ch-carousel-list li { /*ChicoUi carousel needs width & height */width:720px;height: 390px;}
 
