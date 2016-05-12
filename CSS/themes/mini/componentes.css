@@ -73,9 +73,9 @@
 .component.searchResults .component.item-gallery figure a img{max-width:95%;}
 .component.searchResults .component.item-gallery img {max-width:100%}
 
-.component.searchResults  li.row.one-promo {
-	height: 390px;
-}
+/*.component.searchResults  li.row.one-promo {
+	height: 320px;
+}*/
 
 .component.searchResults .component.item-gallery article.one-promo {
 	height: 140px;
