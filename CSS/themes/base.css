@@ -1008,7 +1008,7 @@ dl.priceInfo.promotionPrice span.ch-price.price{font-size: 23px}
 dl.priceInfo.promotionPrice dd.installments span.QtyPayment{color:#777;}
 /* Added by Diego */
 #homePrice del dd {text-decoration: inherit;}
-#homePrice ins span.ch-price.price {color:#009933;}
+#homePrice ins span.ch-price.price {color:#0D71BA;}
 
 /* This replaces the wording 'con mercado pago' with the logo */
 dl.priceInfo.promotionPrice dd.installments span.withMP, dl.priceInfo dd.installments span.withMP{
