@@ -166,7 +166,8 @@ html*#widget .code textarea { /*Hack IE7-*/height: 170px; width: 350px;}
 .prev-title {font-size: 21px;color: #333;}
 .prev-subt {font-size: 13px;color: #666;margin-top: 5px;}
 .prev-controls {float: right;padding-right: 30px;margin-top: 6px;}
-.prev-btn {background-position: 0 -178px;background-color: #2F3B85;font-size: 18px;background-image: url(//static.mercadoshops.com/static/images/btnGradients.gif);background-repeat: repeat-x;border: 1px solid #2F3B85;cursor: pointer;color: white;font-family: Arial, Helvetica, sans-serif;overflow: visible;padding: 3px 9px;border-radius: 3px;}
+.prev-btn {background-position: 0 -178px;background-color: #2F3B85;font-size: 18px;background-image: url(//static.mercadoshops.com/static/images/btnGradients.gif);background-repeat: repeat-x;border: 1px solid #2F3B85;cursor: pointer;color: white;ƒ
+    , sans-serif;overflow: visible;padding: 3px 9px;border-radius: 3px;}
 .prev-link {color: #0099FF;font-size: 14px;}
 
 /*
@@ -693,8 +694,8 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.categoriesPath .home a{text-indent:-9999px;display:block;width:16px; height:16px;}
 .component.ch-pagination{text-align:center;clear:both; display:block;}
 .component.ch-pagination li{display:inline;}
-.component.ch-pagination li.current{ padding: 5px 8px; background-color: #FDD062;}
-.component.ch-pagination li a { border: 1px solid #FDD062; }
+.component.ch-pagination li.current{ padding: 5px 8px; background-color: #FDD062; font-family: 'BenchNine', sans-serif;font-size: 17px; letter-spacing: 1px; }
+.component.ch-pagination li a { border: 1px solid #FDD062; font-family: 'BenchNine', sans-serif; letter-spacing: 1px; font-size: 17px; }
 .component.orderList {float:right;}
 .component.orderList dt,
 .component.orderList dd{border-left: 1px solid #CECECE;float: left;margin-left: 10px;padding-left: 10px;}
@@ -1050,8 +1051,6 @@ ul.MPVipPaymethods a.ch-points-ltrt#allPayments{
  font-size: 16px;
  font-weight: bold;
 }
-
-.component.searchResults .background { border-bottom: 1px solid #000; }
 
 /*.component.itemGallery .item-gallery h2 {
 	min-height: 2.6em;
