@@ -877,7 +877,7 @@ aside .component.publicidad.v1.pt a{background: url(//static.mercadoshops.com/st
 /*
  * VIP Picture Viewer (aka Producto Page image viewer)
 */
-.component.picviewer{margin:20px auto;width:auto;overflow:hidden;position: relative;min-height: 440px}
+.component.picviewer{margin:20px auto;width:auto;overflow:hidden;position: relative;/*min-height: 440px*/}
 .component.picviewer ul {height:auto;}
 .component.picviewer figure,
 .component.picviewer li {text-align:center;}

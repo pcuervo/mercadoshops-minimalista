@@ -4182,7 +4182,7 @@ button.close {
 
 header {
   position: relative;
-  z-index: 1;
+  z-index: 1000;
   height: 180px;
 }
 
