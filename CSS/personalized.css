@@ -1268,14 +1268,18 @@ select {
 }
 
 /* chico form Pcuervo */
-.ch-form{
-  padding: 20px;
-  background:#000;
-}
+.ch-form{ padding: 20px; }
 
 .ch-form .ch-form-required label{ color: #fff; }
 
 .component.formContact, .section{ display: inline-block; }
+
+#cartForm.ch-form{ background-color: #EAEAEA}
+#cartForm.ch-form #total-to-pay.ch-price.price{ 
+  font-size: 1.5em;
+  color: #666 !important;
+  margin-left: 15px;
+}
 
 #frmContact.ch-form #msgContent { width: inherit; }
 
