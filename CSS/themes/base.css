@@ -353,7 +353,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.shipTable #CEP-calc {margin-left: 10px;width: 80px;text-align: left;}
 .component.shipTable #cep-label {background-color:#eaeaea;margin-left:0px !important;width:80px !important;padding:5px 4px;text-align:left;}
 .component.shipTable .carritoresp {width:100%;}
-.component.shipTable .filas {display:block; clear:both;}
+.component.shipTable .filas {display:block; clear:both; margin-top: 10px;}
 .component.shipTable .thead {/*border-radius:5px;*/background-color: #FDD062;}
 .component.shipTable .thead li {font-weight:bold;min-height:20px}
 .component.shipTable .thead li, .component.shipTable .tbody li {float:left;display:inline-block;padding:1%;position:relative;}
@@ -420,6 +420,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 		font-size: 12px;
 		width: 65px;
 		margin: 10px 0;
+		color: #D0021B;
 	}
 
 	a.mobile-delete-link {
@@ -441,7 +442,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 	.component.shipTable .tbody .colCant {width:22%; float:left;text-align: right}
 	.component.shipTable .tbody .colPrice {position:absolute; top:0; right:0;}
 	.component.shipTable .tbody .colPrice.cart-item-price {width: 23%;text-align: right;}
-	.component.shipTable .tfoot .colTotalPrice {padding:1%;}
+	.component.shipTable .tfoot .colTotalPrice {padding:1%; text-align: center }
 	.component.shipTable .tbody li.itemDesc {float:left; width:80%;}
 
 	.component.shipTable ul.order-price-detail.subtotal {margin-top: 30px;}
