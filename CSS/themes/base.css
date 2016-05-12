@@ -1212,8 +1212,8 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 .promoRibbonMlb strong.promoMlb{font-size: 17px}
 .promoRibbonMlb span.promopague{display:inline-block; padding-top: 0;}
 .promoRibbonMlb span.promoLeve{padding-top: 31px;display: inline-block;}
-.promoRibbon span{padding:25px 0 0 0;display:inline-block;font-size: 20px}
-.promoRibbon strong{padding:0 10px 5px 10px; display:block;}
+.promoRibbon span{padding:0;display:inline-block;font-size: 20px}
+.promoRibbon strong{padding:0; display:inline-block;}
 .promoRibbon strong.promoQtyBuy{
 	padding: 0px;
 	display: block;
