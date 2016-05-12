@@ -1193,7 +1193,7 @@ div.promotionFreeShippingStarred span.freeShippingText {
 	display: inline-block;
 }
 
-.promoRibbon, .promoRibbonMlb {background-color: #D0021B; padding: 7px 20px; position: absolute;bottom: 4px;left: 1px;text-align: center;color: #fff;font-size: 14px;}
+.promoRibbon, .promoRibbonMlb {background-color: #D0021B; padding: 10px 25px; position: absolute;bottom: 4px;left: 1px;text-align: center;color: #fff;font-size: 14px;}
 .promoTagMlb{width: 114px;color: #fff;clear: left;background: url("//static.mercadoshops.com/static/images/promoMlbTag.png") no-repeat scroll 0 0;padding: 0 0 0 22px;font-size: 11px;line-height: 17px;font-weight: normal}
 .paymentsMP {margin-top: 15px}
 .paymentsMP dl, paymentsMP ul {
@@ -1224,7 +1224,7 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 	/*width: 50px;
 	height: 60px;
 	background: url("//static.mercadoshops.com/static/images/promoImageTagCart.png") no-repeat scroll 0 0;*/
-	padding: 7px 20px;
+	padding: 10px 25px;
 	background-color: #D0021B;
 	position: absolute;
 	bottom: -5px;
@@ -1255,7 +1255,7 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 }
 .promoRibbonCart span.promoQtyBuyX, .promoRibbonSearchResult span.promoQtyBuyX, .promoRibbonNews span.promoQtyBuyX{font-size: 11px; padding:0;}
 .promoRibbonHome, .promoRibbonHomeStarred {
-	padding: 7px 20px;
+	padding: 10px 25px;
 	background-color: #D0021B;
 	position: absolute;
 	bottom: -20px;
