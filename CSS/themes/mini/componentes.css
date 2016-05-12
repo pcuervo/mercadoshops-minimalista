@@ -117,14 +117,17 @@
 /* Item Gallery
 */
 .component.itemGallery {overflow:hidden;clear:both; margin:20px 0;}
-.component.itemGallery .item-gallery{width:102%}
+.component.itemGallery .item-gallery:after{
+	content: " ";
+	display: table;
+	clear: both;
+}
 .component.itemGallery h2{margin: 0 20px 10px 10px;max-height: 4.1em;overflow: hidden;line-height: 1em;/*font-size: 1.2em*/}
 .component.itemGallery li{float:left; width:25%;}
-.component.itemGallery li.background{background:none; height:350px;overflow:hidden;}
 .component.itemGallery .itemData li.ch-price {font-size:200%;padding:0;margin: 0 10px 10px 10px}
 .component.itemGallery .itemData li{float:none; width:auto; border:none; margin:0 0 5px 0;padding:0px;}
-.component.itemGallery article{padding:195px 0px 0 0px;position:relative;min-height: 100px}
-.component.itemGallery figure{position:absolute; top:5px;text-align:center;width:100%;}
+.component.itemGallery article{position:relative;min-height: 100px}
+.component.itemGallery figure{text-align:center;width:100%;}
 .component.itemGallery figure.background {background:none;}
 .component.itemGallery figure a{display:block;}
 .component.itemGallery figure a img{max-width:95%;}
@@ -135,19 +138,6 @@
 .component.itemGallery .lastProd.last-VE {background-position: 0 -107px;}
 .component.itemGallery .lastProd.last-BR {background-position: 0 -172px;}
 .component.itemGallery .lastProd{top: -6px;right: 20px;z-index:1000;position: absolute;width: 65px;height: 64px;text-indent: -9999px;background-image: url("//static.mercadoshops.com/static/images/themes/basic/sprite.png");background-repeat: no-repeat;}
-
-
-.component.itemGallery li.background.one-promo {
-	height: 350px;
-}
-
-.component.itemGallery li.background.two-promos {
-	height: 310px;
-}
-
-.component.itemGallery li.background.three-promos {
-	height: 340px;
-}
 
 @media screen and (max-width:1024px){
 	.component.itemGallery li{width:33%;}
@@ -252,8 +242,8 @@
 /* Stared
 */
 .component.prominentProd {padding:0px;width:100%;margin:0 auto;border-bottom: 1px dotted #CCC;}
-.component.prominentProd h2{float:left;font-size:200% !important; line-height:1em; font-weight:bold; margin-bottom:30px;}
-.component.prominentProd h2 a{display:block;}
+.component.prominentProd h3{float:left;font-size:200% !important; line-height:1em; font-weight:bold; margin-bottom:30px;}
+.component.prominentProd h3 a{display:block;}
 .component.prominentProd figure{position:relative; width:50%;}
 .component.prominentProd .ch-price {font-weight:bold;margin-bottom: 20px;}
 .component.prominentProd .ch-carousel-list li {width:740px;}
