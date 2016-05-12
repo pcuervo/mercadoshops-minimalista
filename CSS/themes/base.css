@@ -1317,7 +1317,8 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
     .component.prodCarousel p.promoRibbonHomeStarred {background: url("//static.mercadoshops.com/static/images/promoImageTagCartFlip.png") no-repeat scroll -1px 0;left:140px;}
 }
 article.component.vip header{ height: 120px; }
-article.component.vip header{ height: 120px; }
+article.component.vip label.ch-select-trigger.ch-user-no-select.ch-points-ltlb{ margin-left: 5%;
+ }
 
 #frmContact.ch-form .ch-actions{margin:0; text-align:center;}
 #frmContact.ch-form #msgContent {width:275px; }
