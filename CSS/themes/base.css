@@ -1524,7 +1524,7 @@ p.ch-form-row.ch-form-required label{width:130px}
 
 /* Added for meli quota select, rompe variaciones */
 .installmentsMenu, .installmentsContent {background:#FFF;cursor:pointer;}
-.installmentsMenu {margin-top:-5px;padding:2px 13px 2px 4px;display:inline-block;line-height: 25px;border: 1px solid #ededed;border-radius: 3px;margin-right:-10px;}
+.installmentsMenu {/*margin-top:-5px;*/padding:2px 13px 2px 4px;display:inline-block;line-height: 25px;border: 1px solid #ededed;border-radius: 3px;/*margin-right:-10px;*/margin: 5px 20px;}
 .installmentsMenu label {cursor:pointer !important;width:100% !important;display:block;padding-right:10px;z-index:1;position:relative;}
 .installmentsContent {border-radius: 5px;box-shadow: 0 0 5px #999;min-width: 115px;z-index: 998!important;}
 .installmentsContent li{cursor: pointer;padding: 3px 8px 2px;}
