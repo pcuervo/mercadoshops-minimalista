@@ -658,7 +658,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 	.component.searchResults .item-list .itemPrice {position:static; text-align:left;}
 }
 .component.searchResults .rowsWrapper {clear:both; width:100% ;overflow:hidden;}
-.component.searchResults .component.item-gallery li{float:left;padding:0 20px;height:360px; overflow:hidden;width:25%;text-align: center;}
+.component.searchResults .component.item-gallery li{float:left;padding:0 20px;height:400px; overflow:hidden;width:25%;text-align: center;}
 .component.searchResults .component.item-gallery .itemPrice {position:relative;margin-left: 10px}
 .component.searchResults .component.item-gallery .itemPrice li{float:none; width:auto; border:none; margin:0 10px 10px 10px;padding:0px;height:auto;}
 .component.searchResults .component.item-gallery article{padding:190px 0px 0 0px;position:relative;border-right:1px solid #eaeaea;border-bottom:1px solid #eaeaea;height:134px;}
@@ -696,7 +696,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.ch-pagination{text-align:center;clear:both; display:block;}
 .component.ch-pagination li{display:inline;}
 .component.ch-pagination li.current{ padding: 5px 8px; background-color: #FDD062; font-family: 'BenchNine', sans-serif;font-size: 17px; letter-spacing: 1px; }
-.component.ch-pagination li a { border: 1px solid #FDD062; font-family: 'BenchNine', sans-serif; letter-spacing: 1px; font-size: 17px; }
+.component.ch-pagination li a { border: 1px solid #FDD062; font-family: 'BenchNine', sans-serif; letter-spacing: 1px; font-size: 17px; color: #000; text-decoration: none; }
 .component.orderList {float:right;}
 .component.orderList dt,
 .component.orderList dd{border-left: 1px solid #CECECE;float: left;margin-left: 10px;padding-left: 10px;}
@@ -793,7 +793,6 @@ dl.component.orderList { margin-bottom: 0px; }
 .component.prominentProd .ch-carousel-pages {bottom:10px;}
 .component.prominentProd article {padding:20px;background-color:#fff;}/*aplies to a non-carousel items*/
 .component.prominentProd .ch-carousel article {padding:0;} /*aplies to carousel articles*/
-.component.prominentProd h3 {display:none;}
 .component.prominentProd nav{clear:both;}
 .component.prominentProd h2{float:none;margin-bottom:30px;}
 .component.prominentProd figure{float:right;}
@@ -1193,7 +1192,7 @@ div.promotionFreeShippingStarred span.freeShippingText {
 	display: inline-block;
 }
 
-.promoRibbon, .promoRibbonMlb {background-color: #D0021B; padding: 7px 20px; position: absolute;bottom: 4px;left: 1px;text-align: center;color: #fff;font-size: 14px;}
+.promoRibbon, .promoRibbonMlb {background-color: #D0021B; padding: 10px 25px; position: absolute;bottom: 4px;left: 1px;text-align: center;color: #fff;font-size: 14px;}
 .promoTagMlb{width: 114px;color: #fff;clear: left;background: url("//static.mercadoshops.com/static/images/promoMlbTag.png") no-repeat scroll 0 0;padding: 0 0 0 22px;font-size: 11px;line-height: 17px;font-weight: normal}
 .paymentsMP {margin-top: 15px}
 .paymentsMP dl, paymentsMP ul {
@@ -1224,7 +1223,7 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 	/*width: 50px;
 	height: 60px;
 	background: url("//static.mercadoshops.com/static/images/promoImageTagCart.png") no-repeat scroll 0 0;*/
-	padding: 7px 20px;
+	padding: 10px 25px;
 	background-color: #D0021B;
 	position: absolute;
 	bottom: -5px;
@@ -1240,8 +1239,8 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 	left:-2px;
 }
 .item-gallery .promoRibbonSearchResult {
-	bottom: -11px;
-	left: 26px;
+	bottom: -10px;
+	left: 45px;
 }
 .item-list .promoRibbonSearchResult {
 	bottom: -11px;
@@ -1255,22 +1254,19 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 }
 .promoRibbonCart span.promoQtyBuyX, .promoRibbonSearchResult span.promoQtyBuyX, .promoRibbonNews span.promoQtyBuyX{font-size: 11px; padding:0;}
 .promoRibbonHome, .promoRibbonHomeStarred {
-	padding: 7px 20px;
+	padding: 10px 25px;
 	background-color: #D0021B;
-	position: absolute;
-	bottom: -20px;
-	left: 1px;
+	position: absolute; top: 0px; left: 0px;
 	text-align: center;
 	color: #fff;
 	font-size: 12px;
 	line-height: 14px
 }
 .component.prodCarousel figure{position:relative;}
-.promoRibbonHomeStarred{bottom: -10px;left: -12px;}
 .promoRibbonHome span, .promoRibbonHomeStarred span{padding:0;display:inline-block;font-size: 15px}
 .promoRibbonHome strong, .promoRibbonHomeStarred strong{padding:0; display:inline-block;}
 .promoRibbonHome strong.promoQtyBuy, .promoRibbonHomeStarred strong.promoQtyBuy{
-	padding: 22px 0 5px 0;
+	padding: 0;
 	display: block;
 	font-size: 14px;
 }
