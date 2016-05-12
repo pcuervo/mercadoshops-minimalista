@@ -1278,20 +1278,20 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 
 @media screen and (max-width:800px){
 	.component.vip .share{float: left;clear: both;margin: 20px 0 20px 92px;}
-	.component.prodCarousel p.promoRibbonHomeStarred {background: url("//static.mercadoshops.com/static/images/promoImageTagCartFlip.png") no-repeat scroll -1px 0;left:260px;}
+	.component.prodCarousel p.promoRibbonHomeStarred {padding: 10px 25px;background-color: #D0021B;}
 	}
 @media screen and (max-width:768px){
 	.component.vip .ch-actions.buttonBuy,
 	.component.vip .ch-actions.buttonContact {border-right:none;}
 	.component.vip .share {margin-left:92px;}
-	.component.prodCarousel p.promoRibbonHomeStarred {background: url("//static.mercadoshops.com/static/images/promoImageTagCartFlip.png") no-repeat scroll -1px 0;left:260px;}
+	.component.prodCarousel p.promoRibbonHomeStarred {padding: 10px 25px;background-color: #D0021B;}
 }
 @media screen and (max-width:640px){
 	.component.vip .share {margin-left:0px;display:block; text-align:left;width:100%;}
 	.component.vip .shareLabel {display:inline;}
 	 .component.vip #shippMethods {float:left;margin-left:95px; display:block;}
 	 .component.vip #shippMethods + .medioAConvenir {margin-top:0px;}
-	 .component.prodCarousel p.promoRibbonHomeStarred {background: url("//static.mercadoshops.com/static/images/promoImageTagCartFlip.png") no-repeat scroll -1px 0;left:260px;}
+	 .component.prodCarousel p.promoRibbonHomeStarred {padding: 10px 25px;background-color: #D0021B;}
 }
 @media screen and (max-width:480px){
 	.component.vip {margin:20px 0 30px 0}
