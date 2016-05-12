@@ -4188,7 +4188,7 @@ button.close {
 header {
   position: relative;
   z-index: 1000;
-  height: 180px;
+  height: s80px;
 }
 
 @media (min-width: 768px){ header { height: 230px; } }
@@ -4394,6 +4394,4 @@ footer a{ text-decoration: none; }
   }
 }
 
-.newsProduct--product{
-  height: 300px;
-}
+@media (min-width: 768px){ .newsProduct--product{ height: 300px; } }
