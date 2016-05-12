@@ -128,6 +128,10 @@ a:active {
 	color: #0000DD;
 }
 
+a:visited {
+	color: #800080;
+}
+
 a:hover,
 a:focus {
 	text-decoration: underline;
@@ -1510,14 +1514,20 @@ font-style:normal}
 	transform: translateZ(0);
 }
 
+@media screen and (max-width: 480px) {
+	#top-carousel .ch-carousel-mask,
+	#top-carousel article.component.article.clearfix { height: 150px !important;}	
+}
+
 .ch-carousel-mask {
 	overflow: hidden;
 	position: relative;
+	display: block;
 }
 
-.ch-carousel-adaptive {
+/*.ch-carousel-adaptive {
 	margin: 0 50px;
-}
+}*/
 
 .ch-carousel ul {
 	overflow: hidden;
@@ -1546,6 +1556,15 @@ font-style:normal}
 	background: transparent url('//static.mercadoshops.com/static/images/chico/loading_small.gif') center center no-repeat;
 }
 
+@media screen and (max-width: 480px) {
+	#top-carousel .ch-carousel-prev,
+	#top-carousel .ch-carousel-next{ top: 15% !important;} 	
+}
+@media (min-width: 768px) {
+	#top-carousel .ch-carousel-prev,
+	#top-carousel .ch-carousel-next{ top: 30% !important;} 	
+}
+
 .ch-carousel-prev,
 .ch-carousel-next {
 	cursor: pointer;
@@ -1559,6 +1578,9 @@ font-style:normal}
 .ch-carousel-prev span,
 .ch-carousel-next span {
 	background-image: url('//static.mercadoshops.com/static/images/chico/carousel.png');
+	background-color: rgba(238, 238, 238, 0.38) !important;
+    background-repeat: no-repeat;
+    padding: 15px 5px;
 	display: block;
 	height: 20px;
 	margin: 30px 18px;
@@ -1569,7 +1591,7 @@ font-style:normal}
 	width: 11px;
 }
 
-.ch-carousel-next span { background-position: -10px 0; }
+.ch-carousel-next span { background-position: -10px; }
 
 .ch-carousel-prev:hover span,
 .ch-carousel-next:hover span {
@@ -1590,8 +1612,9 @@ font-style:normal}
 }
 
 .ch-carousel-pages span {
-	background-color: #999999;
+	background-color: #d1d1d1;
 	border-radius: 100%;
+	box-shadow: 1px 1px #888 inset;
 	cursor: pointer;
 	display: inline-block;
 	height: 10px;
@@ -1602,7 +1625,7 @@ font-style:normal}
 }
 
 .ch-carousel-pages .ch-carousel-selected {
-	background-color: #000;
+	background-color: #16232f;
 }
 
 .ch-cone:after,
@@ -2234,6 +2257,11 @@ font-style:normal}
 	color: #00D;
 }
 
+/* Visited trigger
+.ch-expando-trigger:visited{
+	color:#800080;
+}
+*/
 /* Hover trigger */
 .ch-expando-trigger:hover {
 	text-decoration: underline;
@@ -3152,7 +3180,7 @@ form .ico{display:inline-block;}
 	padding:3px 12px;
 	margin-right:2px;
 	text-decoration:none !important;
-	color:#000000 !important;
+	color:#333333 !important;
 	background-color:#fff;
 	-moz-border-radius:5px 5px 0 0;
 	-webkit-border-radius:5px 5px 0 0;
