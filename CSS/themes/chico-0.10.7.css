@@ -273,7 +273,7 @@ dl.ch-list dd {
 	box-shadow: none;
 	color: #FFF;
 	cursor: pointer;
-	padding: 0 10px;
+	//padding: 0 10px;
 }
 
 /* Focus style */

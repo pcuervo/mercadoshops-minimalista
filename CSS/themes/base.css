@@ -9,7 +9,7 @@
  * Generic styles for elements
  */
 .button {border-style: solid;border-width: 1px;cursor: pointer;padding: 4px 6px;border-radius: 5px;background-image:url(//static.mercadoshops.com/static/images/spriteV1.png);}
-.title-component {font-size: 16px !important; font-style: normal !important;}
+.title-component {font-size: 24px !important; font-style: normal !important;}
 .component.page-user .title-component { font-family: 'BenchNine', sans-serif; text-transform: uppercase; letter-spacing: 1.5px; }
 .component.page-user .title-component.first { background-color: #FDD062; padding: 10px;}
 .ch-price {font-size: 1em;}
@@ -916,7 +916,6 @@ aside .component.publicidad.v1.pt a{background: url(//static.mercadoshops.com/st
 .component.vip {margin:20px 0 30px 20px;width:auto;float:none;}
 .component.vip {position:relative;}
 .component.vip label {cursor: default;}
-.component.vip h1{line-height: 100%; font-weight:bold;margin-bottom:0px;font-size: 36px;padding-right:5px;}
 .component.vip dt {display: none;}
 .component.vip dd {display:inline;margin:0 3px 0 0}
 .component.vip dd.installments a {color:#666; text-decoration:underline;}
@@ -1213,8 +1212,8 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 .promoRibbonMlb strong.promoMlb{font-size: 17px}
 .promoRibbonMlb span.promopague{display:inline-block; padding-top: 0;}
 .promoRibbonMlb span.promoLeve{padding-top: 31px;display: inline-block;}
-.promoRibbon span{padding:25px 0 0 0;display:inline-block;font-size: 20px}
-.promoRibbon strong{padding:0 10px 5px 10px; display:block;}
+.promoRibbon span{padding:0;display:inline-block;font-size: 20px}
+.promoRibbon strong{padding:0; display:inline-block;}
 .promoRibbon strong.promoQtyBuy{
 	padding: 0px;
 	display: block;
@@ -1268,8 +1267,8 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 }
 .component.prodCarousel figure{position:relative;}
 .promoRibbonHomeStarred{bottom: -10px;left: -12px;}
-.promoRibbonHome span, .promoRibbonHomeStarred span{padding:15px 0 0 0;display:inline-block;font-size: 15px}
-.promoRibbonHome strong, .promoRibbonHomeStarred strong{padding:0 10px 5px 10px; display:block;}
+.promoRibbonHome span, .promoRibbonHomeStarred span{padding:0;display:inline-block;font-size: 15px}
+.promoRibbonHome strong, .promoRibbonHomeStarred strong{padding:0; display:inline-block;}
 .promoRibbonHome strong.promoQtyBuy, .promoRibbonHomeStarred strong.promoQtyBuy{
 	padding: 22px 0 5px 0;
 	display: block;
