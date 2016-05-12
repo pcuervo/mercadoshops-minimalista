@@ -128,10 +128,6 @@ a:active {
 	color: #0000DD;
 }
 
-a:visited {
-	color: #800080;
-}
-
 a:hover,
 a:focus {
 	text-decoration: underline;
@@ -1594,9 +1590,8 @@ font-style:normal}
 }
 
 .ch-carousel-pages span {
-	background-color: #d1d1d1;
+	background-color: #999999;
 	border-radius: 100%;
-	box-shadow: 1px 1px #888 inset;
 	cursor: pointer;
 	display: inline-block;
 	height: 10px;
@@ -1607,7 +1602,7 @@ font-style:normal}
 }
 
 .ch-carousel-pages .ch-carousel-selected {
-	background-color: #16232f;
+	background-color: #000;
 }
 
 .ch-cone:after,
@@ -2239,11 +2234,6 @@ font-style:normal}
 	color: #00D;
 }
 
-/* Visited trigger
-.ch-expando-trigger:visited{
-	color:#800080;
-}
-*/
 /* Hover trigger */
 .ch-expando-trigger:hover {
 	text-decoration: underline;
@@ -3162,7 +3152,7 @@ form .ico{display:inline-block;}
 	padding:3px 12px;
 	margin-right:2px;
 	text-decoration:none !important;
-	color:#333333 !important;
+	color:#000000 !important;
 	background-color:#fff;
 	-moz-border-radius:5px 5px 0 0;
 	-webkit-border-radius:5px 5px 0 0;

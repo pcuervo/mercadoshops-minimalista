@@ -359,7 +359,7 @@ table th.alignRight {
 #ordersTable ins {
 	display: block;
 	padding-top: 5px;
-	color: #009933;
+	color: #0D71BA;
 }
 
 #checkout-payment-step-1item tr.item td,
@@ -409,7 +409,7 @@ table th.alignRight {
 }
 
 #ordersTable span.promotionPrice {
-	color: #009933;
+	color: #0D71BA;
 }
 
 .divradio{

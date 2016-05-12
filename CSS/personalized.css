@@ -63,12 +63,11 @@ input, button, select, textarea {
 }
 
 a {
-  color: #000;
-  text-decoration: none;
+  color: #0D71BA;
+  text-decoration: underline;
 }
 a:hover, a:focus{
-  color: #FDD062;
-  text-decoration: none;
+  color: #000; text-decoration: none;
 }
 a:focus {
   outline: thin dotted;
@@ -1269,30 +1268,27 @@ select {
 
 .ch-form{ }
 
+.formContact{ width: 50%; }
+
 .ch-form label{
-  width: 100%;
+  width: auto !important;
   color: #000;
   text-align: left;
 }
 
-.ch-form-row input, .ch-form-row textarea{
- width: 100%;
+.ch-form input[type="text"], .ch-form input[type="email"], .ch-form input[type="tel"], .ch-form textarea{
+  width: 100% !important;
 }
+
+#couponCode{ width: 120px !important; }
 
 .component.formContact, .section{ display: inline-block; }
 
-#cartForm.ch-form{ background-color: #F3F3F3}
 #cartForm.ch-form #total-to-pay.ch-price.price{
   font-size: 1.5em;
   color: #666 !important;
   margin-left: 15px;
 }
-#newBuyCart-submit{
-  font-family: "open sans";
-  padding: 0 20px;
-}
-
-#frmContact.ch-form #msgContent { width: inherit; }
 
 .component.formContact .title-component{
   font-family: "BenchNine";
@@ -1319,9 +1315,11 @@ select {
 
 .btn, .ch-btn {
   display: inline-block;
+  height: auto !important;
   margin-bottom: 0; border: 1px solid transparent; padding: 6px 12px;
   border-radius: 10px;
-  font-weight: bold;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
@@ -1411,12 +1409,6 @@ a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; }
   color: #000;
   background-color: #FDD062;
   border-color: #fdc849;
-}
-
-#contact-btn{
-  //font-family: "BenchNine";
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 .btn-primary:focus, .btn-primary.focus, #contact-btn:focus, #contact-btn.focus {
@@ -4190,6 +4182,8 @@ header {
 
 @media (min-width: 768px){ header { height: 230px; } }
 
+header a{ text-decoration: none; }
+
 header .navbar-nav > li:hover { background-color: #FDD062; }
 
 header.navbar-nav > li > .dropdown-menu { background-color: #fcb916; }
@@ -4249,6 +4243,8 @@ footer {
 footer .logo{
   font-size: 350%;
 }
+
+footer a{ text-decoration: none; }
 
 
 /*------------------------------------*\
