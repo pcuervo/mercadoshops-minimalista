@@ -1560,6 +1560,10 @@ font-style:normal}
 	#top-carousel .ch-carousel-prev,
 	#top-carousel .ch-carousel-next{ top: 15% !important;} 	
 }
+@media (min-width: 620px) {
+	#top-carousel .ch-carousel-prev,
+	#top-carousel .ch-carousel-next{ top: 20% !important;} 	
+}
 @media (min-width: 768px) {
 	#top-carousel .ch-carousel-prev,
 	#top-carousel .ch-carousel-next{ top: 30% !important;} 	
