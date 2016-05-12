@@ -367,7 +367,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.shipTable .colPrice{width:18%; text-align:right;}
 .component.shipTable .colTotalPrice {float:right;width:auto;text-align:right; background: none; color: #000; font-size: 1.5em;/*background-color:#eaeaea; border-radius:5px;*/}
 .component.shipTable .colCep {background-color:#eaeaea; border-radius:5px;}
-.component.shipTable .tbody {border-bottom:1px solid #eaeaea; background:white;}
+.component.shipTable .tbody {border-bottom:1px solid #CCC; background:white;}
 .component.shipTable .tbody:nth-last-child(1){border-bottom:none;}
 .component.shipTable .thead .deleteRow,
 .component.shipTable .tbody .deleteRow {width:3%; width:20px; text-align:center;border-left:none;}
@@ -419,8 +419,6 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 		display: block;
 		padding: 11px 10px;
 		font-size: 12px;
-		background: #f6f6f6;
-		border: 1px solid #ededed;
 		width: 65px;
 		margin: 10px 0;
 	}
@@ -449,7 +447,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 
 	.component.shipTable ul.order-price-detail.subtotal {margin-top: 30px;}
 	.component.shipTable ul.order-price-detail {border-top: 1px solid #eaeaea;}
-	.component.shipTable .tbody.order-price-detail li.colTitulo {float:left; display:block; width:57%;}
+	.component.shipTable .tbody.order-price-detail li.colTitulo {float:left; display:block; width:100%;}
 	.component.shipTable .tbody.order-price-detail li.colCantidad {display: none;}
 	.component.shipTable .tbody.order-price-detail li.colCant {width:1%;}
 	.component.shipTable .tbody.order-price-detail li.colPrice {width: 33%; clear: none; text-align: right; position:static;}
@@ -461,7 +459,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 	.component.shipTable .tbody {border:none;}
 	.component.shipTable .tfoot {background-color:transparent; margin-top:0px;}
 	.component.shipTable .colCep,
-	.component.shipTable .colTotalPrice {background-color:#eaeaea; border-radius:5px; margin-top:5px;}
+	.component.shipTable .colTotalPrice {margin-top:30px;width: 100%; border-top: 2px solid; padding-top: 20px !important;}
 	.component.shipTable .ch-form-row label{width:120px;}
 	.component.shipTable .colProd {width:55%}
 	.component.shipTable .colFoto {width:17%; text-align: center}
@@ -485,7 +483,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 	.component.shipTable .colPrice {width:30%}
 	.component.shipTable .tbody .colCant {width:22%; float:left;text-align: right}
 	/*.component.shipTable .colCant .lblQuantity {display:block;} Removed */
-	.component.shipTable .tbody.order-price-detail li.colTitulo {float:left; display:block; width:56%;}
+	.component.shipTable .tbody.order-price-detail li.colTitulo {float:right; display:block; width:100%; padding: 5%;}
 	.component.shipTable .tbody.order-price-detail li.colPrice.cart-item-price {width: 34%}
 	.component.shipTable .tbody.order-price-detail li.colCant {width: 1%}
 
