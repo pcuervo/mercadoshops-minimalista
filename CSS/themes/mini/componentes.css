@@ -172,7 +172,7 @@
 
 /* News prod
 */
-.component.newsProduct {clear:both; margin-top:20px; width:100%;}
+.component.newsProduct {clear:both; width:100%;}
 .component.newsProduct ul{padding:10px;}
 .component.newsProduct li {float:left;width:46%;padding:0 2%}
 .component.newsProduct h2{display:block;margin-bottom:10px;margin-top:10px;line-height: 1.3em;}
