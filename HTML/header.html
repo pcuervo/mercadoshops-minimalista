@@ -33,7 +33,6 @@
 						#if($categoryLevel1.hasSubCategories)
 							<div class="[ sub-menu ]">
 								#foreach($categoryLevel2 in $categoryLevel1.subCategories)
-									<a class="[ text-center text-uppercase ][ block ][ padding--small ][ sub-menu-opener js-sub-menu-opener ]" href="$categoryLevel2.url">$categoryLevel2.name</a>
 									#if($categoryLevel2.hasSubCategories)
 										<a class="[ text-center text-uppercase ][ block ][ padding--small ][ sub-menu-opener js-sub-menu-opener ]" href="$categoryLevel2.url">$categoryLevel2.name<span class="[ icon-plus icon-xxsmall ][ pull-right ]"></span></a>
 										<div class="[ sub-menu ]">
@@ -41,6 +40,8 @@
 												<a class="[ text-center text-uppercase ][ block ][ padding--small ][ sub-menu-opener js-sub-menu-opener ]" href="$categoryLevel3.name">$categoryLevel3.name</a>
 											#end
 										</div>
+									#else
+										<a class="[ text-center text-uppercase ][ block ][ padding--small ][ sub-menu-opener js-sub-menu-opener ]" href="$categoryLevel2.url">$categoryLevel2.name</a>
 									#end
 								#end
 							</div>
