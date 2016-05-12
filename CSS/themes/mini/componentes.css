@@ -74,7 +74,7 @@
 .component.searchResults .component.item-gallery img {max-width:100%}
 
 .component.searchResults  li.row.one-promo {
-	height: 365px;
+	height: 390px;
 }
 
 .component.searchResults .component.item-gallery article.one-promo {
@@ -138,7 +138,7 @@
 
 
 .component.itemGallery li.background.one-promo {
-	height: 275px;
+	height: 350px;
 }
 
 .component.itemGallery li.background.two-promos {
