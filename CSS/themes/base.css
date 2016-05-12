@@ -790,7 +790,8 @@ dl.component.orderList { margin-bottom: 0px; }
 .component.prominentProd .ch-carousel {background-color:#fff;padding:20px 0;}
 .component.prominentProd .ch-carousel-pages {bottom:10px;}
 .component.prominentProd article {padding:20px;background-color:#fff;}/*aplies to a non-carousel items*/
-.component.prominentProd .ch-carousel article {padding:0;} /*aplies to carousel articles*/
+.component.prominentProd .ch-carousel article { height: 100%; padding: 0 56px; } /*aplies to carousel articles*/
+.component.prominentProd .ch-carousel article > div{ height: 100%; }
 .component.prominentProd nav{clear:both;}
 .component.prominentProd h2{float:none;margin-bottom:30px;}
 .component.prominentProd figure{float:right;}
