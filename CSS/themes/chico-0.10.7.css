@@ -890,10 +890,10 @@ input.ch-btn-tiny::-moz-focus-inner{
 .ch-pagination li a:hover,
 /* Deprecate */
 .pagination li a:hover {
-	color: #FFF;
+	color: #000;
 	text-decoration: none;
-	background-color: #0637b3;
-	border: 1px solid #0637b3;
+	background-color: #F4B61E;
+	border: 1px solid #F4B61E;
 }
 
 .ch-pagination li.ch-pagination-current a,
@@ -919,7 +919,7 @@ input.ch-btn-tiny::-moz-focus-inner{
 /* Deprecate */
 .pagination li:first-child a:hover,
 .pagination li:last-child a:hover {
-	border-color: #0637b3;
+	border-color: #F4B61E;
 }
 
 .lt-ie8 .ch-pagination li,
@@ -3192,6 +3192,7 @@ form .ico{display:inline-block;}
 /* Trigger ON */
 .ch-tabNavigator .ch-tab-trigger-on,
 .ch-tabNavigator .ch-tab-trigger-on:hover {
+	padding: 10px 20px;
 	background-image: -o-linear-gradient(top, #F0F0F0, #FFFFFF 25px);
 	background-image: -ms-linear-gradient(top, #F0F0F0, #FFFFFF 25px);
 	background-image: -moz-linear-gradient(top, #F0F0F0, #FFFFFF 25px);
@@ -3204,6 +3205,10 @@ form .ico{display:inline-block;}
 	cursor:default;
 	font-weight: bold;
 	text-shadow: 2px 0 2px rgba(255, 255, 255, .5);
+	background: #FDD062;
+    border: none;
+    /* text-align: center; */
+    font-size: 20px;
 }
 
 .lt-ie10 .ch-tabNavigator .ch-tab-trigger-on,

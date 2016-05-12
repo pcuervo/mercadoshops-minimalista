@@ -57,7 +57,7 @@ vertical-align: top;
 .ch-g3-4, .ch-g6-8 { width:75%; }
 .ch-g7-10 {width: 70%; }
 .ch-g2-3, .ch-g4-6 { width:66.67%;}
-@media screen and (max-width:480px){ width:60%; }
+@media (max-width:480px){ .ch-g4-6 {width:60%;} }
 .ch-g5-8 {width: 62.5%;}
 .ch-g3-5, .ch-g6-10 {width: 60%;}
 .ch-g1-2, .ch-g2-4, .ch-g3-6, .ch-g4-8, .ch-g5-10 { width:50%;}
