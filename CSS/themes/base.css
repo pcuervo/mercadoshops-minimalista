@@ -1267,8 +1267,8 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 }
 .component.prodCarousel figure{position:relative;}
 .promoRibbonHomeStarred{bottom: -10px;left: -12px;}
-.promoRibbonHome span, .promoRibbonHomeStarred span{padding:15px 0 0 0;display:inline-block;font-size: 15px}
-.promoRibbonHome strong, .promoRibbonHomeStarred strong{padding:0 10px 5px 10px; display:block;}
+.promoRibbonHome span, .promoRibbonHomeStarred span{padding:0;display:inline-block;font-size: 15px}
+.promoRibbonHome strong, .promoRibbonHomeStarred strong{padding:0; display:inline-block;}
 .promoRibbonHome strong.promoQtyBuy, .promoRibbonHomeStarred strong.promoQtyBuy{
 	padding: 22px 0 5px 0;
 	display: block;
