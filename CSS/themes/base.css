@@ -658,7 +658,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 	.component.searchResults .item-list .itemPrice {position:static; text-align:left;}
 }
 .component.searchResults .rowsWrapper {clear:both; width:100% ;overflow:hidden;}
-.component.searchResults .component.item-gallery li{float:left;padding:0 20px;height:360px; overflow:hidden;width:25%;text-align: center;}
+.component.searchResults .component.item-gallery li{float:left;padding:0 20px;height:400px; overflow:hidden;width:25%;text-align: center;}
 .component.searchResults .component.item-gallery .itemPrice {position:relative;margin-left: 10px}
 .component.searchResults .component.item-gallery .itemPrice li{float:none; width:auto; border:none; margin:0 10px 10px 10px;padding:0px;height:auto;}
 .component.searchResults .component.item-gallery article{padding:190px 0px 0 0px;position:relative;border-right:1px solid #eaeaea;border-bottom:1px solid #eaeaea;height:134px;}
@@ -793,7 +793,6 @@ dl.component.orderList { margin-bottom: 0px; }
 .component.prominentProd .ch-carousel-pages {bottom:10px;}
 .component.prominentProd article {padding:20px;background-color:#fff;}/*aplies to a non-carousel items*/
 .component.prominentProd .ch-carousel article {padding:0;} /*aplies to carousel articles*/
-.component.prominentProd h3 {display:none;}
 .component.prominentProd nav{clear:both;}
 .component.prominentProd h2{float:none;margin-bottom:30px;}
 .component.prominentProd figure{float:right;}
@@ -1264,7 +1263,6 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 	line-height: 14px
 }
 .component.prodCarousel figure{position:relative;}
-.promoRibbonHomeStarred{bottom: -10px;left: -12px;}
 .promoRibbonHome span, .promoRibbonHomeStarred span{padding:0;display:inline-block;font-size: 15px}
 .promoRibbonHome strong, .promoRibbonHomeStarred strong{padding:0; display:inline-block;}
 .promoRibbonHome strong.promoQtyBuy, .promoRibbonHomeStarred strong.promoQtyBuy{

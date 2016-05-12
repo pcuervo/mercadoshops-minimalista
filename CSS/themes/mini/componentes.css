@@ -123,7 +123,7 @@
 	clear: both;
 }
 .component.itemGallery h2{margin: 0 20px 10px 10px;max-height: 4.1em;overflow: hidden;line-height: 1em;/*font-size: 1.2em*/}
-.component.itemGallery li{float:left; width:25%;}
+.component.itemGallery > li{ float:left; width:25%; height: 400px; overflow: hidden; }
 .component.itemGallery .itemData li.ch-price {font-size:200%;padding:0;margin: 0 10px 10px 10px}
 .component.itemGallery .itemData li{float:none; width:auto; border:none; margin:0 0 5px 0;padding:0px;}
 .component.itemGallery article{position:relative;min-height: 100px}
@@ -137,7 +137,7 @@
 .component.itemGallery .lastProd.last-MX,
 .component.itemGallery .lastProd.last-VE {background-position: 0 -107px;}
 .component.itemGallery .lastProd.last-BR {background-position: 0 -172px;}
-.component.itemGallery .lastProd{top: -6px;right: 20px;z-index:1000;position: absolute;width: 65px;height: 64px;text-indent: -9999px;background-image: url("//static.mercadoshops.com/static/images/themes/basic/sprite.png");background-repeat: no-repeat;}
+.component.itemGallery .lastProd{top: 0;right: 20px;z-index:1000;position: absolute;width: 65px;height: 64px;text-indent: -9999px;background-image: url("//static.mercadoshops.com/static/images/themes/basic/sprite.png");background-repeat: no-repeat;}
 
 @media screen and (max-width:1024px){
 	.component.itemGallery li{width:33%;}
@@ -331,7 +331,5 @@ iframe[src="about:blank"]{display:none;}
 	width: 900px;
 }
 /*Promos*/
-.promoRibbonHomeStarred{bottom: 30px;left: -12px;}
-.promoRibbonHome{bottom: -8px;}
 ul.itemData .promoRibbonMlb{bottom:0;}
 p.CartpromotionFreeShipping{right: -124px;}
