@@ -1516,7 +1516,7 @@ font-style:normal}
 
 @media screen and (max-width: 480px) {
 	#top-carousel .ch-carousel-mask,
-	#top-carousel article.component.article.clearfix { height: 150px !important;}	
+	#top-carousel article.component.article.clearfix { height: 150px !important;}
 }
 
 .ch-carousel-mask {
@@ -1558,15 +1558,15 @@ font-style:normal}
 
 @media screen and (max-width: 480px) {
 	#top-carousel .ch-carousel-prev,
-	#top-carousel .ch-carousel-next{ top: 15% !important;} 	
+	#top-carousel .ch-carousel-next{ top: 15% !important;}
 }
 @media (min-width: 620px) {
 	#top-carousel .ch-carousel-prev,
-	#top-carousel .ch-carousel-next{ top: 20% !important;} 	
+	#top-carousel .ch-carousel-next{ top: 20% !important;}
 }
 @media (min-width: 768px) {
 	#top-carousel .ch-carousel-prev,
-	#top-carousel .ch-carousel-next{ top: 30% !important;} 	
+	#top-carousel .ch-carousel-next{ top: 30% !important;}
 }
 
 .ch-carousel-prev,
@@ -1618,7 +1618,6 @@ font-style:normal}
 .ch-carousel-pages span {
 	background-color: #d1d1d1;
 	border-radius: 100%;
-	box-shadow: 1px 1px #888 inset;
 	cursor: pointer;
 	display: inline-block;
 	height: 10px;

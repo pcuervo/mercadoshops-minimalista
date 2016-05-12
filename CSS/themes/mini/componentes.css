@@ -123,15 +123,15 @@
 	clear: both;
 }
 .component.itemGallery h2{margin: 0 20px 10px 10px;max-height: 4.1em;overflow: hidden;line-height: 1em;/*font-size: 1.2em*/}
-.component.itemGallery li{ float:left; width:25%; }
-.component.itemGallery > li{ height: 400px; overflow: hidden; }
+.component.itemGallery li{ float:left; width:25%; background: none; }
+.item-gallery > li{ height: 400px; overflow: hidden; }
 .component.itemGallery .itemData li.ch-price {font-size:200%;padding:0;margin: 0 10px 10px 10px}
 .component.itemGallery .itemData li{float:none; width:auto; border:none; margin:0 0 5px 0;padding:0px;}
 .component.itemGallery article{position:relative;min-height: 100px}
 .component.itemGallery figure{text-align:center;width:100%;}
 .component.itemGallery figure.background {background:none;}
 .component.itemGallery figure a{display:block;}
-.component.itemGallery figure a img{max-width:95%;}
+.component.itemGallery figure a img{max-width:105%;}
 .component.itemGallery .lastProd.last-AR,
 .component.itemGallery .lastProd.last-CO,
 .component.itemGallery .lastProd.last-CL,

@@ -22,9 +22,10 @@
 						</div>
 					</div>
 				#end
+
 				<!-- Carousel -->
 				#if($showContent)
-					<div class="box-content-list ch-g1">
+					<div class="box-content-list ch-g1  [ margin-bottom--large ]">
 						#if($showContentImage)
 							<div id="top-carousel" class="ch-carousel" data-max-items="1">
 								<ul class="content-list">
@@ -196,17 +197,14 @@
 
 				</div>
 
-				<!-- Productos destacados -->
+				<!-- Galería -->
 				<div class="[ component itemGallery clearfix ]">
 					<div class="[ container ]">
-						<h2 class="[ text-center text-uppercase ][ margin-bottom ][ text-bold ]">Productos destacados</h2>
+						<h2 class="[ text-center text-uppercase ][ margin-bottom ][ text-bold ]">Galería</h2>
 						<ul class="[ item-gallery ][ text-center ]">
 							#foreach ($galleryItem in $galleryItemList)
 								<li class="background $promotionCssClass">
 									<article class="clearfix $promotionCssClass">
-										<h3>
-											<a href="$galleryItem.url" title="$galleryItem.title" class="title">$galleryItem.title</a>
-										</h3>
 										<ul class="itemData clearfix">
 											<li>
 												<figure class="background">
@@ -229,6 +227,10 @@
 													#end
 												</figure>
 											</li>
+
+											<h3>
+												<a href="$galleryItem.url" title="$galleryItem.title" class="title">$galleryItem.title</a>
+											</h3>
 
 											#set ($galleryPromotion = $galleryItem.promotion)
 
