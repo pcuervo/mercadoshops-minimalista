@@ -1274,11 +1274,15 @@ select {
 
 .component.formContact, .section{ display: inline-block; }
 
-#cartForm.ch-form{ background-color: #EAEAEA}
+#cartForm.ch-form{ background-color: #F3F3F3}
 #cartForm.ch-form #total-to-pay.ch-price.price{ 
   font-size: 1.5em;
   color: #666 !important;
   margin-left: 15px;
+}
+#newBuyCart-submit{
+  font-family: "open sans";
+  padding: 0 20px;
 }
 
 #frmContact.ch-form #msgContent { width: inherit; }
@@ -4349,6 +4353,7 @@ footer .logo{
 .icon-find:before { content: '\e843'; }
 .icon-key-hole-2:before { content: '\e844'; }
 
+.icon-xxsmall { font-size: .6em; }
 .icon-xsmall { font-size: 1em; }
 .icon-small { font-size: 1.5em; }
 .icon-medium { font-size: 2em; }
