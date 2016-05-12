@@ -361,7 +361,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.shipTable .colFoto {width:10%;min-width:50px;}
 .component.shipTable .colFoto img{vertical-align:middle}
 .component.shipTable .colTitulo{width:49%;}
-.component.shipTable .colCant {width:10%; text-align: right;}
+.component.shipTable .colCant {/*width:10%;*/ text-align: right;}
 .component.shipTable .colCant #updCartLink {display:block;}
 .component.shipTable .colCant .lblQuantity {display:none;}
 .component.shipTable .colPrice{width:18%; text-align:right;}
@@ -1043,9 +1043,9 @@ dl.priceInfo.promotionPrice dd.installments span.withMP, dl.priceInfo dd.install
 	clear: none;
 }
 
-.component.searchResults .component.item-gallery h2 {
+/*.component.searchResults .component.item-gallery h2 {
 	min-height: 3.6em;
-}
+}*/
 
 dd.installments i.ch-icon-credit-card{
 	font-size: 2em;
