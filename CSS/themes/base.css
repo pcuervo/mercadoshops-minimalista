@@ -345,7 +345,8 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.shipTable .headQty,
 .component.shipTable .headPrice {text-align:left;font-size:100%;}
 .component.shipTable .ch-actions.cart{ clear: both;display: block;float: none;margin-top: 10px;position: static;text-align: right;margin:10px 0 0 0;width:auto;}
-.component.shipTable .ch-actions.cart .keepBuying {font-size:110%; margin-right:10px;}
+.component.shipTable .ch-actions.cart .keepBuying {font-size:110%; margin-right:10px; }
+.keepBuying.ch-btn.ch-primary.button { font-family: "open sans"; color: #000;}
 .component.shipTable .cep-cart{margin-right: 0px;text-align: right;}
 .component.shipTable .correiosType{margin:10px 0;text-align: right;}
 .component.shipTable .cep-input-cart {width:80px;}
