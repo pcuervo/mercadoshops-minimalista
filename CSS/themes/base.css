@@ -21,7 +21,7 @@ del {display: block; margin-bottom: 5px;}
 .colPrice ins,
 .promo-text,
 .promo-price {
-	color: #009933;
+	color: #0D71BA;
 }
 
 /* Cart specific styles */
@@ -57,7 +57,7 @@ span.ch-ico-ok {
  */
 #inactiveShop {background: #FFF6B3; border: 1px solid #E2D3A8;color: #000;font-size:1em;padding: 15px; position: absolute; top: 5px;z-index: 1000;width: 400px;border-radius: 5px;box-shadow: 0 1px 2px #999;}
 #inactiveShop a {color: #3A54A1;font-size: 1em;margin-left: 10px;text-decoration: underline;}
-#inactiveShop a.button-accion {background: url(//static.mercadoshops.com/static/images/bg-button.gif) repeat-x;border: 1px solid #70b7cd;color: #333333;cursor: pointer;border-radius: 5px;margin: 0;padding: 2px 8px;text-decoration: none;}
+#inactiveShop a.button-accion {background: url(//static.mercadoshops.com/static/images/bg-button.gif) repeat-x;border: 1px solid #70b7cd;color: #000000;cursor: pointer;border-radius: 5px;margin: 0;padding: 2px 8px;text-decoration: none;}
 #inactiveShop .title-inactive {font-size: 1.385em;margin: 0 0 10px;}
 #inactiveShop .content-inactive {line-height: 16px;margin: 0 0 20px;}
 #inactiveShop .controls-inactive {line-height: 20px;text-align: center;}
@@ -977,7 +977,7 @@ aside .component.publicidad.v1.pt a{background: url(//static.mercadoshops.com/st
 .ContentVariation.dev-no-options .ch-icon-sort{display: none;}
 .ContentVariation.dev-no-options {cursor:default}
 .VariationList{float:left;margin-right: 10px;}
-.ShippingData .freeShipping i, .ShippingData .freeShipping{color:#009933;}
+.ShippingData .freeShipping i, .ShippingData .freeShipping{color:#0D71BA;}
 .ch-box-error{display:none;}
 .vipSocials{display: block;float: left;padding: 8px 5px;margin: 5px 0 25px 0;border-top: solid 3px #FDD36E;}
 .sharesButtons li{display:inline;}
@@ -1002,13 +1002,13 @@ a.ch-btn.ch-btn-small.btn-grey:hover{text-decoration: none}
 .ch-viewervip-display .ch-seeker{z-index: 20}
 
 /*Vip/Cart Promos elements*/
-dl.priceInfo.promotionPrice span.ch-price.price, dl.priceInfo.promotionPrice dd.installments span, p.promotionPrice, span.promotionPrice, li.promotionPrice,.promotionFreeShippingText{color:#009933;}
+dl.priceInfo.promotionPrice span.ch-price.price, dl.priceInfo.promotionPrice dd.installments span, p.promotionPrice, span.promotionPrice, li.promotionPrice,.promotionFreeShippingText{color:#0D71BA;}
 dl.priceInfo.promotionPrice span.ch-price.price, li.promotionPrice{font-size: 20px}
 dl.priceInfo.promotionPrice span.ch-price.price{font-size: 23px}
 dl.priceInfo.promotionPrice dd.installments span.QtyPayment{color:#777;}
 /* Added by Diego */
 #homePrice del dd {text-decoration: inherit;}
-#homePrice ins span.ch-price.price {color:#009933;}
+#homePrice ins span.ch-price.price {color:#0D71BA;}
 
 /* This replaces the wording 'con mercado pago' with the logo */
 dl.priceInfo.promotionPrice dd.installments span.withMP, dl.priceInfo dd.installments span.withMP{
@@ -1176,14 +1176,14 @@ div.promotionFreeShippingStarred span.arrow-left {
 	height: 0;
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
-	border-right: 11px solid #009933;
+	border-right: 11px solid #0D71BA;
 }
 
 div.CartpromotionFreeShipping span.freeShippingText,
 div.promotionFreeShippingSmall span.freeShippingText,
 div.promotionFreeShippingSearch span.freeShippingText,
 div.promotionFreeShippingStarred span.freeShippingText {
-	background: #009933 url('//static.mercadoshops.com/static/images/icoShipping.png') no-repeat 4% 50%;
+	background: #0D71BA url('//static.mercadoshops.com/static/images/icoShipping.png') no-repeat 4% 50%;
 	position: relative;
 	top: -6px;
 	padding: 0 10px 4px 20px;
