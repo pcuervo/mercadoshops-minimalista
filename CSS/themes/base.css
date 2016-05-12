@@ -346,8 +346,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.shipTable .headQty,
 .component.shipTable .headPrice {text-align:left;font-size:100%;}
 .component.shipTable .ch-actions.cart{ clear: both;display: block;float: none;margin-top: 10px;position: static;text-align: right;margin:10px 0 0 0;width:auto;}
-.component.shipTable .ch-actions.cart .keepBuying {font-size:110%; margin-right:10px; }
-.keepBuying.ch-btn.ch-primary.button { font-family: "open sans"; color: #000;}
+.component.shipTable .ch-actions.cart .keepBuying {font-size:110%; margin-right:10px;}
 .component.shipTable .cep-cart{margin-right: 0px;text-align: right;}
 .component.shipTable .correiosType{margin:10px 0;text-align: right;}
 .component.shipTable .cep-input-cart {width:80px;}
@@ -659,7 +658,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 	.component.searchResults .item-list .itemPrice {position:static; text-align:left;}
 }
 .component.searchResults .rowsWrapper {clear:both; width:100% ;overflow:hidden;}
-.component.searchResults .component.item-gallery li{float:left;padding:0 10px;height:360px; overflow:hidden;width:25%;text-align: center;}
+.component.searchResults .component.item-gallery li{float:left;padding:0 20px;height:360px; overflow:hidden;width:25%;text-align: center;}
 .component.searchResults .component.item-gallery .itemPrice {position:relative;margin-left: 10px}
 .component.searchResults .component.item-gallery .itemPrice li{float:none; width:auto; border:none; margin:0 10px 10px 10px;padding:0px;height:auto;}
 .component.searchResults .component.item-gallery article{padding:190px 0px 0 0px;position:relative;border-right:1px solid #eaeaea;border-bottom:1px solid #eaeaea;height:134px;}
@@ -1195,7 +1194,7 @@ div.promotionFreeShippingStarred span.freeShippingText {
 	display: inline-block;
 }
 
-.promoRibbon, .promoRibbonMlb {width: 80px;height: 84px;background: url("//static.mercadoshops.com/static/images/promoImageTagSmall.png") no-repeat scroll 0 0;position: absolute;bottom: 4px;left: 1px;text-align: center;color: #fff;font-size: 14px;}
+.promoRibbon, .promoRibbonMlb {background-color: #D0021B; padding: 7px 20px; position: absolute;bottom: 4px;left: 1px;text-align: center;color: #fff;font-size: 14px;}
 .promoTagMlb{width: 114px;color: #fff;clear: left;background: url("//static.mercadoshops.com/static/images/promoMlbTag.png") no-repeat scroll 0 0;padding: 0 0 0 22px;font-size: 11px;line-height: 17px;font-weight: normal}
 .paymentsMP {margin-top: 15px}
 .paymentsMP dl, paymentsMP ul {
@@ -1217,7 +1216,7 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 .promoRibbon span{padding:25px 0 0 0;display:inline-block;font-size: 20px}
 .promoRibbon strong{padding:0 10px 5px 10px; display:block;}
 .promoRibbon strong.promoQtyBuy{
-	padding: 33px 9px 5px 6px;
+	padding: 0px;
 	display: block;
 	font-size: 23px;
 }
@@ -1236,13 +1235,14 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 	font-size: 12px;
 	line-height: 14px
 }
-.promoRibbonSearchResult ~ .promoQtyBuy { background-color: #0D71BA; }
+.promoRibbonSearchResult < .promoQtyBuy { background-color: #0D71BA!important; }
+.promoRibbonSearchResult .promoQtyBuy:parent { background-color: #0D71BA!important; }
 .promoRibbonNews{
 	left:-2px;
 }
 .item-gallery .promoRibbonSearchResult {
 	bottom: -11px;
-	left: 0px;
+	left: 26px;
 }
 .item-list .promoRibbonSearchResult {
 	bottom: -11px;
@@ -1256,9 +1256,8 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 }
 .promoRibbonCart span.promoQtyBuyX, .promoRibbonSearchResult span.promoQtyBuyX, .promoRibbonNews span.promoQtyBuyX{font-size: 11px; padding:0;}
 .promoRibbonHome, .promoRibbonHomeStarred {
-	width: 50px;
-	height: 60px;
-	background: url("//static.mercadoshops.com/static/images/promoImageTagCart.png") no-repeat scroll 0 0;
+	padding: 7px 20px;
+	background-color: #D0021B;
 	position: absolute;
 	bottom: -20px;
 	left: 1px;
@@ -1280,6 +1279,7 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 .component.searchResults .component.item-gallery p.promoTagMlb.promoSearch{margin-left: 10px}
 .component.searchResults .component.item-list p.promoTagMlb.promoSearch{position:absolute;margin:0;right:0;}
 .component.searchResults .component.item-list p.promotionFreeShippingSearch{margin-left: 0; position:absolute; right:22px; top:55px;}
+
 
 @media screen and (max-width:800px){
 	.component.vip .share{float: left;clear: both;margin: 20px 0 20px 92px;}
