@@ -1272,8 +1272,6 @@ select {
 
 .ch-form{ }
 
-.formContact{ width: 50%; }
-
 .ch-form label{
   width: auto !important;
   color: #000;
@@ -4235,7 +4233,8 @@ a.sub-menu-opener:hover, a.sub-menu-opener:focus {
 
 .top-menu a.menu-item-Inicio,
 .top-menu a.menu-item-politica,
-.top-menu a.menu-item-Terminos{ display: none; }
+.top-menu a.menu-item-Terminos,
+.top-menu a.menu-item-faq{ display: none; }
 .top-menu a:first-child{ display: none }
 
 .logo{

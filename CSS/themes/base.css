@@ -785,7 +785,10 @@ dl.component.orderList { margin-bottom: 0px; }
 .component.social h3.title-component, 
 #page-CART h3.title-component { font-family:'BenchNine'}	
 
+.formContact { width: 100%}
+
 @media (min-width: 520px) {
+	.formContact { width: 50%}
 	section.component.formContact ~ .component.social{ 
 		display: inline-block;
 	    position: absolute;
