@@ -1307,8 +1307,12 @@ select {
   float: right;
 }
 
-@media (min-width: 1200px) {
-  .component.promoMP.payMethod{ margin-right: 20px; }
+@media (min-width: 520px) {
+  .component.promoMP.payMethod{
+    position: absolute;
+    right: 5%;
+    top: 20%
+  }
 }
 
 .ch-form-hint{ color: #D0021B; }
@@ -3976,11 +3980,12 @@ button.close {
 .border-radius-30-px { border-radius: 30px; }
 
 .no-padding { padding: 0 !important; }
-@media (max-width: 480px){ .no-padding--xs { padding: 0 !important; }} 
 
 .padding--large { padding: 24px 48px; }
 .padding--xlarge { padding: 24px 72px; }
 
+@media (max-width: 480px){ .no-padding--xs { padding: 0 !important; }}
+@media (min-width: 520px){ .margin-top--xlarge--sm { margin-top: 80px; }}
 @media (mix-width: 780px){ .padding--large--md { padding: 24px 48px; } } 
 
 .padding { padding: 12px 24px; }
@@ -4030,10 +4035,6 @@ button.close {
 .padding--left--large { padding-left: 24px; }
 .padding--left--xlarge { padding-left: 36px; }
 .padding--left--xxlarge { padding-left: 48px; }
-
-@media (max-width: 480px) {
-
-}
 
 @media (max-width: 480px) {
   .padding--bottom--large-xs { padding-bottom: 24px; }

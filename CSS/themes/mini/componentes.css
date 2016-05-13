@@ -156,6 +156,13 @@
 .component.img-logo {margin:0; padding:0;max-height: 150px;min-height: 40px; height: auto!important; height: auto;overflow: hidden;}
 .component.img-logo a {display: inline-block;max-width: 300px;width: 300px;overflow: hidden;}
 .component.img-logo img{max-width:100%;}
+@media(min-width:640px){
+	.component.img-logo a {display: inline-block;max-width: 400px;width: 500px;overflow: hidden;}
+	.component.img-logo img{width:100%;}
+}
+@media(min-width:1200px){
+	.component.img-logo a {display: inline-block;max-width: 500px;width: 500px;overflow: hidden;}
+}
 
 /* Promos MP -> en home mpago.html
 */
@@ -254,12 +261,12 @@
 @media screen and (max-width:800px) {
 	.component.prominentProd .ch-carousel-list li {width:600px;}
 }
-@media screen and (max-width:768px) {
+/*@media screen and (max-width:768px) {
 	.component.prominentProd .ch-carousel,
-	/*.component.prominentProd .ch-carousel-mask {height:320px !important;}
-	.component.prominentProd .ch-carousel-list li {height:320px !important;}*/
+.component.prominentProd .ch-carousel-mask {height:320px !important;}
+	.component.prominentProd .ch-carousel-list li {height:320px !important;}
 	.component.prominentProd .ch-carousel-pages {display:none;}
-}
+}*/
 @media screen and (max-width:640px) {
 	.component.prominentProd figure{text-align:center; width:100%;}
 	.component.prominentProd figure{max-width:100%;}
@@ -281,10 +288,15 @@
 	.component.prominentProd figure{text-align:center; width:100%;}
 	.component.prominentProd figure{max-width:100%;auto}
 	.component.prominentProd .itemData {display:block; width:100%; float:none}
-	.component.prominentProd .ch-carousel-list li {height:550px !important;}
+	/*.component.prominentProd .ch-carousel-list li {height:550px !important;}*/
 }
 
-#prominents-carousel .ch-carousel-mask.ch-carousel-adaptive { height: 350px !important;}
+#prominents-carousel .ch-carousel-mask.ch-carousel-adaptive { height: 100px !important;}
+
+@media (min-width:480px){#prominents-carousel .ch-carousel-mask.ch-carousel-adaptive{ height: 150px !important;}}
+@media (min-width:520px){#prominents-carousel .ch-carousel-mask.ch-carousel-adaptive{ height: 200px !important;}}
+@media (min-width:640px){#prominents-carousel .ch-carousel-mask.ch-carousel-adaptive{ height: 250px !important;}}
+@media (min-width:800px){#prominents-carousel .ch-carousel-mask.ch-carousel-adaptive{ height: 300px !important;}}
 
 /* Vertical - Horizontal Ad
 */
