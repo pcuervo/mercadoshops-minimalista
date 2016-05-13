@@ -245,7 +245,7 @@
 .component.prominentProd {padding:0px;width:100%;margin:0 auto;border-bottom: 1px dotted #CCC;}
 .component.prominentProd h3{ font-size:200% !important; line-height:1em;  }
 .component.prominentProd h3 a{display:block;}
-.component.prominentProd figure{position:relative; width:50%;}
+.component.prominentProd figure{position:relative; /*width:50%;*/}
 .component.prominentProd .ch-price {font-weight:bold;margin-bottom: 20px;}
 .component.prominentProd .ch-carousel-list li {width:740px;}
 .component.prominentProd .itemFeatures p,
@@ -256,8 +256,8 @@
 }
 @media screen and (max-width:768px) {
 	.component.prominentProd .ch-carousel,
-	.component.prominentProd .ch-carousel-mask {height:320px !important;}
-	.component.prominentProd .ch-carousel-list li {height:320px !important;}
+	/*.component.prominentProd .ch-carousel-mask {height:320px !important;}
+	.component.prominentProd .ch-carousel-list li {height:320px !important;}*/
 	.component.prominentProd .ch-carousel-pages {display:none;}
 }
 @media screen and (max-width:640px) {
@@ -266,23 +266,25 @@
 	.component.prominentProd .itemData {display:block; width:100%; float:none}
 	.component.prominentProd .itemFeatures {display:none}
 	.component.prominentProd .ch-carousel,
-	.component.prominentProd .ch-carousel-mask {height:550px !important;}
-	.component.prominentProd .ch-carousel-list li {height:550px !important;}
+	/*.component.prominentProd .ch-carousel-mask {height:550px !important;}
+	.component.prominentProd .ch-carousel-list li {height:550px !important;}*/
 }
 @media screen and (max-width:520px) {
-	.component.prominentProd .ch-carousel,
-	.component.prominentProd .ch-carousel-mask {height:550px !important;}
+	/*.component.prominentProd .ch-carousel,
+	.component.prominentProd .ch-carousel-mask {height:550px !important;}*/
 	.component.prominentProd .ch-carousel-list li {height:550px !important;}
 }
 @media screen and (max-width:480px) {
-	.component.prominentProd .ch-carousel,
-	.component.prominentProd .ch-carousel-mask {height:550px !important;}
+	/*.component.prominentProd .ch-carousel,
+	.component.prominentProd .ch-carousel-mask {height:550px !important;}*/
 	.component.prominentProd h2 a {font-size:120%;}
 	.component.prominentProd figure{text-align:center; width:100%;}
 	.component.prominentProd figure{max-width:100%;auto}
 	.component.prominentProd .itemData {display:block; width:100%; float:none}
 	.component.prominentProd .ch-carousel-list li {height:550px !important;}
 }
+
+#prominents-carousel .ch-carousel-mask.ch-carousel-adaptive { height: 350px !important;}
 
 /* Vertical - Horizontal Ad
 */

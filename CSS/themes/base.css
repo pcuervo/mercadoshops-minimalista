@@ -789,7 +789,7 @@ dl.component.orderList { margin-bottom: 0px; }
 .component.prominentProd {padding:5px;width:90%;margin:0 auto;}
 .component.prominentProd .ch-carousel {background-color:#fff;padding:20px 0;}
 .component.prominentProd .ch-carousel-pages {bottom:10px;}
-.component.prominentProd article {padding:20px;background-color:#fff;}/*aplies to a non-carousel items*/
+.component.prominentProd article {padding:20px;background-color:#fff;} /*aplies to a non-carousel items*/
 .component.prominentProd .ch-carousel article { height: 100%; padding: 0 56px; } /*aplies to carousel articles*/
 .component.prominentProd .ch-carousel article > div{ height: 100%; }
 .component.prominentProd nav{clear:both;}

@@ -55,17 +55,18 @@
 				#end
 
 				#if ( $outstandingItemList )
-					<h2 class="[ text-center ]">Productos destacados</h2>
-					<div class="[ clear ]"></div>
+
+				<h2 class="[ text-center ]">Productos destacados</h2>
 					<div class="[ container ]">
 						<section class=" component prominentProd prodCarousel ch-g1">
-							<div class="ch-carousel" data-max-items="$outstandingMaxItemsPerPage">
+							<div id="prominents-carousel" class="ch-carousel" data-max-items="$outstandingMaxItemsPerPage">
+
 								<ul>
 									#foreach ($outstandingItem in $outstandingItemList)
 										<li>
 											<article class="[ clearfix ][ row ]">
-												<div class="[ col-xs-12 col-md-6 ][ text-center ]">
-													<h3 class="">
+												<div class="[ col-xs-6 col-md-offset-2 col-md-4 ][ text-center ][ no-padding--sm padding--large--md ]">
+													<h3 class="[ margin-top--xlarge ]">
 														<a title="$outstandingItem.title" href="$outstandingItem.url" class="title">$outstandingItem.title</a>
 													</h3>
 
@@ -112,11 +113,11 @@
 														#end
 													</dl>
 												</div>
-												<div class="[ col-xs-12 col-md-6 ]">
+												<div class="[ col-xs-6 col-md-4 ]">
 													<figure>
 														<a href="$outstandingItem.url" title="$outstandingItem.title" class="link">
 															#if( $outstandingItem.hasImages )
-																<img src="$outstandingItem.imageUrl" alt="$outstandingItem.title" title="$outstandingItem.title">
+																<img src="$outstandingItem.imageUrl" alt="$outstandingItem.title" title="$outstandingItem.title" class="">
 															#else
 																<img alt="Sin Foto" title="Sin Foto" src="$outstandingItem.imageUrl"/>
 															#end

@@ -3976,9 +3976,13 @@ button.close {
 .border-radius-30-px { border-radius: 30px; }
 
 .no-padding { padding: 0 !important; }
+@media (max-width: 480px){ .no-padding--xs { padding: 0 !important; }} 
 
 .padding--large { padding: 24px 48px; }
 .padding--xlarge { padding: 24px 72px; }
+
+@media (mix-width: 780px){ .padding--large--md { padding: 24px 48px; } } 
+
 .padding { padding: 12px 24px; }
 .padding--small { padding: 6px 12px; }
 .padding--xsmall { padding: 3px 6px; }
@@ -4394,4 +4398,6 @@ footer a{ text-decoration: none; }
   }
 }
 
-.newsProduct--product{ height: 300px; }
+@media (min-width: 768px){
+  .newsProduct--product{ height: 300px; }
+}
