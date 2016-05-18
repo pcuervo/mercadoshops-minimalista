@@ -430,7 +430,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 	.mobile-delete-link img {display: inline-block; position: relative; top: 3px; margin-right: 4px}
 
 
-	.delete {text-indent: 20px}
+	/*.delete {text-indent: 20px}*/
 
 
 
@@ -530,7 +530,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 .component.categoriesPath li.selected{font-weight: bold;}
 .component.categoriesPath li .selected{font-weight: bold;}
 .component.categoriesPath li.qtyResults{background-position: 0 -61px;font-weight: normal;margin-top: 3px;overflow: visible;}
-.component.categoriesPath li.qtyResults h2 {display: inline;line-height: 1px;margin: 0;overflow: visible;font-weight:bold;}
+.component.categoriesPath li.qtyResults h2 {display: inline;line-height: 1px;margin: 0;overflow: visible;font-weight:bold; font-size: 1.1em; border-bottom: solid 3px #0D71BA; }
 .component.categoriesPath .background { background-color: transparent; }
 /*
  * Categories List

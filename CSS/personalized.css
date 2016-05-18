@@ -1300,13 +1300,13 @@ select {
 }
 
 .component.promoMP.payMethod{
-  width: 40%;
   padding: 20px !important; border-left: 2px solid #FDD062 !important; margin: 20px 0;
   float: right;
 }
 
 @media (min-width: 520px) {
   .component.promoMP.payMethod{
+    width: 40%;
     position: absolute;
     right: 5%;
     top: 20%
@@ -1315,12 +1315,12 @@ select {
 
 .ch-form-hint{ color: #D0021B; }
 
-
 /*------------------------------------*\
     #Buttons
 \*------------------------------------*/
 
-.btn, .ch-btn {
+.btn, .ch-btn,
+#page-RESULT .item-gallery li.row > a {
   display: inline-block;
   height: auto !important;
   margin-bottom: 0; border: 1px solid transparent; padding: 6px 12px;
@@ -1412,7 +1412,8 @@ a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; }
   background-color: #333;
 }
 
-.btn-primary, .ch-primary, #contact-btn {
+.btn-primary, .ch-primary, #contact-btn, 
+#page-RESULT .item-gallery li.row article + a {
   color: #000;
   background-color: #FDD062;
   border-color: #fdc849;
@@ -1424,7 +1425,7 @@ a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; }
   border-color: #c48b02;
 }
 
-.btn-primary:hover, #contact-btn:hover {
+.btn-primary:hover, #contact-btn:hover, #page-RESULT .item-gallery li.row.one-promo > a:hover {
   color: #000;
   background-color: #fcc130;
   border-color: #fcb60c;
@@ -4400,4 +4401,37 @@ footer a{ text-decoration: none; }
 
 @media (min-width: 768px){
   .newsProduct--product{ height: 300px; }
+}
+
+#page-CONTACT a:visited { color: #fff; }
+
+#page-CONTACT a:hover, 
+#page-CONTACT a:focus,
+#page-CONTACT a:hover,
+#page-CONTACT a:focus { color: #FDD062;}
+
+#page-CONTACT a.logo{ color: #000; }
+#page-CONTACT a.logo:hover{ color: #FDD062;}
+
+#page-CONTACT .dropdown--hover div.dropdown-content a:hover{ color: #000;}
+
+#page-CONTACT .ico-facebook{ 
+  background: url('../images/facebook24.png');
+  background-repeat: no-repeat; 
+}
+
+#page-RESULT #search-submit .ch-container,
+#page-RESULT .ch-container.component.viewMode{ width: 100%; }
+
+#page-CART img.delete{ background: url('../images/delete.png');}
+#page-CART a.delete{ background: url('../images/delete-disabled.png');}
+#page-CART a.delete:hover{ background: url('../images/delete.png'); }
+
+#page-RESULT .item-gallery li.row { position: relative;}
+#page-RESULT .item-gallery li.row > a{
+  position: absolute;
+  bottom: 15%;
+  left: 30%;
+  color: #000;
+  text-decoration: none;
 }

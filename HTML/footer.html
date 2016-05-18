@@ -20,7 +20,6 @@
 						<a href="#" class="[ color-light ][ icon-logo-youtube-clip icon-small ]"></a>
 						<a href="#" class="[ color-light ][ icon-logo-instagram icon-small ]"></a>
 						<a href="#" class="[ color-light ][ icon-logo-pinterest icon-small ]"></a>
-						<a href="#" class="[ color-light ][ icon-logo-google icon-small ]"></a>
 						<a href="#" class="[ color-light ][ icon-logo-tumblr icon-small ]"></a>
 						<a href="#" class="[ color-light ][ icon-logo-whatsapp icon-small ]"></a>
 						<div class="[ margin-top ]">
@@ -81,6 +80,16 @@
 		**/
 
 		footerBottom();
+
+		if ( $('#page-RESULT .item-gallery li').length ){
+
+			$('.item-gallery li').each( function(){
+				var itemURL = $(this).find('article figure a').attr('href');
+				$(this).append('<a href="'+itemURL+'">shop now<a/>');
+			});
+			
+		}
+
 
 		/**
 		 * Triggered
