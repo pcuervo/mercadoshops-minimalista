@@ -427,7 +427,7 @@ a.disabled:hover {text-decoration: none;cursor: not-allowed;}
 		text-decoration: none;
 	}
 
-	.mobile-delete-link img {display: inline-block; position: relative; top: 3px; margin-right: 4px}
+	.mobile-delete-link img {display: inline-block; position: relative; top: -2px; left: 10px; margin-right: 4px}
 
 
 	/*.delete {text-indent: 20px}*/
