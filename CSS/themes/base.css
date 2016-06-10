@@ -803,7 +803,7 @@ dl.component.orderList { margin-bottom: 0px; }
 .component.prominentProd .ch-carousel {background-color:#fff;padding:20px 0;}
 .component.prominentProd .ch-carousel-pages {bottom:10px;}
 .component.prominentProd article {padding:20px;background-color:#fff;} /*aplies to a non-carousel items*/
-.component.prominentProd .ch-carousel article { height: 100%; padding: 0 56px; } /*aplies to carousel articles*/
+.component.prominentProd .ch-carousel article { padding: 0 56px; } /*aplies to carousel articles*/
 .component.prominentProd .ch-carousel article > div{ height: 100%; }
 .component.prominentProd nav{clear:both;}
 .component.prominentProd h2{float:none;margin-bottom:30px;}
@@ -1334,7 +1334,7 @@ ul.itemData .promoRibbonMlb{bottom:-40px;}
 	.component.vip .no-stock-pt {display:block; float:none; width:auto; background-color:#eaeaea; padding:10px; margin:5px 0; border-radius:5px;}
 	.component.vip .no-stock-es label,
 	.component.vip .no-stock-pt label {border:none; padding: 0 0 0 25px; margin: 0; background-color: transparent; background-position: -145px -42px;}
-	.component.prodCarousel p.promoRibbonHomeStarred {background: url("//static.mercadoshops.com/static/images/promoImageTagCartFlip.png") no-repeat scroll -1px 0;left:140px;}
+	.component.prodCarousel p.promoRibbonHomeStarred{ width: 120%; padding: 5px; top: 85%;}
 }
 article.component.vip header{ height: 120px; }
 article.component.vip label.ch-select-trigger.ch-user-no-select.ch-points-ltlb{ margin-left: 5%;

@@ -4436,3 +4436,5 @@ footer a{ text-decoration: none; }
   color: #000;
   text-decoration: none;
 }
+
+.component.picviewer figure, .component.picviewer li{ text-align: left !important;}
