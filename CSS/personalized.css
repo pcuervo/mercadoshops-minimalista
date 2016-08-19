@@ -4421,6 +4421,27 @@ footer a{ text-decoration: none; }
   background-repeat: no-repeat; 
 }
 
+#page-CONTACT #recaptcha_widget{ left: 0; width: 100%; }
+#page-CONTACT #recaptcha_widget #recaptcha_image{ width: 100% !important; overflow: hidden;}
+#page-CONTACT #recaptcha_widget img{ width: 100%; vertical-align: baseline;}
+#page-CONTACT #recaptcha_widget .recaptcha_logo{ position: absolute; bottom: 0;}
+#page-CONTACT #recaptcha_widget #recaptcha_response_field{
+  left: 5px;
+  top: 80px;
+  width: 97% !important;
+  font-size: 10px;
+}
+
+#page-CONTACT #recaptcha_widget .recaptcha_logo img,
+#page-CONTACT #recaptcha_widget .recaptcha_reload img{ vertical-align: baseline;}
+#page-CONTACT #recaptcha_widget .recaptcha_reload{
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  left: initial;
+  top: initial;
+}
+
 #page-RESULT #search-submit .ch-container,
 #page-RESULT .ch-container.component.viewMode{ width: 100%; }
 
@@ -4436,5 +4457,3 @@ footer a{ text-decoration: none; }
   color: #000;
   text-decoration: none;
 }
-
-.component.picviewer figure, .component.picviewer li{ text-align: left !important;}

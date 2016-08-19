@@ -1582,7 +1582,7 @@ font-style:normal}
 .ch-carousel-prev span,
 .ch-carousel-next span {
 	background-image: url('//static.mercadoshops.com/static/images/chico/carousel.png');
-	background-color: rgba(238, 238, 238, 0.38) !important;
+	background-color: rgba(238, 238, 238, 0.4) !important;
     background-repeat: no-repeat;
     padding: 5px;
 	display: block;
@@ -1630,6 +1630,8 @@ font-style:normal}
 .ch-carousel-pages .ch-carousel-selected {
 	background-color: #16232f;
 }
+
+@media screen and (max-width:400px){ .ch-carousel-pages span{ display: none}}
 
 .ch-cone:after,
 .ch-cone:before {
