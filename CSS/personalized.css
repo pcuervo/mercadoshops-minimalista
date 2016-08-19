@@ -4422,8 +4422,9 @@ footer a{ text-decoration: none; }
 }
 
 #page-CONTACT #recaptcha_widget{ left: 0; width: 100%; }
-#page-CONTACT #recaptcha_widget #recaptcha_image{ width: 100% !important; overflow: hidden;}
-#page-CONTACT #recaptcha_widget img{ width: 100%; vertical-align: baseline;}
+#page-CONTACT #recaptcha_widget #recaptcha_image,
+#page-CONTACT #recaptcha_widget #recaptcha_image #recaptcha_challenge_image{ width: 100% !important; overflow: hidden;}
+#page-CONTACT #recaptcha_widget img{  vertical-align: baseline;}
 #page-CONTACT #recaptcha_widget .recaptcha_logo{ position: absolute; bottom: 0;}
 #page-CONTACT #recaptcha_widget #recaptcha_response_field{
   left: 5px;
@@ -4432,8 +4433,6 @@ footer a{ text-decoration: none; }
   font-size: 10px;
 }
 
-#page-CONTACT #recaptcha_widget .recaptcha_logo img,
-#page-CONTACT #recaptcha_widget .recaptcha_reload img{ vertical-align: baseline;}
 #page-CONTACT #recaptcha_widget .recaptcha_reload{
   position: absolute;
   right: 10px;
